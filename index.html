@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaScale Global | Premier Digital Growth Agency & Web Architecture</title>
+  <meta name="description" content="NovaScale Global engineers high-converting websites, ROI-driven Meta and Google Ads, and dominant Google Maps rankings for growing businesses worldwide." />
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    .gradient-text {
+      background: linear-gradient(135deg, #4f46e5 0%, #ec4899 50%, #f59e0b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white">
+
+  <!-- Top Global Announcement Bar (Contact info hidden as discrete action links) -->
+  <div class="bg-slate-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">GLOBAL AGENCY</span>
+        <span>Serving ambitious businesses across the US, UK, Canada, Europe & India</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs">
+        <a href="contact.html" class="hover:text-white flex items-center gap-1.5 transition-colors font-medium">
+          <i data-lucide="mail" class="w-3.5 h-3.5 text-indigo-400"></i> Send Strategy Inquiry
+        </a>
+        <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20chat%20with%20your%20growth%20team." target="_blank" class="hover:text-white flex items-center gap-1.5 transition-colors font-medium text-emerald-400">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Live WhatsApp Desk
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/25">
+          <i data-lucide="sparkles" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-extrabold tracking-tight text-slate-950">NovaScale<span class="text-indigo-600">.</span></span>
+          <span class="block text-[10px] uppercase font-bold tracking-widest text-slate-400 -mt-1">Global Growth Agency</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+        <a href="index.html" class="text-indigo-600">Home</a>
+        <a href="services.html" class="hover:text-indigo-600 transition-colors">Services</a>
+        <a href="templates.html" class="hover:text-indigo-600 transition-colors">Portfolio & Templates</a>
+        <a href="pricing.html" class="hover:text-indigo-600 transition-colors">Pricing & Plans</a>
+        <a href="contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+      </nav>
+
+      <!-- Header Action Buttons -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/919457886467?text=Hello%20NovaScale%20Global!%20I%20would%20like%20to%20discuss%20a%20digital%20growth%20project%20for%20my%20business." 
+           target="_blank" 
+           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-semibold text-sm shadow-md shadow-emerald-600/20 transition-all hover:scale-105">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          <span>Chat on WhatsApp</span>
+        </a>
+        <a href="contact.html" class="hidden lg:inline-flex items-center gap-2 bg-slate-950 hover:bg-slate-800 text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all hover:shadow-lg">
+          <span>Book Discovery Call</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-16 pb-24 overflow-hidden">
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[380px] bg-indigo-500/15 blur-[130px] rounded-full pointer-events-none -z-10"></div>
+    <div class="absolute top-1/3 right-10 w-[450px] h-[300px] bg-pink-500/10 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-200 text-indigo-700 text-xs sm:text-sm font-bold mb-8 shadow-sm">
+        <span class="flex h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>Trusted Growth Partner for Global Brands & Regional Leaders</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-slate-950 max-w-5xl mx-auto leading-[1.12]">
+        We Engineer Revenue-Driven <br class="hidden sm:inline"/>
+        <span class="gradient-text">Websites & Growth Funnels</span>
+      </h1>
+
+      <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto font-normal leading-relaxed">
+        High-performing web architecture, high-ROI Meta & Google Ads campaigns, top-ranking Google Maps SEO, and viral social creative production — designed to predictably acquire high-value customers.
+      </p>
+
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="templates.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 rounded-2xl font-bold text-base shadow-xl shadow-indigo-600/25 transition-all hover:-translate-y-0.5">
+          <span>Explore Niche UI Mockups</span>
+          <i data-lucide="layout-grid" class="w-5 h-5"></i>
+        </a>
+        <a href="pricing.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-800 border border-slate-300 px-8 py-4 rounded-2xl font-bold text-base shadow-sm transition-all hover:-translate-y-0.5">
+          <span>View Packages & Pricing</span>
+          <i data-lucide="arrow-right" class="w-5 h-5 text-indigo-600"></i>
+        </a>
+      </div>
+
+      <!-- Verified Metric Counters -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto border border-slate-200 py-8 bg-white/70 backdrop-blur-md rounded-3xl px-8 shadow-sm">
+        <div>
+          <div class="text-3xl sm:text-4xl font-black text-slate-900">65+</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Global Businesses Scaled</div>
+        </div>
+        <div>
+          <div class="text-3xl sm:text-4xl font-black text-indigo-600">4.8x</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Average ROAS on Ad Spend</div>
+        </div>
+        <div>
+          <div class="text-3xl sm:text-4xl font-black text-amber-500">4.9 / 5.0</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Client Satisfaction Score</div>
+        </div>
+        <div>
+          <div class="text-3xl sm:text-4xl font-black text-emerald-600">$4.2M+</div>
+          <div class="text-xs sm:text-sm font-semibold text-slate-500 mt-1">Client Pipeline Generated</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive ROI Calculator Preview -->
+  <section class="py-16 bg-slate-900 text-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-slate-800/80 rounded-3xl p-8 sm:p-12 border border-slate-700 shadow-2xl backdrop-blur-md">
+        
+        <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-8 pb-6 border-b border-slate-700">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">Interactive Pipeline Forecaster</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Calculate Your Expected Revenue Growth</h2>
+          </div>
+          <div class="flex items-center gap-2 bg-slate-900 p-1.5 rounded-xl border border-slate-700">
+            <button id="curr-usd" onclick="setCurrency('USD')" class="px-3 py-1 rounded-lg text-xs font-bold bg-indigo-600 text-white transition-all">USD ($)</button>
+            <button id="curr-inr" onclick="setCurrency('INR')" class="px-3 py-1 rounded-lg text-xs font-semibold text-slate-400 hover:text-white transition-all">INR (₹)</button>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <div class="flex justify-between text-sm font-bold text-slate-300 mb-2">
+              <span>Monthly Paid Ad Investment:</span>
+              <span id="spend-label" class="text-indigo-400 font-extrabold text-base">$1,000</span>
+            </div>
+            <input type="range" id="spend-slider" min="500" max="15000" step="250" value="1000" class="w-full accent-indigo-500 cursor-pointer" oninput="runCalculator()">
+            <p class="text-xs text-slate-400 mt-1">Recommended baseline for regional/hyper-local campaigns.</p>
+          </div>
+
+          <div>
+            <div class="flex justify-between text-sm font-bold text-slate-300 mb-2">
+              <span>Average Customer Lifetime Value (LTV):</span>
+              <span id="clv-label" class="text-indigo-400 font-extrabold text-base">$250</span>
+            </div>
+            <input type="range" id="clv-slider" min="50" max="3000" step="25" value="250" class="w-full accent-indigo-500 cursor-pointer" oninput="runCalculator()">
+            <p class="text-xs text-slate-400 mt-1">Estimated average revenue per closed client or customer.</p>
+          </div>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 pt-6 border-t border-slate-700 text-center">
+          <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-700">
+            <div class="text-xs font-medium text-slate-400">Estimated Qualified Inquiries</div>
+            <div id="est-leads" class="text-2xl sm:text-3xl font-black text-white mt-1">65 – 110</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-700">
+            <div class="text-xs font-medium text-slate-400">Estimated Closed Customers</div>
+            <div id="est-closed" class="text-2xl sm:text-3xl font-black text-indigo-400 mt-1">12 – 22</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-slate-900/60 border border-slate-700">
+            <div class="text-xs font-medium text-slate-400">Projected Monthly Revenue</div>
+            <div id="est-revenue" class="text-2xl sm:text-3xl font-black text-emerald-400 mt-1">$3,000 – $5,500</div>
+          </div>
+        </div>
+
+        <div class="mt-6 text-center">
+          <a href="contact.html" class="inline-flex items-center gap-2 text-sm font-bold text-indigo-300 hover:text-indigo-200">
+            <span>Ready to implement this system for your business? Request Full Growth Proposal</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Templates Preview Section -->
+  <section class="py-24 bg-slate-100/70 border-t border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <span class="inline-block text-indigo-600 text-xs font-bold uppercase tracking-widest mb-2">Industry Solutions</span>
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-950">Pre-Engineered Business Architecture</h2>
+          <p class="mt-3 text-slate-600">Explore tailored frameworks engineered specifically for your industry's customer journey.</p>
+        </div>
+        <a href="templates.html" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-md transition-all">
+          <span>Inspect All UI Mockups</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md group hover:shadow-2xl transition-all">
+          <div class="p-6 bg-slate-900 text-white border-b border-slate-800">
+            <span class="text-xs font-bold text-emerald-400 uppercase">Healthcare & Clinic</span>
+            <h3 class="text-xl font-bold text-white mt-1">CarePlus Dental Suite</h3>
+            <p class="text-slate-400 text-xs mt-2">Doctor credentials, treatment pricing calculator, and online patient appointment bookings.</p>
+          </div>
+          <div class="p-6 bg-white flex items-center justify-between">
+            <span class="text-xs font-bold text-emerald-600 flex items-center gap-1"><i data-lucide="check" class="w-4 h-4"></i> WhatsApp Ready</span>
+            <a href="templates.html" class="text-sm font-bold text-indigo-600 hover:text-indigo-800 flex items-center gap-1">
+              Inspect 3 UI Screens &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md group hover:shadow-2xl transition-all">
+          <div class="p-6 bg-slate-900 text-white border-b border-slate-800">
+            <span class="text-xs font-bold text-indigo-400 uppercase">Fitness & Gym Club</span>
+            <h3 class="text-xl font-bold text-white mt-1">IronClad Performance Gym</h3>
+            <p class="text-slate-400 text-xs mt-2">Membership pass lead-magnets, trainer showcase, transformation galleries, and class schedules.</p>
+          </div>
+          <div class="p-6 bg-white flex items-center justify-between">
+            <span class="text-xs font-bold text-indigo-600 flex items-center gap-1"><i data-lucide="zap" class="w-4 h-4"></i> Free Trial Funnel</span>
+            <a href="templates.html" class="text-sm font-bold text-indigo-600 hover:text-indigo-800 flex items-center gap-1">
+              Inspect 3 UI Screens &rarr;
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-md group hover:shadow-2xl transition-all">
+          <div class="p-6 bg-slate-900 text-white border-b border-slate-800">
+            <span class="text-xs font-bold text-blue-400 uppercase">Real Estate & Luxury</span>
+            <h3 class="text-xl font-bold text-white mt-1">PrimeAcre Luxury Estates</h3>
+            <p class="text-slate-400 text-xs mt-2">Engineered for high-ticket property inquiries, floor plan previews, and VIP site visit requests.</p>
+          </div>
+          <div class="p-6 bg-white flex items-center justify-between">
+            <span class="text-xs font-bold text-blue-600 flex items-center gap-1"><i data-lucide="shield-check" class="w-4 h-4"></i> High-Ticket Funnel</span>
+            <a href="templates.html" class="text-sm font-bold text-indigo-600 hover:text-indigo-800 flex items-center gap-1">
+              Inspect 3 UI Screens &rarr;
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Global Call to Action Banner -->
+  <section class="py-20 bg-gradient-to-r from-indigo-950 via-slate-950 to-purple-950 text-white text-center relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 mb-4">READY TO SCALE?</span>
+      <h2 class="text-3xl sm:text-5xl font-black tracking-tight">Let's Build Your Revenue Machine</h2>
+      <p class="mt-4 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto">
+        Speak directly with our growth strategists. We will audit your current website, ads, and local presence to show you untapped revenue channels.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20claim%20my%20Free%20Digital%20Growth%20Audit." 
+           target="_blank" 
+           class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-2xl font-bold text-base shadow-xl shadow-emerald-600/25 transition-all">
+          <i data-lucide="message-circle" class="w-5 h-5"></i>
+          <span>Chat on WhatsApp Directly</span>
+        </a>
+        <a href="contact.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-4 rounded-2xl font-bold text-base transition-all">
+          <span>Book Discovery Call</span>
+          <i data-lucide="arrow-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Global Footer (Pure action links, zero raw contact info displayed) -->
+  <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+        
+        <div>
+          <div class="flex items-center gap-3 text-white font-extrabold text-xl">
+            <div class="w-8 h-8 rounded-xl bg-indigo-600 flex items-center justify-center text-white"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
+            <span>NovaScale<span class="text-indigo-500">.</span></span>
+          </div>
+          <p class="mt-4 text-slate-400 text-xs leading-relaxed">Data-driven digital growth architecture for ambitious brands worldwide.</p>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Navigation</h4>
+          <ul class="space-y-2.5">
+            <li><a href="index.html" class="hover:text-white">Home</a></li>
+            <li><a href="services.html" class="hover:text-white">Services Breakdown</a></li>
+            <li><a href="templates.html" class="hover:text-white">Industry Templates</a></li>
+            <li><a href="pricing.html" class="hover:text-white">Pricing & Packages</a></li>
+            <li><a href="contact.html" class="hover:text-white">Contact & Consultation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Solutions</h4>
+          <ul class="space-y-2.5">
+            <li><a href="services.html#web" class="hover:text-white">High-Converting Websites</a></li>
+            <li><a href="services.html#ads" class="hover:text-white">Meta & Google Ads</a></li>
+            <li><a href="services.html#gmb" class="hover:text-white">Google Maps Top Ranking</a></li>
+            <li><a href="services.html#social" class="hover:text-white">Viral Reels Production</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Connect With Us</h4>
+          <ul class="space-y-3">
+            <li>
+              <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20have%20an%20inquiry." target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl font-bold text-xs transition-colors">
+                <i data-lucide="message-circle" class="w-4 h-4"></i> Direct WhatsApp Channel
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-xl font-bold text-xs transition-colors">
+                <i data-lucide="mail" class="w-4 h-4"></i> Official Consultation Form
+              </a>
+            </li>
+            <li class="text-[11px] text-slate-500">Average response time: within 15 minutes.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div>&copy; 2026 NovaScale Global Media. All rights reserved. Registered Digital Agency.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Quick Button -->
+  <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20interested%20in%20scaling%20my%20business." 
+     target="_blank" 
+     class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all hover:scale-110">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <script>
+    lucide.createIcons();
+
+    let currentCurrency = 'USD';
+    const rates = {
+      USD: { symbol: '$', minSpend: 500, maxSpend: 15000, stepSpend: 250, defaultSpend: 1000, defaultCLV: 250, cplRatio: 18 },
+      INR: { symbol: '₹', minSpend: 10000, maxSpend: 200000, stepSpend: 5000, defaultSpend: 20000, defaultCLV: 3000, cplRatio: 120 }
+    };
+
+    function setCurrency(curr) {
+      currentCurrency = curr;
+      const usdBtn = document.getElementById('curr-usd');
+      const inrBtn = document.getElementById('curr-inr');
+      const spendSlider = document.getElementById('spend-slider');
+      const clvSlider = document.getElementById('clv-slider');
+
+      if (curr === 'USD') {
+        usdBtn.className = "px-3 py-1 rounded-lg text-xs font-bold bg-indigo-600 text-white transition-all";
+        inrBtn.className = "px-3 py-1 rounded-lg text-xs font-semibold text-slate-400 hover:text-white transition-all";
+        spendSlider.min = 500;
+        spendSlider.max = 15000;
+        spendSlider.step = 250;
+        spendSlider.value = 1000;
+        clvSlider.min = 50;
+        clvSlider.max = 3000;
+        clvSlider.step = 25;
+        clvSlider.value = 250;
+      } else {
+        inrBtn.className = "px-3 py-1 rounded-lg text-xs font-bold bg-indigo-600 text-white transition-all";
+        usdBtn.className = "px-3 py-1 rounded-lg text-xs font-semibold text-slate-400 hover:text-white transition-all";
+        spendSlider.min = 10000;
+        spendSlider.max = 200000;
+        spendSlider.step = 5000;
+        spendSlider.value = 20000;
+        clvSlider.min = 500;
+        clvSlider.max = 25000;
+        clvSlider.step = 500;
+        clvSlider.value = 3000;
+      }
+      runCalculator();
+    }
+
+    function runCalculator() {
+      const spend = parseInt(document.getElementById('spend-slider').value);
+      const clv = parseInt(document.getElementById('clv-slider').value);
+      const cfg = rates[currentCurrency];
+
+      document.getElementById('spend-label').innerText = `${cfg.symbol}${spend.toLocaleString()}`;
+      document.getElementById('clv-label').innerText = `${cfg.symbol}${clv.toLocaleString()}`;
+
+      const minLeads = Math.round(spend / (cfg.cplRatio * 1.3));
+      const maxLeads = Math.round(spend / (cfg.cplRatio * 0.8));
+
+      const minClosed = Math.round(minLeads * 0.16);
+      const maxClosed = Math.round(maxLeads * 0.22);
+
+      const minRev = minClosed * clv;
+      const maxRev = maxClosed * clv;
+
+      document.getElementById('est-leads').innerText = `${minLeads} – ${maxLeads}`;
+      document.getElementById('est-closed').innerText = `${minClosed} – ${maxClosed}`;
+      document.getElementById('est-revenue').innerText = `${cfg.symbol}${minRev.toLocaleString()} – ${cfg.symbol}${maxRev.toLocaleString()}`;
+    }
+
+    runCalculator();
+  </script>
+</body>
+</html>
