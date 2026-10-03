@@ -3,13 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Industry Templates & Interactive UI Gallery | NovaScale Global</title>
-  <meta name="description" content="Explore real website UI mockups and pre-engineered web architecture templates for dental clinics, fitness clubs, luxury salons, real estate, and restaurants." />
-
-  <!-- Google Fonts: Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Templates & Live Demos | NovaScale Global - Noida Growth Studio</title>
+  <meta name="description" content="Explore live, interactive websites built for local clinics, gyms, salons, real estate, restaurants, and coaching centers. Launch your business site in 5 days." />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -19,6 +14,17 @@
         extend: {
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#1e1b4b',
+              950: '#090d16'
+            }
           }
         }
       }
@@ -27,479 +33,521 @@
 
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <style>
-    .gradient-text {
-      background: linear-gradient(135deg, #4f46e5 0%, #ec4899 50%, #f59e0b 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .browser-frame {
-      box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
-    }
-    .phone-mockup {
-      width: 320px;
-      max-width: 100%;
-      height: 520px;
-      border-radius: 40px;
-      border: 10px solid #0f172a;
-      box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.4);
-      overflow: hidden;
-      margin: 0 auto;
-      background: #ffffff;
-      position: relative;
-    }
-    .phone-island {
-      width: 90px;
-      height: 18px;
-      background: #0f172a;
-      border-radius: 20px;
-      position: absolute;
-      top: 8px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 30;
-    }
-  </style>
+  <!-- Custom Design System CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white">
 
-  <!-- Top Global Announcement Bar (Contact info hidden as discrete action links) -->
+  <!-- Top Micro Announcement Bar -->
   <div class="bg-slate-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
       <div class="flex items-center gap-2">
-        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">PORTFOLIO & ARCHITECTURE</span>
-        <span>Click any industry design to preview live UI mockups (Desktop, Mobile & Booking Flow)</span>
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+          📍 NOIDA, INDIA & GLOBAL
+        </span>
+        <span>Empowering clinics, gyms, salons, restaurants & retail leaders across India & worldwide</span>
       </div>
       <div class="flex items-center gap-4 text-xs">
-        <a href="contact.html" class="hover:text-white flex items-center gap-1.5 transition-colors font-medium">
-          <i data-lucide="mail" class="w-3.5 h-3.5 text-indigo-400"></i> Send Strategy Inquiry
-        </a>
-        <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20chat%20with%20your%20growth%20team." target="_blank" class="hover:text-white flex items-center gap-1.5 transition-colors font-medium text-emerald-400">
-          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Live WhatsApp Desk
+        <span class="flex items-center gap-1.5 text-emerald-400 font-semibold">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> WhatsApp response: &lt; 15 mins
+        </span>
+        <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20discuss%20growing%20my%20business." target="_blank" class="text-white hover:text-indigo-400 flex items-center gap-1 transition-colors font-bold">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400"></i> Chat on WhatsApp
         </a>
       </div>
     </div>
   </div>
 
-  <!-- Navigation Bar -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200">
+  <!-- Main Navigation Bar -->
+  <header class="sticky top-0 z-40 glass-nav">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <div class="flex items-center gap-6">
-        <a href="index.html" class="flex items-center gap-3">
-          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/25">
-            <i data-lucide="sparkles" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <span class="text-2xl font-extrabold tracking-tight text-slate-950">NovaScale<span class="text-indigo-600">.</span></span>
-            <span class="block text-[10px] uppercase font-bold tracking-widest text-slate-400 -mt-1">Global Growth Agency</span>
-          </div>
-        </a>
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform">
+          <i data-lucide="sparkles" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-black tracking-tight text-slate-950">NovaScale<span class="text-indigo-600">.</span></span>
+          <span class="block text-[10px] uppercase font-extrabold tracking-widest text-slate-400 -mt-1">Growth Studio • Noida</span>
+        </div>
+      </a>
 
-        <!-- Breadcrumb / Back button -->
-        <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-indigo-600 bg-slate-100 px-3 py-1.5 rounded-lg transition-colors">
-          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Back to Home
-        </a>
-      </div>
-
-      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-600">
         <a href="index.html" class="hover:text-indigo-600 transition-colors">Home</a>
         <a href="services.html" class="hover:text-indigo-600 transition-colors">Services</a>
-        <a href="templates.html" class="text-indigo-600">Portfolio & Templates</a>
-        <a href="pricing.html" class="hover:text-indigo-600 transition-colors">Pricing & Plans</a>
+        <a href="pricing.html" class="hover:text-indigo-600 transition-colors">Pricing</a>
+        <a href="templates.html" class="text-indigo-600 flex items-center gap-1">
+          <span>Templates & Demos</span>
+          <span class="bg-indigo-600 text-white text-[10px] px-2 py-0.5 rounded-full font-extrabold">6 Live</span>
+        </a>
+        <a href="about.html" class="hover:text-indigo-600 transition-colors">About Us</a>
         <a href="contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
       </nav>
 
-      <div class="flex items-center gap-3">
-        <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20discuss%20a%20website%20template%20for%20my%20business." 
+      <!-- Desktop Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20interested%20in%20a%20website%20template%20for%20my%20business." 
            target="_blank" 
-           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-semibold text-sm shadow-md shadow-emerald-600/20 transition-all hover:scale-105">
+           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-md shadow-emerald-600/25 transition-all hover:scale-105">
           <i data-lucide="message-circle" class="w-4 h-4"></i>
-          <span>Chat on WhatsApp</span>
+          <span>WhatsApp Founder</span>
         </a>
-        <a href="contact.html" class="hidden lg:inline-flex items-center gap-2 bg-slate-950 hover:bg-slate-800 text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-all hover:shadow-lg">
-          <span>Request Custom Quote</span>
-          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        <a href="contact.html" class="inline-flex items-center gap-1.5 bg-slate-950 hover:bg-slate-800 text-white px-5 py-2.5 rounded-xl font-bold text-sm transition-all hover:shadow-lg">
+          <span>Claim Free Audit</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400"></i>
         </a>
       </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition-colors" aria-label="Toggle Navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
     </div>
   </header>
 
-  <!-- Page Header -->
-  <section class="py-16 bg-slate-900 text-white text-center relative overflow-hidden">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <span class="inline-block text-indigo-400 text-xs font-bold uppercase tracking-widest mb-3">Live Interactive Mockups</span>
-      <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-tight">
-        Industry-Specific Web Architecture
-      </h1>
-      <p class="mt-4 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal">
-        Click on any industry card below to inspect its <strong>Actual Desktop UI, Mobile View, and Booking Engine Flow</strong>.
-      </p>
+  <!-- Mobile Navigation Slide-Over Drawer -->
+  <div id="mobile-backdrop" class="fixed inset-0 bg-slate-950/60 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85%] bg-white z-50 shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+        <div class="flex items-center gap-2 font-black text-slate-900 text-lg">
+          <div class="w-8 h-8 rounded-xl bg-indigo-600 flex items-center justify-center text-white"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
+          <span>NovaScale<span class="text-indigo-600">.</span></span>
+        </div>
+        <button id="close-menu-btn" class="p-2 text-slate-400 hover:text-slate-700 rounded-lg">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <nav class="mt-6 flex flex-col gap-4 text-base font-bold text-slate-800">
+        <a href="index.html" class="p-2.5 rounded-xl hover:bg-slate-100">Home</a>
+        <a href="services.html" class="p-2.5 rounded-xl hover:bg-slate-100">Services</a>
+        <a href="pricing.html" class="p-2.5 rounded-xl hover:bg-slate-100">Pricing & Packages</a>
+        <a href="templates.html" class="p-2.5 rounded-xl hover:bg-indigo-50 text-indigo-600 flex items-center justify-between">
+          <span>Templates & Demos</span>
+          <span class="bg-indigo-600 text-white text-xs px-2 py-0.5 rounded-full font-bold">6 Live</span>
+        </a>
+        <a href="about.html" class="p-2.5 rounded-xl hover:bg-slate-100">About Us (Noida Studio)</a>
+        <a href="contact.html" class="p-2.5 rounded-xl hover:bg-slate-100">Contact Us</a>
+      </nav>
     </div>
-  </section>
 
-  <!-- Filterable Gallery Section -->
-  <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <!-- Filter Buttons -->
-    <div class="flex flex-wrap items-center justify-center gap-2.5 mb-14" id="filters">
-      <button onclick="filterGallery('all')" class="gallery-btn active px-5 py-2.5 rounded-xl font-bold text-sm bg-indigo-600 text-white shadow-md transition-all">All Industries</button>
-      <button onclick="filterGallery('clinic')" class="gallery-btn px-5 py-2.5 rounded-xl font-semibold text-sm bg-white text-slate-700 border border-slate-300 hover:border-indigo-600 transition-all">Clinics & Healthcare</button>
-      <button onclick="filterGallery('gym')" class="gallery-btn px-5 py-2.5 rounded-xl font-semibold text-sm bg-white text-slate-700 border border-slate-300 hover:border-indigo-600 transition-all">Fitness & Gym</button>
-      <button onclick="filterGallery('salon')" class="gallery-btn px-5 py-2.5 rounded-xl font-semibold text-sm bg-white text-slate-700 border border-slate-300 hover:border-indigo-600 transition-all">Salons & Aesthetic Spas</button>
-      <button onclick="filterGallery('realestate')" class="gallery-btn px-5 py-2.5 rounded-xl font-semibold text-sm bg-white text-slate-700 border border-slate-300 hover:border-indigo-600 transition-all">Real Estate & Developers</button>
-      <button onclick="filterGallery('dining')" class="gallery-btn px-5 py-2.5 rounded-xl font-semibold text-sm bg-white text-slate-700 border border-slate-300 hover:border-indigo-600 transition-all">Restaurants & Cafes</button>
-      <button onclick="filterGallery('academy')" class="gallery-btn px-5 py-2.5 rounded-xl font-semibold text-sm bg-white text-slate-700 border border-slate-300 hover:border-indigo-600 transition-all">Education & Coaching</button>
-    </div>
-
-    <!-- Cards Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-grid">
-      
-      <!-- Card 1: Clinic -->
-      <div class="card-item clinic bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl transition-all group cursor-pointer" onclick="openMultiPhotoModal('clinic')">
-        <div class="h-64 relative overflow-hidden bg-slate-900 border-b border-slate-100 p-4 flex flex-col justify-between">
-          <div class="flex items-center justify-between z-10">
-            <span class="bg-emerald-500 text-white text-[11px] font-bold px-3 py-1 rounded-lg shadow">Healthcare & Dental</span>
-            <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1">
-              <i data-lucide="layout" class="w-3 h-3"></i> 3 UI Screens
-            </span>
-          </div>
-          <!-- Visual preview miniature mockup -->
-          <div class="bg-white rounded-xl shadow-lg p-3 text-slate-800 border border-slate-200 transform group-hover:-translate-y-1 transition-transform">
-            <div class="flex items-center justify-between pb-2 border-b border-slate-100 text-[10px]">
-              <span class="font-black text-indigo-600">CarePlus Dental</span>
-              <span class="text-emerald-600 font-bold">● Book Online</span>
-            </div>
-            <div class="mt-2 text-xs font-extrabold text-slate-900">Modern Dental Care & Smile Studio</div>
-            <div class="mt-1 text-[10px] text-slate-500">Instant WhatsApp Booking • 4.9★ Patient Rated</div>
-          </div>
-          <div class="text-[11px] text-indigo-300 font-bold flex items-center justify-between pt-2">
-            <span>Includes 95+ PageSpeed & Schema</span>
-            <span class="text-white group-hover:translate-x-1 transition-transform flex items-center gap-1">Click to Inspect &rarr;</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">CarePlus Dental & Medical Suite</h3>
-          <p class="text-slate-500 text-xs mt-2 leading-relaxed">Integrated appointment scheduler, treatment price calculator, doctor credentials, and automated patient review loops.</p>
-          <div class="mt-6 flex items-center justify-between pt-4 border-t border-slate-100">
-            <span class="text-xs font-bold text-emerald-600 flex items-center gap-1"><i data-lucide="zap" class="w-4 h-4"></i> 48-Hour Deployment</span>
-            <span class="text-xs font-bold text-indigo-600 flex items-center gap-1">Inspect UI Screens &rarr;</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 2: Gym -->
-      <div class="card-item gym bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl transition-all group cursor-pointer" onclick="openMultiPhotoModal('gym')">
-        <div class="h-64 relative overflow-hidden bg-slate-900 border-b border-slate-100 p-4 flex flex-col justify-between">
-          <div class="flex items-center justify-between z-10">
-            <span class="bg-indigo-600 text-white text-[11px] font-bold px-3 py-1 rounded-lg shadow">Fitness & Gym Club</span>
-            <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1">
-              <i data-lucide="layout" class="w-3 h-3"></i> 3 UI Screens
-            </span>
-          </div>
-          <div class="bg-slate-950 rounded-xl shadow-lg p-3 text-white border border-slate-800 transform group-hover:-translate-y-1 transition-transform">
-            <div class="flex items-center justify-between pb-2 border-b border-slate-800 text-[10px]">
-              <span class="font-black text-amber-400">IRONCLAD GYM</span>
-              <span class="bg-red-600 text-white px-2 py-0.5 rounded font-bold">FREE PASS</span>
-            </div>
-            <div class="mt-2 text-xs font-extrabold text-white">Transform Your Physique & Strength</div>
-            <div class="mt-1 text-[10px] text-slate-400">3-Day VIP Pass • Trainer Roster • Tier Pricing</div>
-          </div>
-          <div class="text-[11px] text-indigo-300 font-bold flex items-center justify-between pt-2">
-            <span>High-Converting Lead-Gen Funnel</span>
-            <span class="text-white group-hover:translate-x-1 transition-transform flex items-center gap-1">Click to Inspect &rarr;</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">IronClad Performance Fitness</h3>
-          <p class="text-slate-500 text-xs mt-2 leading-relaxed">Features high-converting 3-day trial pass lead generation forms, interactive tier pricing tables, and trainer profiles.</p>
-          <div class="mt-6 flex items-center justify-between pt-4 border-t border-slate-100">
-            <span class="text-xs font-bold text-indigo-600 flex items-center gap-1"><i data-lucide="check" class="w-4 h-4"></i> High Conversion</span>
-            <span class="text-xs font-bold text-indigo-600 flex items-center gap-1">Inspect UI Screens &rarr;</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3: Salon -->
-      <div class="card-item salon bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl transition-all group cursor-pointer" onclick="openMultiPhotoModal('salon')">
-        <div class="h-64 relative overflow-hidden bg-slate-900 border-b border-slate-100 p-4 flex flex-col justify-between">
-          <div class="flex items-center justify-between z-10">
-            <span class="bg-pink-600 text-white text-[11px] font-bold px-3 py-1 rounded-lg shadow">Salons & Aesthetics</span>
-            <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1">
-              <i data-lucide="layout" class="w-3 h-3"></i> 3 UI Screens
-            </span>
-          </div>
-          <div class="bg-rose-50 rounded-xl shadow-lg p-3 text-slate-900 border border-rose-200 transform group-hover:-translate-y-1 transition-transform">
-            <div class="flex items-center justify-between pb-2 border-b border-rose-200/60 text-[10px]">
-              <span class="font-black text-rose-700">Luxe Aura Spa</span>
-              <span class="text-rose-600 font-bold">✨ Book Slot</span>
-            </div>
-            <div class="mt-2 text-xs font-extrabold text-slate-900">Luxury Bridal Artistry & Spa Care</div>
-            <div class="mt-1 text-[10px] text-slate-600">Digital Menu • Instagram Feed • WhatsApp Reservation</div>
-          </div>
-          <div class="text-[11px] text-pink-300 font-bold flex items-center justify-between pt-2">
-            <span>Aesthetic High-Ticket Design</span>
-            <span class="text-white group-hover:translate-x-1 transition-transform flex items-center gap-1">Click to Inspect &rarr;</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Luxe Aura Beauty & Bridal Spa</h3>
-          <p class="text-slate-500 text-xs mt-2 leading-relaxed">Digital price menu, bridal package booking, live Instagram portfolio integration, and automated discount vouchers.</p>
-          <div class="mt-6 flex items-center justify-between pt-4 border-t border-slate-100">
-            <span class="text-xs font-bold text-pink-600 flex items-center gap-1"><i data-lucide="heart" class="w-4 h-4"></i> Luxury Look</span>
-            <span class="text-xs font-bold text-indigo-600 flex items-center gap-1">Inspect UI Screens &rarr;</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4: Real Estate -->
-      <div class="card-item realestate bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl transition-all group cursor-pointer" onclick="openMultiPhotoModal('realestate')">
-        <div class="h-64 relative overflow-hidden bg-slate-900 border-b border-slate-100 p-4 flex flex-col justify-between">
-          <div class="flex items-center justify-between z-10">
-            <span class="bg-blue-600 text-white text-[11px] font-bold px-3 py-1 rounded-lg shadow">Real Estate & Developers</span>
-            <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1">
-              <i data-lucide="layout" class="w-3 h-3"></i> 3 UI Screens
-            </span>
-          </div>
-          <div class="bg-slate-900 rounded-xl shadow-lg p-3 text-white border border-slate-700 transform group-hover:-translate-y-1 transition-transform">
-            <div class="flex items-center justify-between pb-2 border-b border-slate-800 text-[10px]">
-              <span class="font-black text-blue-400">PrimeAcre Luxury</span>
-              <span class="text-amber-400 font-bold">Brochure PDF</span>
-            </div>
-            <div class="mt-2 text-xs font-extrabold text-white">4 BHK Ultra-Luxury Sky Villas</div>
-            <div class="mt-1 text-[10px] text-slate-400">Virtual Tours • EMI Calculator • Site Visit Booking</div>
-          </div>
-          <div class="text-[11px] text-blue-300 font-bold flex items-center justify-between pt-2">
-            <span>High-Ticket Qualified Inquiries</span>
-            <span class="text-white group-hover:translate-x-1 transition-transform flex items-center gap-1">Click to Inspect &rarr;</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">PrimeAcre Luxury Estates</h3>
-          <p class="text-slate-500 text-xs mt-2 leading-relaxed">Virtual property tour showcase, floor plan viewer, interactive mortgage EMI calculator, and VIP site visit requests.</p>
-          <div class="mt-6 flex items-center justify-between pt-4 border-t border-slate-100">
-            <span class="text-xs font-bold text-blue-600 flex items-center gap-1"><i data-lucide="shield-check" class="w-4 h-4"></i> High-Ticket Lead Gen</span>
-            <span class="text-xs font-bold text-indigo-600 flex items-center gap-1">Inspect UI Screens &rarr;</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 5: Restaurant -->
-      <div class="card-item dining bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl transition-all group cursor-pointer" onclick="openMultiPhotoModal('dining')">
-        <div class="h-64 relative overflow-hidden bg-slate-900 border-b border-slate-100 p-4 flex flex-col justify-between">
-          <div class="flex items-center justify-between z-10">
-            <span class="bg-amber-600 text-white text-[11px] font-bold px-3 py-1 rounded-lg shadow">Restaurants & Cafes</span>
-            <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1">
-              <i data-lucide="layout" class="w-3 h-3"></i> 3 UI Screens
-            </span>
-          </div>
-          <div class="bg-amber-50 rounded-xl shadow-lg p-3 text-slate-900 border border-amber-200 transform group-hover:-translate-y-1 transition-transform">
-            <div class="flex items-center justify-between pb-2 border-b border-amber-200 text-[10px]">
-              <span class="font-black text-amber-800">Urban Roast Cafe</span>
-              <span class="text-amber-700 font-bold">Reserve Table</span>
-            </div>
-            <div class="mt-2 text-xs font-extrabold text-slate-900">Artisan Coffee & Gourmet Dining</div>
-            <div class="mt-1 text-[10px] text-slate-600">Contactless QR Menu • Table Reservations • Google Reviews</div>
-          </div>
-          <div class="text-[11px] text-amber-300 font-bold flex items-center justify-between pt-2">
-            <span>Fast Load & Swiggy/Zomato Links</span>
-            <span class="text-white group-hover:translate-x-1 transition-transform flex items-center gap-1">Click to Inspect &rarr;</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">The Urban Roast Bistro</h3>
-          <p class="text-slate-500 text-xs mt-2 leading-relaxed">QR digital food menu, table reservation engine, direct delivery platform links, and Google review boosters.</p>
-          <div class="mt-6 flex items-center justify-between pt-4 border-t border-slate-100">
-            <span class="text-xs font-bold text-amber-600 flex items-center gap-1"><i data-lucide="coffee" class="w-4 h-4"></i> Table Reservation</span>
-            <span class="text-xs font-bold text-indigo-600 flex items-center gap-1">Inspect UI Screens &rarr;</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 6: Education -->
-      <div class="card-item academy bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl transition-all group cursor-pointer" onclick="openMultiPhotoModal('academy')">
-        <div class="h-64 relative overflow-hidden bg-slate-900 border-b border-slate-100 p-4 flex flex-col justify-between">
-          <div class="flex items-center justify-between z-10">
-            <span class="bg-teal-600 text-white text-[11px] font-bold px-3 py-1 rounded-lg shadow">Education & Academy</span>
-            <span class="bg-white/20 backdrop-blur-md text-white text-[10px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1">
-              <i data-lucide="layout" class="w-3 h-3"></i> 3 UI Screens
-            </span>
-          </div>
-          <div class="bg-white rounded-xl shadow-lg p-3 text-slate-900 border border-slate-200 transform group-hover:-translate-y-1 transition-transform">
-            <div class="flex items-center justify-between pb-2 border-b border-slate-100 text-[10px]">
-              <span class="font-black text-teal-700">Zenith Academy</span>
-              <span class="text-teal-600 font-bold">Free Demo</span>
-            </div>
-            <div class="mt-2 text-xs font-extrabold text-slate-900">Rank #1 Coaching & Study Material</div>
-            <div class="mt-1 text-[10px] text-slate-500">Live Demo Booking • Syllabus Download • Topper Wall</div>
-          </div>
-          <div class="text-[11px] text-teal-300 font-bold flex items-center justify-between pt-2">
-            <span>Admission Lead Accelerator</span>
-            <span class="text-white group-hover:translate-x-1 transition-transform flex items-center gap-1">Click to Inspect &rarr;</span>
-          </div>
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold text-slate-900 group-hover:text-indigo-600 transition-colors">Zenith Elite Academy</h3>
-          <p class="text-slate-500 text-xs mt-2 leading-relaxed">Free demo class registration, downloadable syllabus PDFs, student success badges, and video testimonial walls.</p>
-          <div class="mt-6 flex items-center justify-between pt-4 border-t border-slate-100">
-            <span class="text-xs font-bold text-teal-600 flex items-center gap-1"><i data-lucide="book-open" class="w-4 h-4"></i> High Conversion</span>
-            <span class="text-xs font-bold text-indigo-600 flex items-center gap-1">Inspect UI Screens &rarr;</span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Interactive Multi-Photo & Real UI Preview Modal (With Back Button & Zero Freezing) -->
-  <div id="multi-modal" class="fixed inset-0 z-50 hidden bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 overflow-y-auto" onclick="handleBackdropClick(event)">
-    <div class="bg-white rounded-3xl max-w-5xl w-full p-6 sm:p-8 shadow-2xl relative my-6" onclick="event.stopPropagation()">
-      
-      <!-- Top Navigation & Back Controls -->
-      <div class="flex items-center justify-between gap-4 pb-4 border-b border-slate-200">
-        <button onclick="closeMultiModal()" class="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-slate-700 hover:text-indigo-600 bg-slate-100 hover:bg-slate-200 px-4 py-2 rounded-xl transition-all">
-          <i data-lucide="arrow-left" class="w-4 h-4"></i>
-          <span>Back to Templates Gallery</span>
-        </button>
-
-        <div class="flex items-center gap-2">
-          <span class="hidden sm:inline-flex text-xs font-bold text-emerald-600 items-center gap-1 bg-emerald-50 px-3 py-1.5 rounded-full border border-emerald-200">
-            <i data-lucide="shield-check" class="w-4 h-4"></i> Production Ready Architecture
-          </span>
-          <button onclick="closeMultiModal()" class="text-slate-400 hover:text-slate-800 bg-slate-100 rounded-full p-2 transition-colors">
-            <i data-lucide="x" class="w-5 h-5"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- Title & Category Info -->
-      <div class="mt-4">
-        <span id="m-category" class="text-xs font-bold uppercase tracking-widest text-indigo-600">Industry Solution</span>
-        <h2 id="m-title" class="text-2xl sm:text-3xl font-black text-slate-950 mt-0.5">Template Name</h2>
-      </div>
-
-      <!-- 3 Real View Switcher Tabs -->
-      <div class="mt-6 flex flex-wrap items-center gap-2 border-b border-slate-200 pb-3" id="view-tabs">
-        <button onclick="switchPhotoTab(0)" class="photo-tab active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 text-white transition-all flex items-center gap-2">
-          <i data-lucide="monitor" class="w-4 h-4"></i> 1. Desktop Experience UI
-        </button>
-        <button onclick="switchPhotoTab(1)" class="photo-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all flex items-center gap-2">
-          <i data-lucide="smartphone" class="w-4 h-4"></i> 2. Mobile Responsive View
-        </button>
-        <button onclick="switchPhotoTab(2)" class="photo-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all flex items-center gap-2">
-          <i data-lucide="calendar" class="w-4 h-4"></i> 3. Booking Engine & Features
-        </button>
-      </div>
-
-      <!-- Live Mockup Presentation Area -->
-      <div class="mt-4 rounded-2xl bg-slate-100 border border-slate-300 p-4 sm:p-6 min-h-[440px] flex items-center justify-center relative overflow-hidden" id="mockup-container">
-        
-        <!-- View 1: Browser Desktop Mockup Container -->
-        <div id="desktop-view" class="w-full bg-white rounded-2xl border border-slate-300 shadow-xl overflow-hidden browser-frame">
-          <!-- Browser Top Chrome Bar -->
-          <div class="bg-slate-200 px-4 py-2.5 border-b border-slate-300 flex items-center justify-between text-xs">
-            <div class="flex items-center gap-1.5">
-              <span class="w-3 h-3 rounded-full bg-red-400 inline-block"></span>
-              <span class="w-3 h-3 rounded-full bg-amber-400 inline-block"></span>
-              <span class="w-3 h-3 rounded-full bg-emerald-400 inline-block"></span>
-            </div>
-            <div class="bg-white px-6 py-1 rounded-md text-[11px] text-slate-500 font-mono shadow-inner border border-slate-200 flex items-center gap-1.5" id="browser-url">
-              <i data-lucide="lock" class="w-3 h-3 text-emerald-600"></i> https://preview.novascaleglobal.com/demo
-            </div>
-            <div class="text-[10px] text-slate-400 font-bold uppercase">Desktop HD</div>
-          </div>
-          <!-- Website Desktop Body Content (Dynamically Injected) -->
-          <div id="desktop-body" class="p-6 sm:p-8 bg-slate-50 text-slate-800 min-h-[300px]">
-            <!-- Dynamic Real Website UI will load here -->
-          </div>
-        </div>
-
-        <!-- View 2: Mobile Smartphone Frame View -->
-        <div id="mobile-view" class="hidden">
-          <div class="phone-mockup">
-            <div class="phone-island"></div>
-            <!-- Mobile Top Bar -->
-            <div class="pt-6 px-4 pb-2 flex items-center justify-between text-[10px] font-bold text-slate-600 border-b border-slate-100">
-              <span>9:41</span>
-              <div class="flex items-center gap-1 text-[10px]">
-                <i data-lucide="wifi" class="w-3 h-3"></i>
-                <i data-lucide="battery" class="w-3.5 h-3.5"></i>
-              </div>
-            </div>
-            <!-- Mobile Body Content (Dynamically Injected) -->
-            <div id="mobile-body" class="p-4 text-xs overflow-y-auto h-[440px] bg-slate-50">
-              <!-- Dynamic Mobile UI will load here -->
-            </div>
-          </div>
-        </div>
-
-        <!-- View 3: Key Features & Booking Checkout View -->
-        <div id="feature-view" class="hidden w-full max-w-2xl bg-white rounded-2xl border border-slate-300 shadow-xl p-6 sm:p-8">
-          <div id="feature-body">
-            <!-- Dynamic Feature Flow will load here -->
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Deliverables & Action Controls -->
-      <div class="mt-6 flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100">
-        <div class="text-xs text-slate-500 space-y-1">
-          <div class="flex items-center gap-2 text-slate-700 font-semibold">
-            <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Custom Domain, Free SSL & 95+ PageSpeed Included
-          </div>
-          <div class="flex items-center gap-2 text-slate-700 font-semibold">
-            <i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Direct WhatsApp Routing & Google GA4 Conversion Tracking Included
-          </div>
-        </div>
-
-        <div class="flex items-center gap-3 w-full sm:w-auto">
-          <button onclick="closeMultiModal()" class="w-full sm:w-auto px-5 py-3 rounded-xl text-xs font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 transition-colors">
-            Close Preview
-          </button>
-          <a id="m-whatsapp-btn" href="#" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-lg shadow-emerald-600/25 transition-all">
-            <i data-lucide="message-circle" class="w-4 h-4"></i>
-            <span>Order This Architecture (WhatsApp)</span>
-          </a>
-        </div>
-      </div>
-
+    <div class="space-y-3 pt-6 border-t border-slate-100">
+      <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20interested%20in%20a%20website%20template." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 text-white p-3.5 rounded-xl font-bold text-sm shadow-md">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>Chat on WhatsApp Directly</span>
+      </a>
+      <a href="contact.html" class="w-full inline-flex items-center justify-center gap-2 bg-slate-900 text-white p-3.5 rounded-xl font-bold text-sm">
+        <span>Request Free Strategy Call</span>
+      </a>
     </div>
   </div>
 
-  <!-- Global Footer (Zero raw phone/email displayed, pure action buttons) -->
-  <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800 text-xs">
+  <!-- Hero Section -->
+  <section class="relative pt-14 pb-16 overflow-hidden">
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] glow-primary rounded-full pointer-events-none -z-10 blur-3xl opacity-70"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-200/80 text-indigo-700 text-xs sm:text-sm font-extrabold mb-6 shadow-sm">
+        <span class="flex h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>Interactive Live Website Blueprints • 5-Day Delivery Guarantee</span>
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-slate-950 max-w-4xl mx-auto leading-tight mb-6">
+        See Exactly What Your New <br class="hidden sm:inline" />
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600">High-Conversion Website Looks Like.</span>
+      </h1>
+
+      <p class="text-base sm:text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed mb-8">
+        We don't sell blank WordPress templates that break in 2 weeks. Every blueprint below is pre-engineered for ultra-fast mobile loading, Google Maps SEO ranking, and direct WhatsApp lead capture. Click any live demo to interact with it!
+      </p>
+
+      <!-- Category Filter Pills -->
+      <div class="flex flex-wrap items-center justify-center gap-2 max-w-3xl mx-auto">
+        <button onclick="filterTemplates('all')" class="filter-pill active px-4 py-2 rounded-xl text-xs font-bold bg-slate-950 text-white transition-all shadow-sm">
+          All Blueprints (6)
+        </button>
+        <button onclick="filterTemplates('clinic')" class="filter-pill px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-indigo-400 transition-all">
+          🏥 Clinics & Dental
+        </button>
+        <button onclick="filterTemplates('gym')" class="filter-pill px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-indigo-400 transition-all">
+          🏋️ Gyms & Fitness
+        </button>
+        <button onclick="filterTemplates('salon')" class="filter-pill px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-indigo-400 transition-all">
+          ✨ Salons & Spas
+        </button>
+        <button onclick="filterTemplates('realestate')" class="filter-pill px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-indigo-400 transition-all">
+          🏢 Real Estate
+        </button>
+        <button onclick="filterTemplates('restaurant')" class="filter-pill px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-indigo-400 transition-all">
+          🍕 Restaurants & Cafés
+        </button>
+        <button onclick="filterTemplates('coaching')" class="filter-pill px-4 py-2 rounded-xl text-xs font-bold bg-white text-slate-700 border border-slate-200 hover:border-indigo-400 transition-all">
+          🎓 Coaching & Institutes
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Templates Grid -->
+  <section class="pb-24 pt-4">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
-        <div>
-          <div class="flex items-center gap-3 text-white font-extrabold text-xl">
-            <div class="w-8 h-8 rounded-xl bg-indigo-600 flex items-center justify-center text-white"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
-            <span>NovaScale<span class="text-indigo-500">.</span></span>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="templates-grid">
+        
+        <!-- Blueprint 1: Clinic -->
+        <div class="template-card clinic bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <!-- Card Header / Mockup Banner -->
+            <div class="h-52 bg-gradient-to-tr from-cyan-900 via-cyan-800 to-slate-900 p-6 flex flex-col justify-between relative text-white">
+              <div class="flex items-center justify-between">
+                <span class="bg-cyan-500/20 text-cyan-300 border border-cyan-400/30 text-[10px] font-black uppercase px-2.5 py-1 rounded-full">
+                  Healthcare & Dental
+                </span>
+                <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> 99/100 Mobile Speed
+                </span>
+              </div>
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-cyan-600/80 flex items-center justify-center text-white mb-2">
+                  <i data-lucide="activity" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-black">CarePlus Dental Studio</h3>
+                <p class="text-xs text-cyan-200">Sector 50, Noida • Multi-Specialty Clinic</p>
+              </div>
+            </div>
+
+            <!-- Features -->
+            <div class="p-6">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Pre-Configured Architecture</div>
+              <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-600"></i> Instant Online Appointment Booking Form</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-600"></i> Smile Makeover Before/After Gallery</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-600"></i> Doctor Credentials & Speciality Pricing</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-cyan-600"></i> Google Maps Schema & Reviews Embed</li>
+              </ul>
+            </div>
           </div>
-          <p class="mt-4 text-slate-400 text-xs leading-relaxed">Data-driven digital growth architecture for ambitious brands worldwide.</p>
+
+          <!-- Actions -->
+          <div class="p-6 pt-0 space-y-2.5">
+            <a href="demos/clinic.html" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-slate-950 hover:bg-slate-800 text-white py-3 rounded-xl font-bold text-xs transition-all shadow-md group-hover:bg-indigo-600">
+              <span>Launch Live Interactive Demo</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20order%20the%20CarePlus%20Dental%20Clinic%20website%20blueprint%20for%20%E2%82%B97,999." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 py-2.5 rounded-xl font-bold text-xs transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i> Order for ₹7,999 ($199)
+            </a>
+          </div>
         </div>
+
+        <!-- Blueprint 2: Gym -->
+        <div class="template-card gym bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="h-52 bg-gradient-to-tr from-slate-950 via-slate-900 to-orange-950 p-6 flex flex-col justify-between relative text-white">
+              <div class="flex items-center justify-between">
+                <span class="bg-orange-500/20 text-orange-400 border border-orange-500/30 text-[10px] font-black uppercase px-2.5 py-1 rounded-full">
+                  Gym & Fitness Club
+                </span>
+                <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> High Conversion
+                </span>
+              </div>
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-orange-500/80 flex items-center justify-center text-white mb-2">
+                  <i data-lucide="flame" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-black">IronForge Performance Club</h3>
+                <p class="text-xs text-orange-200">Sector 63, Noida • 10,000 Sq.Ft Training Facility</p>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Pre-Configured Architecture</div>
+              <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> 1-Click Free Workout Pass WhatsApp Lead Generator</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Interactive 3-Tier Membership Pricing Cards</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Crossfit, Strength & Recovery Showcase</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> Coach Credentials & Metro Location Badge</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 space-y-2.5">
+            <a href="demos/gym.html" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-slate-950 hover:bg-slate-800 text-white py-3 rounded-xl font-bold text-xs transition-all shadow-md group-hover:bg-indigo-600">
+              <span>Launch Live Interactive Demo</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20order%20the%20IronForge%20Gym%20website%20blueprint%20for%20%E2%82%B97,999." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 py-2.5 rounded-xl font-bold text-xs transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i> Order for ₹7,999 ($199)
+            </a>
+          </div>
+        </div>
+
+        <!-- Blueprint 3: Salon -->
+        <div class="template-card salon bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="h-52 bg-gradient-to-tr from-rose-950 via-rose-900 to-slate-900 p-6 flex flex-col justify-between relative text-white">
+              <div class="flex items-center justify-between">
+                <span class="bg-rose-500/20 text-rose-300 border border-rose-400/30 text-[10px] font-black uppercase px-2.5 py-1 rounded-full">
+                  Beauty, Salon & Spa
+                </span>
+                <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Ultra Aesthetic
+                </span>
+              </div>
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-rose-600/80 flex items-center justify-center text-white mb-2">
+                  <i data-lucide="crown" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-black">Luxe Aura Bridal Studio</h3>
+                <p class="text-xs text-rose-200">Sector 18, Noida • Luxury Hair & Spa Lounge</p>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Pre-Configured Architecture</div>
+              <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-600"></i> Bridal Makeup Lookbook & Client Reviews</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-600"></i> Service Menu with Transparent Rate Cards</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-600"></i> VIP Pre-Bridal Consultation Booking Form</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-rose-600"></i> Sector 18 Mall of India Corridor Authority</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 space-y-2.5">
+            <a href="demos/salon.html" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-slate-950 hover:bg-slate-800 text-white py-3 rounded-xl font-bold text-xs transition-all shadow-md group-hover:bg-indigo-600">
+              <span>Launch Live Interactive Demo</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20order%20the%20Luxe%20Aura%20Salon%20website%20blueprint%20for%20%E2%82%B97,999." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 py-2.5 rounded-xl font-bold text-xs transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i> Order for ₹7,999 ($199)
+            </a>
+          </div>
+        </div>
+
+        <!-- Blueprint 4: Real Estate -->
+        <div class="template-card realestate bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="h-52 bg-gradient-to-tr from-slate-950 via-emerald-950 to-slate-900 p-6 flex flex-col justify-between relative text-white">
+              <div class="flex items-center justify-between">
+                <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[10px] font-black uppercase px-2.5 py-1 rounded-full">
+                  Real Estate & Builders
+                </span>
+                <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> RERA Compliant
+                </span>
+              </div>
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-emerald-600/80 flex items-center justify-center text-white mb-2">
+                  <i data-lucide="building-2" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-black">PrimeAcre Luxury Estates</h3>
+                <p class="text-xs text-emerald-200">Noida Expressway & Sector 150 Sports City</p>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Pre-Configured Architecture</div>
+              <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Dynamic Sector & Budget Filter Bar</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Automated WhatsApp Brochure Download Trigger</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Free Chauffeur Site Visit Scheduler</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Jewar Airport Growth Corridor Data</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 space-y-2.5">
+            <a href="demos/realestate.html" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-slate-950 hover:bg-slate-800 text-white py-3 rounded-xl font-bold text-xs transition-all shadow-md group-hover:bg-indigo-600">
+              <span>Launch Live Interactive Demo</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20order%20the%20PrimeAcre%20Real%20Estate%20website%20blueprint%20for%20%E2%82%B97,999." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 py-2.5 rounded-xl font-bold text-xs transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i> Order for ₹7,999 ($199)
+            </a>
+          </div>
+        </div>
+
+        <!-- Blueprint 5: Restaurant -->
+        <div class="template-card restaurant bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="h-52 bg-gradient-to-tr from-stone-950 via-amber-950 to-stone-900 p-6 flex flex-col justify-between relative text-white">
+              <div class="flex items-center justify-between">
+                <span class="bg-amber-500/20 text-amber-300 border border-amber-400/30 text-[10px] font-black uppercase px-2.5 py-1 rounded-full">
+                  Café & Dining
+                </span>
+                <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Zero Commission
+                </span>
+              </div>
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-amber-600/80 flex items-center justify-center text-white mb-2">
+                  <i data-lucide="coffee" class="w-5 h-5 text-amber-200"></i>
+                </div>
+                <h3 class="text-xl font-black">The Urban Roast Bistro</h3>
+                <p class="text-xs text-amber-200">Sector 104, Hajipur, Noida • Artisanal Café</p>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Pre-Configured Architecture</div>
+              <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Instant Table Booking Widget (No Swiggy cut)</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> High-Resolution Digital Menu with Direct Cart</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> Direct WhatsApp Pickup & Home Delivery Desk</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-amber-600"></i> High-Street Sector 104 Foodie Hub Schema</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 space-y-2.5">
+            <a href="demos/restaurant.html" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-slate-950 hover:bg-slate-800 text-white py-3 rounded-xl font-bold text-xs transition-all shadow-md group-hover:bg-indigo-600">
+              <span>Launch Live Interactive Demo</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20order%20the%20Urban%20Roast%20Restaurant%20website%20blueprint%20for%20%E2%82%B97,999." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 py-2.5 rounded-xl font-bold text-xs transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i> Order for ₹7,999 ($199)
+            </a>
+          </div>
+        </div>
+
+        <!-- Blueprint 6: Coaching -->
+        <div class="template-card coaching bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group">
+          <div>
+            <div class="h-52 bg-gradient-to-tr from-slate-950 via-blue-950 to-indigo-950 p-6 flex flex-col justify-between relative text-white">
+              <div class="flex items-center justify-between">
+                <span class="bg-blue-500/20 text-blue-300 border border-blue-400/30 text-[10px] font-black uppercase px-2.5 py-1 rounded-full">
+                  Education & Coaching
+                </span>
+                <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 text-[10px] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span> Admissions Funnel
+                </span>
+              </div>
+              <div>
+                <div class="w-10 h-10 rounded-xl bg-blue-600/80 flex items-center justify-center text-white mb-2">
+                  <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                </div>
+                <h3 class="text-xl font-black">Zenith Elite Academy</h3>
+                <p class="text-xs text-blue-200">Institutional Area, Sector 62, Noida • JEE/NEET</p>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Pre-Configured Architecture</div>
+              <ul class="space-y-2.5 text-xs text-slate-600 mb-6">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Free Scholarship & Diagnostic Test Funnel</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> AIR Rankers Results & Testimonials Showcase</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Batch Modules for Foundation, Class 11, 12 & Repeaters</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Direct PDF Syllabus WhatsApp Auto-Delivery</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="p-6 pt-0 space-y-2.5">
+            <a href="demos/coaching.html" target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-slate-950 hover:bg-slate-800 text-white py-3 rounded-xl font-bold text-xs transition-all shadow-md group-hover:bg-indigo-600">
+              <span>Launch Live Interactive Demo</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+            <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20order%20the%20Zenith%20Coaching%20website%20blueprint%20for%20%E2%82%B97,999." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-300 py-2.5 rounded-xl font-bold text-xs transition-all">
+              <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i> Order for ₹7,999 ($199)
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included Banner -->
+  <section class="py-16 bg-slate-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-bold text-indigo-400 uppercase tracking-widest bg-indigo-950/80 px-3 py-1 rounded-full border border-indigo-800">Complete Turnkey Package</span>
+        <h2 class="text-3xl font-black mt-3">What You Get in Every ₹7,999 Blueprint</h2>
+        <p class="text-slate-400 text-sm mt-2">No hidden development fees, no tech jargon. We deliver a fully working business asset.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-slate-950/60 p-6 rounded-2xl border border-slate-800">
+          <div class="w-10 h-10 rounded-xl bg-indigo-600/20 text-indigo-400 flex items-center justify-center mb-4">
+            <i data-lucide="zap" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white mb-1">5-Day Live Launch</h4>
+          <p class="text-xs text-slate-400">Send us your logo and phone number; your modern website is live and taking leads in 120 hours.</p>
+        </div>
+
+        <div class="bg-slate-950/60 p-6 rounded-2xl border border-slate-800">
+          <div class="w-10 h-10 rounded-xl bg-emerald-600/20 text-emerald-400 flex items-center justify-center mb-4">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white mb-1">Google Maps Local Schema</h4>
+          <p class="text-xs text-slate-400">Structured business schema coded directly into the site so Google Maps ranks you ahead of nearby competitors.</p>
+        </div>
+
+        <div class="bg-slate-950/60 p-6 rounded-2xl border border-slate-800">
+          <div class="w-10 h-10 rounded-xl bg-pink-600/20 text-pink-400 flex items-center justify-center mb-4">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white mb-1">1-Tap WhatsApp Funnel</h4>
+          <p class="text-xs text-slate-400">Never lose a mobile visitor to lengthy forms. Prospects tap once and land directly in your WhatsApp inbox.</p>
+        </div>
+
+        <div class="bg-slate-950/60 p-6 rounded-2xl border border-slate-800">
+          <div class="w-10 h-10 rounded-xl bg-amber-600/20 text-amber-400 flex items-center justify-center mb-4">
+            <i data-lucide="shield-check" class="w-5 h-5"></i>
+          </div>
+          <h4 class="font-bold text-white mb-1">30 Days Handholding</h4>
+          <p class="text-xs text-slate-400">Includes free text changes, photo replacements, SSL security certificates, and hosting deployment.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 pt-16 pb-12 border-t border-slate-800 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800/80">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-black text-lg">N</div>
+            <span class="text-2xl font-black tracking-tight text-white">NovaScale<span class="text-indigo-500">.</span></span>
+          </a>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+            Based in Sector 62, Noida, India. We engineer hyper-growth web systems, local Google Maps rankings, and high-ROI ad funnels for ambitious clinics, gyms, salons, real estate firms, and restaurants.
+          </p>
+        </div>
+
         <div>
-          <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Navigation</h4>
-          <ul class="space-y-2.5">
-            <li><a href="index.html" class="hover:text-white">Home</a></li>
-            <li><a href="services.html" class="hover:text-white">Services</a></li>
-            <li><a href="templates.html" class="hover:text-white">Portfolio & Templates</a></li>
-            <li><a href="pricing.html" class="hover:text-white">Pricing & Plans</a></li>
-            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+          <h4 class="text-white font-bold text-sm mb-4">Live Demos</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="demos/clinic.html" target="_blank" class="hover:text-white transition-colors">CarePlus Dental Clinic</a></li>
+            <li><a href="demos/gym.html" target="_blank" class="hover:text-white transition-colors">IronForge Performance Gym</a></li>
+            <li><a href="demos/salon.html" target="_blank" class="hover:text-white transition-colors">Luxe Aura Bridal Salon</a></li>
+            <li><a href="demos/realestate.html" target="_blank" class="hover:text-white transition-colors">PrimeAcre Luxury Estates</a></li>
+            <li><a href="demos/restaurant.html" target="_blank" class="hover:text-white transition-colors">The Urban Roast Bistro</a></li>
+            <li><a href="demos/coaching.html" target="_blank" class="hover:text-white transition-colors">Zenith Elite Academy</a></li>
           </ul>
         </div>
+
         <div>
-          <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Industries</h4>
-          <ul class="space-y-2.5">
-            <li><a href="#filters" class="hover:text-white">Healthcare & Dental</a></li>
-            <li><a href="#filters" class="hover:text-white">Fitness & Sports Clubs</a></li>
-            <li><a href="#filters" class="hover:text-white">Luxury Salons & Spas</a></li>
-            <li><a href="#filters" class="hover:text-white">Real Estate & Developers</a></li>
+          <h4 class="text-white font-bold text-sm mb-4">Navigation</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="pricing.html" class="hover:text-white transition-colors">Pricing Packages</a></li>
+            <li><a href="templates.html" class="text-indigo-400 font-bold">Templates & Demos</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
+
         <div>
-          <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Connect With Us</h4>
+          <h4 class="text-white font-bold text-sm mb-4">Direct Touchpoints</h4>
           <ul class="space-y-3">
             <li>
               <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20have%20an%20inquiry." target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl font-bold text-xs transition-colors">
@@ -511,539 +559,41 @@
                 <i data-lucide="mail" class="w-4 h-4"></i> Official Consultation Form
               </a>
             </li>
-            <li class="text-[11px] text-slate-500">
-              Average response time: within 15 minutes.
-            </li>
+            <li class="text-[11px] text-slate-500">📍 Studio: Sector 62, Noida, UP, India</li>
           </ul>
         </div>
+
       </div>
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div>&copy; 2026 NovaScale Global Media. All rights reserved.</div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <div>&copy; 2026 NovaScale Global Media. All rights reserved. Registered Digital Agency.</div>
       </div>
     </div>
   </footer>
 
   <!-- Floating WhatsApp Quick Button -->
-  <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20select%20a%20template%20for%20my%20business." 
+  <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20interested%20in%20a%20website%20template." 
      target="_blank" 
      class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all hover:scale-110">
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 
+  <!-- Core Scripts -->
+  <script src="js/main.js"></script>
   <script>
-    lucide.createIcons();
-
-    // High-Fidelity UI Mockup Content Data for each business niche
-    const uiData = {
-      clinic: {
-        title: "CarePlus Dental & Medical Suite",
-        category: "Healthcare & Dental Clinics",
-        url: "https://careplus-clinic.com",
-        desktop: `
-          <div class="border-b border-slate-200 pb-4 flex items-center justify-between">
-            <div class="flex items-center gap-2 font-black text-indigo-700 text-lg">
-              <span class="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center text-xs">CP</span>
-              CarePlus Dental
-            </div>
-            <div class="flex items-center gap-6 text-xs font-semibold text-slate-600">
-              <span>Treatments</span>
-              <span>Our Doctors</span>
-              <span>Patient Reviews</span>
-              <span class="bg-indigo-600 text-white px-4 py-2 rounded-lg font-bold">Book Online</span>
-            </div>
-          </div>
-          <div class="py-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div>
-              <span class="text-xs font-bold text-emerald-600 uppercase bg-emerald-50 px-2.5 py-1 rounded-md">Trusted by 10,000+ Smiles</span>
-              <h2 class="text-2xl font-black text-slate-900 mt-2 leading-tight">Advanced Pain-Free Dental & Cosmetic Care</h2>
-              <p class="text-xs text-slate-500 mt-2">Certified implantologists, root canal specialists, and cosmetic teeth whitening specialists.</p>
-              <div class="mt-4 flex items-center gap-3">
-                <span class="bg-indigo-600 text-white text-xs font-bold px-4 py-2 rounded-lg">Instant Consultation &rarr;</span>
-                <span class="text-xs font-bold text-slate-700">★ 4.9 (420+ Google Reviews)</span>
-              </div>
-            </div>
-            <div class="bg-indigo-50/80 rounded-xl p-4 border border-indigo-100 text-xs">
-              <div class="font-bold text-slate-900 mb-2">Popular Treatments:</div>
-              <div class="grid grid-cols-2 gap-2 text-[11px]">
-                <div class="p-2 bg-white rounded border">Laser Teeth Whitening</div>
-                <div class="p-2 bg-white rounded border">Painless Root Canal</div>
-                <div class="p-2 bg-white rounded border">Invisible Aligners</div>
-                <div class="p-2 bg-white rounded border">Titanium Dental Implants</div>
-              </div>
-            </div>
-          </div>
-        `,
-        mobile: `
-          <div class="flex items-center justify-between pb-3 border-b border-slate-200">
-            <span class="font-black text-indigo-600">CarePlus+</span>
-            <span class="bg-emerald-500 text-white text-[10px] px-2 py-0.5 rounded font-bold">Open Today</span>
-          </div>
-          <div class="py-4">
-            <div class="text-[10px] font-bold text-indigo-600">PREMIER DENTAL CLINIC</div>
-            <div class="text-sm font-black text-slate-900 mt-1">Book Your Smile Consultation In 30 Seconds</div>
-            <p class="text-[10px] text-slate-500 mt-1">Direct appointment booking with zero waiting room queues.</p>
-            <div class="mt-3 bg-white p-3 rounded-xl border border-slate-200 shadow-sm space-y-2">
-              <div class="text-[11px] font-bold text-slate-800">Select Treatment:</div>
-              <div class="p-1.5 rounded bg-indigo-50 text-indigo-700 font-semibold text-[10px]">Teeth Cleaning & Polish ($49)</div>
-              <div class="p-1.5 rounded bg-slate-50 text-slate-700 text-[10px]">Braces & Aligners Consult (Free)</div>
-              <div class="w-full bg-emerald-600 text-white text-center py-2 rounded-lg font-bold text-[10px] mt-2">
-                Tap to Confirm on WhatsApp
-              </div>
-            </div>
-          </div>
-        `,
-        feature: `
-          <h3 class="text-lg font-black text-slate-900 mb-1">Interactive Patient Booking Engine</h3>
-          <p class="text-xs text-slate-500 mb-4">Converts cold visitors into verified phone consultations with automatic slot assignment.</p>
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
-            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-              <div class="font-bold text-slate-800 mb-2">1. Select Specialist Doctor</div>
-              <div class="space-y-1.5">
-                <div class="p-2 bg-white rounded border border-indigo-500 text-indigo-700 font-bold flex justify-between">
-                  <span>Dr. Sharma (Cosmetic)</span>
-                  <span class="text-emerald-600 font-bold">Available</span>
-                </div>
-                <div class="p-2 bg-white rounded border text-slate-600 flex justify-between">
-                  <span>Dr. Kapoor (Orthodontics)</span>
-                  <span>4:00 PM</span>
-                </div>
-              </div>
-            </div>
-            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-              <div class="font-bold text-slate-800 mb-2">2. Automated Review Booster</div>
-              <p class="text-[11px] text-slate-500">Every completed appointment automatically receives a thank you SMS/WhatsApp requesting a 5-star Google Review.</p>
-              <div class="mt-3 p-2 bg-emerald-50 text-emerald-800 rounded font-bold text-[11px] flex items-center gap-1.5">
-                <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Generated 420+ 5-Star Reviews
-              </div>
-            </div>
-          </div>
-        `
-      },
-      gym: {
-        title: "IronClad Performance Fitness",
-        category: "Fitness & Gym Clubs",
-        url: "https://ironclad-gym.com",
-        desktop: `
-          <div class="border-b border-slate-800 pb-4 flex items-center justify-between bg-slate-950 text-white -mx-6 -mt-6 p-6">
-            <div class="font-black text-amber-400 text-lg tracking-wider">IRONCLAD GYM</div>
-            <div class="flex items-center gap-6 text-xs font-semibold text-slate-300">
-              <span>Programs</span>
-              <span>Trainers</span>
-              <span>Transformations</span>
-              <span class="bg-red-600 text-white px-4 py-2 rounded-lg font-bold">CLAIM 3-DAY PASS</span>
-            </div>
-          </div>
-          <div class="py-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div>
-              <span class="text-xs font-black text-red-600 uppercase tracking-widest">UNLEASH YOUR PEAK</span>
-              <h2 class="text-2xl font-black text-slate-900 mt-1">World-Class Strength & Functional Conditioning</h2>
-              <p class="text-xs text-slate-500 mt-2">Olympic barbells, custom squat racks, elite personal coaching, and infrared recovery saunas.</p>
-              <div class="mt-4 flex items-center gap-3">
-                <span class="bg-red-600 text-white text-xs font-bold px-4 py-2 rounded-lg">Get Free 3-Day Trial &rarr;</span>
-                <span class="text-xs text-slate-600 font-bold">No Credit Card Required</span>
-              </div>
-            </div>
-            <div class="bg-slate-900 text-white p-4 rounded-xl text-xs">
-              <div class="font-bold text-amber-400 mb-2">Member Transformations:</div>
-              <div class="grid grid-cols-3 gap-2 text-center text-[10px]">
-                <div class="p-2 bg-slate-800 rounded">-18 kg in 90 Days</div>
-                <div class="p-2 bg-slate-800 rounded">+6 kg Lean Muscle</div>
-                <div class="p-2 bg-slate-800 rounded">100% Drug-Free</div>
-              </div>
-            </div>
-          </div>
-        `,
-        mobile: `
-          <div class="flex items-center justify-between pb-3 border-b border-slate-200">
-            <span class="font-black text-slate-900">IRONCLAD</span>
-            <span class="bg-red-600 text-white text-[10px] px-2 py-0.5 rounded font-bold">FREE PASS</span>
-          </div>
-          <div class="py-4">
-            <div class="text-sm font-black text-slate-900">Claim 3-Day Free VIP Access</div>
-            <p class="text-[10px] text-slate-500 mt-1">Access all gym floors, steam saunas, and group HIIT classes.</p>
-            <div class="mt-3 bg-white p-3 rounded-xl border border-slate-200 shadow-sm space-y-2">
-              <input type="text" placeholder="Your Name" class="w-full text-[10px] p-2 bg-slate-50 border rounded">
-              <input type="tel" placeholder="WhatsApp Number" class="w-full text-[10px] p-2 bg-slate-50 border rounded">
-              <button class="w-full bg-red-600 text-white text-center py-2 rounded-lg font-bold text-[10px]">
-                Generate Instant Pass &rarr;
-              </button>
-            </div>
-          </div>
-        `,
-        feature: `
-          <h3 class="text-lg font-black text-slate-900 mb-1">Tiered Membership & Trial Funnel</h3>
-          <p class="text-xs text-slate-500 mb-4">High-converting pricing tables designed to encourage upfront annual commitments.</p>
-          <div class="grid grid-cols-3 gap-3 text-center text-xs">
-            <div class="p-3 rounded-xl border bg-white">
-              <div class="font-bold text-slate-900">Standard</div>
-              <div class="text-base font-black mt-1">$49/mo</div>
-              <div class="text-[10px] text-slate-400 mt-1">Gym Access Only</div>
-            </div>
-            <div class="p-3 rounded-xl border-2 border-indigo-600 bg-indigo-50 text-indigo-900">
-              <div class="font-bold">Pro Athlete</div>
-              <div class="text-base font-black mt-1">$89/mo</div>
-              <div class="text-[10px] text-indigo-600 mt-1">Sauna + Trainer</div>
-            </div>
-            <div class="p-3 rounded-xl border bg-white">
-              <div class="font-bold text-slate-900">VIP Elite</div>
-              <div class="text-base font-black mt-1">$149/mo</div>
-              <div class="text-[10px] text-slate-400 mt-1">1-on-1 Coaching</div>
-            </div>
-          </div>
-        `
-      },
-      salon: {
-        title: "Luxe Aura Beauty & Bridal Spa",
-        category: "Salons & Luxury Aesthetics",
-        url: "https://luxeaura-salon.com",
-        desktop: `
-          <div class="border-b border-rose-200 pb-4 flex items-center justify-between">
-            <div class="font-black text-rose-800 text-lg">LUXE AURA</div>
-            <div class="flex items-center gap-6 text-xs font-semibold text-slate-600">
-              <span>Bridal Packages</span>
-              <span>Hair & Skin</span>
-              <span>Lookbook</span>
-              <span class="bg-rose-600 text-white px-4 py-2 rounded-lg font-bold">Reserve Slot</span>
-            </div>
-          </div>
-          <div class="py-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div>
-              <span class="text-xs font-bold text-rose-600 uppercase">Couture Beauty & Spa</span>
-              <h2 class="text-2xl font-black text-slate-900 mt-1">High-Definition Bridal Styling & Organic Aesthetics</h2>
-              <p class="text-xs text-slate-500 mt-2">Bespoke bridal makeovers, Korean glass-skin facials, and luxury hair rejuvenation.</p>
-              <div class="mt-4 flex items-center gap-3">
-                <span class="bg-rose-600 text-white text-xs font-bold px-4 py-2 rounded-lg">View Bridal Lookbook &rarr;</span>
-                <span class="text-xs text-slate-600 font-bold">WhatsApp Booking Available</span>
-              </div>
-            </div>
-            <div class="bg-rose-50 p-4 rounded-xl border border-rose-200 text-xs">
-              <div class="font-bold text-rose-800 mb-2">Signature Services:</div>
-              <div class="space-y-1.5 text-[11px]">
-                <div class="flex justify-between bg-white p-2 rounded"><span>Royal Bridal Makeover</span> <span class="font-bold text-rose-700">$299</span></div>
-                <div class="flex justify-between bg-white p-2 rounded"><span>Hydra-Glow Facial</span> <span class="font-bold text-rose-700">$89</span></div>
-              </div>
-            </div>
-          </div>
-        `,
-        mobile: `
-          <div class="flex items-center justify-between pb-3 border-b border-slate-200">
-            <span class="font-black text-rose-700">Luxe Aura</span>
-            <span class="text-[10px] text-rose-600 font-bold">★ 4.9 Stars</span>
-          </div>
-          <div class="py-4">
-            <div class="text-sm font-black text-slate-900">Explore Beauty Services</div>
-            <div class="mt-3 space-y-2">
-              <div class="p-2.5 rounded-lg border bg-white flex items-center justify-between text-[11px]">
-                <span>Bridal Consultation</span>
-                <span class="text-rose-600 font-bold">Tap to Book</span>
-              </div>
-              <div class="p-2.5 rounded-lg border bg-white flex items-center justify-between text-[11px]">
-                <span>Keratin Hair Spa</span>
-                <span class="text-rose-600 font-bold">Tap to Book</span>
-              </div>
-              <div class="bg-rose-600 text-white text-center py-2 rounded-lg font-bold text-[10px]">
-                Chat on WhatsApp
-              </div>
-            </div>
-          </div>
-        `,
-        feature: `
-          <h3 class="text-lg font-black text-slate-900 mb-1">Digital Service Menu & Lookbook</h3>
-          <p class="text-xs text-slate-500 mb-4">Eliminates physical menus and allows instant slot reservation via WhatsApp.</p>
-          <div class="p-4 bg-slate-50 rounded-xl border text-xs space-y-2">
-            <div class="flex justify-between font-bold text-slate-800">
-              <span>Automated Confirmation SMS</span>
-              <span class="text-emerald-600">Active</span>
-            </div>
-            <p class="text-[11px] text-slate-500">Clients receive an instant calendar reminder, Google Maps parking location, and pre-bridal preparation guide.</p>
-          </div>
-        `
-      },
-      realestate: {
-        title: "PrimeAcre Luxury Estates",
-        category: "Real Estate & Builders",
-        url: "https://primeacre-estates.com",
-        desktop: `
-          <div class="border-b border-slate-800 pb-4 flex items-center justify-between bg-slate-900 text-white -mx-6 -mt-6 p-6">
-            <div class="font-black text-blue-400 text-lg">PRIMEACRE</div>
-            <div class="flex items-center gap-6 text-xs font-semibold text-slate-300">
-              <span>Properties</span>
-              <span>Floor Plans</span>
-              <span>Brochure</span>
-              <span class="bg-blue-600 text-white px-4 py-2 rounded-lg font-bold">Book VIP Tour</span>
-            </div>
-          </div>
-          <div class="py-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div>
-              <span class="text-xs font-bold text-blue-400 uppercase">Ultra-Luxury Residencies</span>
-              <h2 class="text-2xl font-black text-slate-900 mt-1">Panoramic Sky Villas & Gated Communities</h2>
-              <p class="text-xs text-slate-500 mt-2">Private plunge pools, concierge clubhouses, and 360-degree skyline views.</p>
-              <div class="mt-4 flex items-center gap-3">
-                <span class="bg-blue-600 text-white text-xs font-bold px-4 py-2 rounded-lg">Download Floor Plans &rarr;</span>
-                <span class="text-xs text-slate-600 font-bold">Starting $850k</span>
-              </div>
-            </div>
-            <div class="bg-blue-50 p-4 rounded-xl border border-blue-200 text-xs">
-              <div class="font-bold text-blue-900 mb-2">Project Highlights:</div>
-              <div class="grid grid-cols-2 gap-2 text-[10px]">
-                <div class="p-2 bg-white rounded border">3 & 4 BHK Configurations</div>
-                <div class="p-2 bg-white rounded border">Zero Brokerage Guarantee</div>
-                <div class="p-2 bg-white rounded border">Possession Q4 2026</div>
-                <div class="p-2 bg-white rounded border">85% Open Greenery</div>
-              </div>
-            </div>
-          </div>
-        `,
-        mobile: `
-          <div class="flex items-center justify-between pb-3 border-b border-slate-200">
-            <span class="font-black text-blue-600">PrimeAcre</span>
-            <span class="text-[10px] bg-blue-100 text-blue-800 px-2 py-0.5 rounded font-bold">Brochure PDF</span>
-          </div>
-          <div class="py-4">
-            <div class="text-sm font-black text-slate-900">Schedule VIP Site Visit</div>
-            <p class="text-[10px] text-slate-500 mt-1">Get free luxury chauffeur pickup for on-site property tour.</p>
-            <div class="mt-3 bg-white p-3 rounded-xl border border-slate-200 shadow-sm space-y-2">
-              <input type="text" placeholder="Full Name" class="w-full text-[10px] p-2 bg-slate-50 border rounded">
-              <input type="tel" placeholder="Phone Number" class="w-full text-[10px] p-2 bg-slate-50 border rounded">
-              <button class="w-full bg-blue-600 text-white text-center py-2 rounded-lg font-bold text-[10px]">
-                Reserve Chauffeur Visit &rarr;
-              </button>
-            </div>
-          </div>
-        `,
-        feature: `
-          <h3 class="text-lg font-black text-slate-900 mb-1">High-Ticket Lead Qualification Engine</h3>
-          <p class="text-xs text-slate-500 mb-4">Captures verified buyer leads with interactive mortgage calculator and automatic WhatsApp alerts.</p>
-          <div class="p-4 bg-slate-50 rounded-xl border text-xs space-y-2">
-            <div class="flex justify-between font-bold text-slate-800">
-              <span>Instant WhatsApp Brochure Delivery</span>
-              <span class="text-emerald-600 font-bold">Automated</span>
-            </div>
-            <p class="text-[11px] text-slate-500">Prospective buyers receive full HD PDF project brochures and price breakdowns directly on WhatsApp upon registration.</p>
-          </div>
-        `
-      },
-      dining: {
-        title: "The Urban Roast Bistro",
-        category: "Restaurants & Cafes",
-        url: "https://urbanroast-bistro.com",
-        desktop: `
-          <div class="border-b border-amber-200 pb-4 flex items-center justify-between">
-            <div class="font-black text-amber-900 text-lg">URBAN ROAST</div>
-            <div class="flex items-center gap-6 text-xs font-semibold text-slate-600">
-              <span>Culinary Menu</span>
-              <span>Specialties</span>
-              <span>Location</span>
-              <span class="bg-amber-600 text-white px-4 py-2 rounded-lg font-bold">Reserve Table</span>
-            </div>
-          </div>
-          <div class="py-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div>
-              <span class="text-xs font-bold text-amber-600 uppercase">Artisan Bistro & Dining</span>
-              <h2 class="text-2xl font-black text-slate-900 mt-1">Farm-to-Table Gastronomy & Handcrafted Brews</h2>
-              <p class="text-xs text-slate-500 mt-2">Wood-fired sourdough pizzas, artisanal specialty roasts, and organic desserts.</p>
-              <div class="mt-4 flex items-center gap-3">
-                <span class="bg-amber-600 text-white text-xs font-bold px-4 py-2 rounded-lg">View Digital Menu &rarr;</span>
-                <span class="text-xs text-slate-600 font-bold">Google Rating: 4.8★</span>
-              </div>
-            </div>
-            <div class="bg-amber-50 p-4 rounded-xl border border-amber-200 text-xs">
-              <div class="font-bold text-amber-900 mb-2">Chef's Recommendations:</div>
-              <div class="space-y-1.5 text-[11px]">
-                <div class="flex justify-between bg-white p-2 rounded"><span>Truffle Burrata Sourdough</span> <span class="font-bold text-amber-800">$18</span></div>
-                <div class="flex justify-between bg-white p-2 rounded"><span>Cold Drip Single Origin Brew</span> <span class="font-bold text-amber-800">$6</span></div>
-              </div>
-            </div>
-          </div>
-        `,
-        mobile: `
-          <div class="flex items-center justify-between pb-3 border-b border-slate-200">
-            <span class="font-black text-amber-800">Urban Roast</span>
-            <span class="bg-amber-600 text-white text-[10px] px-2 py-0.5 rounded font-bold">Table Booking</span>
-          </div>
-          <div class="py-4">
-            <div class="text-sm font-black text-slate-900">Instant Table Reservation</div>
-            <div class="mt-3 space-y-2">
-              <input type="date" class="w-full text-[10px] p-2 bg-slate-50 border rounded">
-              <select class="w-full text-[10px] p-2 bg-slate-50 border rounded">
-                <option>Table for 2 Guests</option>
-                <option>Table for 4 Guests</option>
-                <option>Party Table (6+ Guests)</option>
-              </select>
-              <button class="w-full bg-amber-600 text-white text-center py-2 rounded-lg font-bold text-[10px]">
-                Confirm via WhatsApp &rarr;
-              </button>
-            </div>
-          </div>
-        `,
-        feature: `
-          <h3 class="text-lg font-black text-slate-900 mb-1">Contactless QR Menu & Review Engine</h3>
-          <p class="text-xs text-slate-500 mb-4">Accelerates dine-in table turnover while capturing direct 5-star Google Maps reviews.</p>
-          <div class="p-4 bg-slate-50 rounded-xl border text-xs space-y-2">
-            <div class="flex justify-between font-bold text-slate-800">
-              <span>One-Touch Google Review QR</span>
-              <span class="text-emerald-600 font-bold">Integrated</span>
-            </div>
-            <p class="text-[11px] text-slate-500">Every printed receipt or table standee includes a custom QR code that opens Google Maps rating interface in 1 click.</p>
-          </div>
-        `
-      },
-      academy: {
-        title: "Zenith Elite Academy",
-        category: "Education & Coaching",
-        url: "https://zenith-academy.com",
-        desktop: `
-          <div class="border-b border-teal-200 pb-4 flex items-center justify-between">
-            <div class="font-black text-teal-800 text-lg">ZENITH ACADEMY</div>
-            <div class="flex items-center gap-6 text-xs font-semibold text-slate-600">
-              <span>Courses</span>
-              <span>Top Achievers</span>
-              <span>Faculty</span>
-              <span class="bg-teal-600 text-white px-4 py-2 rounded-lg font-bold">Free Demo Class</span>
-            </div>
-          </div>
-          <div class="py-6 grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
-            <div>
-              <span class="text-xs font-bold text-teal-600 uppercase">Rank #1 Competitive Coaching</span>
-              <h2 class="text-2xl font-black text-slate-900 mt-1">Accelerate Academic Excellence & Top College Admissions</h2>
-              <p class="text-xs text-slate-500 mt-2">Comprehensive test preparation, daily doubt resolution, and personalized mentorship.</p>
-              <div class="mt-4 flex items-center gap-3">
-                <span class="bg-teal-600 text-white text-xs font-bold px-4 py-2 rounded-lg">Register Free Demo Session &rarr;</span>
-                <span class="text-xs text-slate-600 font-bold">100% Scholarship Test</span>
-              </div>
-            </div>
-            <div class="bg-teal-50 p-4 rounded-xl border border-teal-200 text-xs">
-              <div class="font-bold text-teal-900 mb-2">Student Achievers 2026:</div>
-              <div class="grid grid-cols-2 gap-2 text-[10px]">
-                <div class="p-2 bg-white rounded border">98.6% Average Score</div>
-                <div class="p-2 bg-white rounded border">340+ Top Rankers</div>
-                <div class="p-2 bg-white rounded border">Free Digital Study Kits</div>
-                <div class="p-2 bg-white rounded border">Weekly AI Mock Tests</div>
-              </div>
-            </div>
-          </div>
-        `,
-        mobile: `
-          <div class="flex items-center justify-between pb-3 border-b border-slate-200">
-            <span class="font-black text-teal-700">Zenith</span>
-            <span class="bg-teal-600 text-white text-[10px] px-2 py-0.5 rounded font-bold">Free Demo</span>
-          </div>
-          <div class="py-4">
-            <div class="text-sm font-black text-slate-900">Book Free 1-Hour Lecture</div>
-            <p class="text-[10px] text-slate-500 mt-1">Experience live teaching pedagogy and interact with faculty.</p>
-            <div class="mt-3 bg-white p-3 rounded-xl border border-slate-200 shadow-sm space-y-2">
-              <input type="text" placeholder="Student Name" class="w-full text-[10px] p-2 bg-slate-50 border rounded">
-              <input type="tel" placeholder="Parent WhatsApp No" class="w-full text-[10px] p-2 bg-slate-50 border rounded">
-              <button class="w-full bg-teal-600 text-white text-center py-2 rounded-lg font-bold text-[10px]">
-                Claim Free Demo Pass &rarr;
-              </button>
-            </div>
-          </div>
-        `,
-        feature: `
-          <h3 class="text-lg font-black text-slate-900 mb-1">Lead Accelerator & Syllabus Download</h3>
-          <p class="text-xs text-slate-500 mb-4">Captures high-intent parent phone numbers in exchange for curriculum guides and mock exams.</p>
-          <div class="p-4 bg-slate-50 rounded-xl border text-xs space-y-2">
-            <div class="flex justify-between font-bold text-slate-800">
-              <span>Instant WhatsApp Counseling Alert</span>
-              <span class="text-emerald-600 font-bold">Active</span>
-            </div>
-            <p class="text-[11px] text-slate-500">Counselors receive instant notification the moment a parent registers on the website for immediate follow-up.</p>
-          </div>
-        `
-      }
-    };
-
-    let activeKey = 'clinic';
-    let currentTab = 0;
-
-    function openMultiPhotoModal(key) {
-      activeKey = key;
-      const data = uiData[key];
-
-      document.getElementById('m-title').innerText = data.title;
-      document.getElementById('m-category').innerText = data.category;
-      document.getElementById('browser-url').innerHTML = `<i data-lucide="lock" class="w-3 h-3 text-emerald-600"></i> ${data.url}`;
-
-      document.getElementById('desktop-body').innerHTML = data.desktop;
-      document.getElementById('mobile-body').innerHTML = data.mobile;
-      document.getElementById('feature-body').innerHTML = data.feature;
-
-      const encoded = encodeURIComponent(`Hello NovaScale! I am interested in deploying the "${data.title}" design for my business.`);
-      document.getElementById('m-whatsapp-btn').href = `https://wa.me/919457886467?text=${encoded}`;
-
-      switchPhotoTab(0);
-      document.getElementById('multi-modal').classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
-
-      // Push state so browser Back button closes modal smoothly
-      history.pushState({ modalOpen: true }, "", "#preview-" + key);
-    }
-
-    function switchPhotoTab(idx) {
-      currentTab = idx;
-      const tabs = document.querySelectorAll('.photo-tab');
-      tabs.forEach((tab, i) => {
-        if (i === idx) {
-          tab.className = "photo-tab active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-bold bg-indigo-600 text-white transition-all flex items-center gap-2";
-        } else {
-          tab.className = "photo-tab px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all flex items-center gap-2";
-        }
+    function filterTemplates(category) {
+      // update active pill
+      document.querySelectorAll('.filter-pill').forEach(btn => {
+        btn.classList.remove('bg-slate-950', 'text-white');
+        btn.classList.add('bg-white', 'text-slate-700');
       });
+      event.target.classList.remove('bg-white', 'text-slate-700');
+      event.target.classList.add('bg-slate-950', 'text-white');
 
-      const desk = document.getElementById('desktop-view');
-      const mob = document.getElementById('mobile-view');
-      const feat = document.getElementById('feature-view');
-
-      desk.classList.add('hidden');
-      mob.classList.add('hidden');
-      feat.classList.add('hidden');
-
-      if (idx === 0) desk.classList.remove('hidden');
-      else if (idx === 1) mob.classList.remove('hidden');
-      else if (idx === 2) feat.classList.remove('hidden');
-
-      lucide.createIcons();
-    }
-
-    function closeMultiModal() {
-      document.getElementById('multi-modal').classList.add('hidden');
-      document.body.style.overflow = 'auto';
-      if (location.hash.startsWith('#preview-')) {
-        history.replaceState(null, "", window.location.pathname);
-      }
-    }
-
-    function handleBackdropClick(e) {
-      closeMultiModal();
-    }
-
-    // Handle ESC key to close modal
-    window.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape') {
-        closeMultiModal();
-      }
-    });
-
-    // Handle Browser Back Button to close modal
-    window.addEventListener('popstate', function(e) {
-      closeMultiModal();
-    });
-
-    // Gallery Filter Logic
-    function filterGallery(cat) {
-      const btns = document.querySelectorAll('.gallery-btn');
-      btns.forEach(b => {
-        b.classList.remove('bg-indigo-600', 'text-white', 'shadow-md');
-        b.classList.add('bg-white', 'text-slate-700', 'border');
-      });
-      event.target.classList.add('bg-indigo-600', 'text-white', 'shadow-md');
-      event.target.classList.remove('bg-white', 'text-slate-700', 'border');
-
-      const cards = document.querySelectorAll('.card-item');
+      const cards = document.querySelectorAll('.template-card');
       cards.forEach(card => {
-        if (cat === 'all' || card.classList.contains(cat)) {
-          card.style.display = 'block';
+        if (category === 'all' || card.classList.contains(category)) {
+          card.style.display = 'flex';
         } else {
           card.style.display = 'none';
         }

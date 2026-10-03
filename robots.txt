@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vikashyadav0028.github.io/novascale-global/sitemap.xml

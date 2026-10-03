@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Urban Roast Artisanal Bistro & Café | Sector 104, Noida</title>
+  <meta name="description" content="Noida's favorite artisanal café & European bistro in Sector 104. Wood-fired Neapolitan pizzas, single-origin roasts, and weekend brunch." />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            roast: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              500: '#f59e0b',
+              600: '#d97706',
+              800: '#92400e',
+              900: '#78350f',
+              950: '#451a03'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-amber-50/20 text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
+
+  <!-- NovaScale Live Demo Top Banner -->
+  <div class="bg-slate-950 text-slate-200 py-2.5 px-4 border-b border-slate-800 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-xs">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-black bg-amber-500/20 text-amber-300 border border-amber-500/40">
+          ⭐ LIVE CLIENT DEMO
+        </span>
+        <span class="text-slate-300 font-medium">Restaurant & Café Template by <strong class="text-white">NovaScale Global</strong> (Sector 62, Noida)</span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="../templates.html" class="text-slate-400 hover:text-white flex items-center gap-1 transition-colors">
+          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Back to Templates
+        </a>
+        <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20love%20the%20Urban%20Roast%20Restaurant%20template.%20I%20want%20to%20order%20this%20website%20for%20my%20café." 
+           target="_blank" 
+           class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1 rounded-lg font-bold flex items-center gap-1.5 transition-all shadow-sm">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Order This Site (₹7,999)
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bistro Top Bar -->
+  <div class="bg-stone-900 text-stone-300 text-xs py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2">
+      <div class="flex items-center gap-4">
+        <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i> Main Road, Sector 104, Hajipur, Noida</span>
+        <span class="hidden md:flex items-center gap-1.5"><i data-lucide="clock" class="w-3.5 h-3.5 text-amber-400"></i> Daily: 8:30 AM – 11:30 PM</span>
+      </div>
+      <div class="flex items-center gap-4">
+        <span class="text-amber-400 font-semibold">🥐 Fresh Croissants & Sourdough Baked Hourly</span>
+        <a href="https://wa.me/919457886467?text=Hello%20Urban%20Roast!%20I%20want%20to%20reserve%20a%20table." target="_blank" class="text-white hover:text-amber-300 font-bold flex items-center gap-1">
+          <i data-lucide="utensils" class="w-3.5 h-3.5 text-emerald-400"></i> Reserve on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bistro Header -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-stone-200 sticky top-9 z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-amber-600 to-stone-900 flex items-center justify-center text-white shadow-lg shadow-amber-600/20">
+          <i data-lucide="coffee" class="w-6 h-6 text-amber-400"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-black text-stone-900 tracking-tight">URBAN<span class="text-amber-600">ROAST</span></span>
+          <span class="block text-[10px] uppercase font-bold text-stone-400 tracking-wider">Artisanal Bistro & Roastery • Sec 104 Noida</span>
+        </div>
+      </div>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-stone-700">
+        <a href="#menu" class="hover:text-amber-600 transition-colors">Digital Menu</a>
+        <a href="#roastery" class="hover:text-amber-600 transition-colors">Our Coffee</a>
+        <a href="#specials" class="hover:text-amber-600 transition-colors">Chef's Specials</a>
+        <a href="#reservation" class="hover:text-amber-600 transition-colors">Reserve Table</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#reservation" class="bg-stone-900 hover:bg-stone-800 text-amber-400 px-5 py-2.5 rounded-xl font-bold text-sm shadow-md transition-all hover:scale-105 flex items-center gap-2">
+          <i data-lucide="calendar" class="w-4 h-4"></i> Book A Table
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-12 pb-20 bg-gradient-to-b from-stone-100 to-amber-50/20 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100 border border-amber-300 text-amber-900 text-xs font-bold">
+            <i data-lucide="flame" class="w-4 h-4 text-amber-600"></i> Authentic Italian Wood-Fired Oven • Coorg Arabica Beans
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-stone-900 leading-tight">
+            Slow Brewed Coffee & <br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-800">Soulful European Bistro Dining.</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-stone-600 max-w-2xl leading-relaxed">
+            Step into Sector 104's warmest aesthetic café. Hand-tossed sourdough pizzas, handmade fresh pasta, manual pour-overs, and alfresco fairy-lit courtyard dining.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#reservation" class="bg-amber-600 hover:bg-amber-700 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-lg shadow-amber-600/30 transition-all hover:scale-105 flex items-center gap-2">
+              <i data-lucide="utensils-crossed" class="w-4 h-4"></i> Reserve Table Online
+            </a>
+            <a href="https://wa.me/919457886467?text=Hello%20Urban%20Roast!%20Send%20me%20your%20digital%20food%20menu." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-lg shadow-emerald-600/30 transition-all hover:scale-105 flex items-center gap-2">
+              <i data-lucide="message-circle" class="w-4 h-4"></i> Order via WhatsApp
+            </a>
+          </div>
+
+          <div class="pt-6 grid grid-cols-3 gap-4 border-t border-stone-200 text-left">
+            <div>
+              <div class="text-2xl font-black text-stone-900">48-Hr</div>
+              <div class="text-xs text-stone-500 font-semibold">Fermented Sourdough</div>
+            </div>
+            <div>
+              <div class="text-2xl font-black text-amber-600">4.8 ★</div>
+              <div class="text-xs text-stone-500 font-semibold">Google Maps Rated</div>
+            </div>
+            <div>
+              <div class="text-2xl font-black text-stone-900">100%</div>
+              <div class="text-xs text-stone-500 font-semibold">Single-Origin Arabica</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Reservation Card -->
+        <div class="lg:col-span-5" id="reservation">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-stone-200 relative">
+            <div class="absolute -top-3 right-6 bg-stone-900 text-amber-400 text-[10px] font-black uppercase px-3 py-1 rounded-full shadow">
+              Zero Wait Reservation
+            </div>
+            <h3 class="text-xl font-black text-stone-900 mb-1">Instant Table Booking</h3>
+            <p class="text-xs text-stone-500 mb-5">Avoid the weekend rush. We hold your table for 15 minutes.</p>
+
+            <form onsubmit="event.preventDefault(); alert('Reservation confirmed! Redirecting to WhatsApp to send booking code to the café manager.'); window.open('https://wa.me/919457886467?text=Hello%20Urban%20Roast!%20I%20have%20booked%20a%20table%20via%20your%20website.');" class="space-y-4">
+              <div>
+                <label class="block text-xs font-bold text-stone-700 mb-1">Your Name</label>
+                <input type="text" required placeholder="e.g. Varun Kapoor" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-stone-50" />
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 mb-1">Date</label>
+                  <input type="date" required class="w-full px-3 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-stone-50" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 mb-1">Time Slot</label>
+                  <select class="w-full px-3 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-stone-50">
+                    <option>1:00 PM (Lunch)</option>
+                    <option>5:00 PM (Sunset Coffee)</option>
+                    <option>7:30 PM (Dinner 1)</option>
+                    <option>9:00 PM (Dinner 2)</option>
+                  </select>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 mb-1">Guests</label>
+                  <select class="w-full px-3 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-stone-50">
+                    <option>2 Persons</option>
+                    <option>3 - 4 Persons</option>
+                    <option>5 - 8 Persons</option>
+                    <option>8+ Party</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-stone-700 mb-1">Seating Preference</label>
+                  <select class="w-full px-3 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-stone-50">
+                    <option>Indoor AC Lounge</option>
+                    <option>Outdoor Courtyard</option>
+                  </select>
+                </div>
+              </div>
+
+              <button type="submit" class="w-full bg-stone-900 hover:bg-stone-800 text-amber-400 py-3 rounded-xl font-bold text-sm shadow-md transition-all">
+                Confirm Reservation via WhatsApp →
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Menu Section -->
+  <section id="menu" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs font-black uppercase text-amber-600 tracking-widest bg-amber-50 px-3 py-1 rounded-full">Culinary Highlights</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-stone-900 mt-3">Signature House Creations</h2>
+        <p class="text-stone-500 text-sm mt-2">Every dish prepared fresh from scratch with authentic Italian zero-zero flour and fresh farm produce.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-3xl bg-stone-50 border border-stone-200 hover:border-amber-500 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5">
+            <i data-lucide="flame" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[11px] font-bold uppercase text-amber-600 tracking-wider">Wood-Fired Pizza</span>
+          <h3 class="text-xl font-bold text-stone-900 mt-1 mb-2">Truffle Burrata Pizza</h3>
+          <p class="text-xs text-stone-600 leading-relaxed mb-4">San Marzano tomatoes, fresh artisanal burrata, wild mushrooms, drizzled with white truffle oil on blistered sourdough crust.</p>
+          <div class="flex items-center justify-between pt-4 border-t border-stone-200">
+            <span class="text-lg font-black text-stone-900">₹645</span>
+            <a href="https://wa.me/919457886467?text=Hello%20Urban%20Roast!%20I%20want%20to%20order%20the%20Truffle%20Burrata%20Pizza." target="_blank" class="text-xs font-bold text-amber-600 hover:text-amber-800">
+              Order on WhatsApp →
+            </a>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-stone-50 border border-stone-200 hover:border-amber-500 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5">
+            <i data-lucide="coffee" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[11px] font-bold uppercase text-amber-600 tracking-wider">Specialty Roastery</span>
+          <h3 class="text-xl font-bold text-stone-900 mt-1 mb-2">Sea Salt Caramel Cold Brew</h3>
+          <p class="text-xs text-stone-600 leading-relaxed mb-4">18-hour cold steeped Coorg estate beans topped with thick whipped sea-salt cream and burnt Himalayan caramel.</p>
+          <div class="flex items-center justify-between pt-4 border-t border-stone-200">
+            <span class="text-lg font-black text-stone-900">₹295</span>
+            <a href="https://wa.me/919457886467?text=Hello%20Urban%20Roast!%20I%20want%20to%20order%20the%20Sea%20Salt%20Caramel%20Cold%20Brew." target="_blank" class="text-xs font-bold text-amber-600 hover:text-amber-800">
+              Order on WhatsApp →
+            </a>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-3xl bg-stone-50 border border-stone-200 hover:border-amber-500 transition-all">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center mb-5">
+            <i data-lucide="cake" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[11px] font-bold uppercase text-amber-600 tracking-wider">Pastry & Dessert</span>
+          <h3 class="text-xl font-bold text-stone-900 mt-1 mb-2">San Sebastián Burnt Cheesecake</h3>
+          <p class="text-xs text-stone-600 leading-relaxed mb-4">Caramelized crust with an ultra-creamy molten center, served with warm Belgian chocolate ganache pour.</p>
+          <div class="flex items-center justify-between pt-4 border-t border-stone-200">
+            <span class="text-lg font-black text-stone-900">₹345</span>
+            <a href="https://wa.me/919457886467?text=Hello%20Urban%20Roast!%20I%20want%20to%20order%20the%20San%20Sebastian%20Cheesecake." target="_blank" class="text-xs font-bold text-amber-600 hover:text-amber-800">
+              Order on WhatsApp →
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bistro Footer -->
+  <footer class="bg-stone-950 text-stone-400 py-12 border-t border-stone-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-xs">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-8 border-b border-stone-800">
+        <div class="flex items-center gap-2 text-white font-black text-lg">
+          <i data-lucide="coffee" class="w-5 h-5 text-amber-400"></i> URBAN ROAST BISTRO
+        </div>
+        <div>📍 Plot 18, Commercial Market, Sector 104, Noida, UP 201304</div>
+        <a href="https://wa.me/919457886467?text=Hello%20Urban%20Roast!%20I%20have%20a%20query." target="_blank" class="bg-emerald-600 text-white px-4 py-2 rounded-xl font-bold flex items-center gap-1.5">
+          <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Desk
+        </a>
+      </div>
+      <div class="pt-6 text-center text-stone-600">
+        The Urban Roast Demo Site • Crafted with high conversion design by <strong>NovaScale Global Growth Agency</strong> (Sector 62, Noida).
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919457886467?text=Hello%20Urban%20Roast!%20I%20want%20to%20reserve%20a%20table%20or%20order%20food." target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all hover:scale-110">
+    <i data-lucide="message-circle" class="w-7 h-7"></i>
+  </a>
+
+  <script>
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  </script>
+</body>
+</html>

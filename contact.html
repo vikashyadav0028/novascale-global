@@ -3,13 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact & Discovery Consultation | NovaScale Global</title>
-  <meta name="description" content="Connect with NovaScale Global growth strategists. Book a discovery call, claim your free digital audit, or chat on WhatsApp." />
-
-  <!-- Google Fonts: Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Contact Us & Free Growth Audit | NovaScale Global - Noida</title>
+  <meta name="description" content="Get in touch with NovaScale Global digital growth strategists in Sector 62, Noida. Claim your free digital audit or chat directly on WhatsApp." />
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -19,6 +14,17 @@
         extend: {
           fontFamily: {
             sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+              900: '#1e1b4b',
+              950: '#090d16'
+            }
           }
         }
       }
@@ -27,277 +33,372 @@
 
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
-  <style>
-    .gradient-text {
-      background: linear-gradient(135deg, #4f46e5 0%, #ec4899 50%, #f59e0b 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  </style>
+  <!-- Custom Design System CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white">
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white">
 
-  <!-- Top Announcement Bar (Contact info hidden as discrete action links) -->
+  <!-- Top Micro Announcement Bar -->
   <div class="bg-slate-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
       <div class="flex items-center gap-2">
-        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">DIRECT CONSULTATION</span>
-        <span>Average strategy response time within 15 minutes</span>
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+          📍 NOIDA, INDIA & GLOBAL
+        </span>
+        <span>Empowering clinics, gyms, salons, restaurants & retail leaders across India & worldwide</span>
       </div>
       <div class="flex items-center gap-4 text-xs">
-        <a href="#consultation-form" class="hover:text-white flex items-center gap-1.5 transition-colors font-medium">
-          <i data-lucide="mail" class="w-3.5 h-3.5 text-indigo-400"></i> Send Strategy Inquiry
-        </a>
-        <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20chat%20with%20your%20growth%20team." target="_blank" class="hover:text-white flex items-center gap-1.5 transition-colors font-medium text-emerald-400">
-          <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Live WhatsApp Desk
+        <span class="flex items-center gap-1.5 text-emerald-400 font-semibold">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> WhatsApp response: &lt; 15 mins
+        </span>
+        <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20discuss%20growing%20my%20business." target="_blank" class="text-white hover:text-indigo-400 flex items-center gap-1 transition-colors font-bold">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400"></i> Chat on WhatsApp
         </a>
       </div>
     </div>
   </div>
 
-  <!-- Navigation Bar -->
-  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+  <!-- Main Navigation Bar -->
+  <header class="sticky top-0 z-40 glass-nav">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
-      <div class="flex items-center gap-6">
-        <a href="index.html" class="flex items-center gap-3">
-          <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/25">
-            <i data-lucide="sparkles" class="w-6 h-6"></i>
-          </div>
-          <div>
-            <span class="text-2xl font-extrabold tracking-tight text-slate-950">NovaScale<span class="text-indigo-600">.</span></span>
-            <span class="block text-[10px] uppercase font-bold tracking-widest text-slate-400 -mt-1">Global Growth Agency</span>
-          </div>
-        </a>
+      <!-- Brand Logo -->
+      <a href="index.html" class="flex items-center gap-3 group">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform">
+          <i data-lucide="sparkles" class="w-6 h-6"></i>
+        </div>
+        <div>
+          <span class="text-2xl font-black tracking-tight text-slate-950">NovaScale<span class="text-indigo-600">.</span></span>
+          <span class="block text-[10px] uppercase font-extrabold tracking-widest text-slate-400 -mt-1">Growth Studio • Noida</span>
+        </div>
+      </a>
 
-        <a href="index.html" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-slate-500 hover:text-indigo-600 bg-slate-100 px-3 py-1.5 rounded-lg transition-colors">
-          <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Back to Home
-        </a>
-      </div>
-
-      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
+      <!-- Desktop Nav Links -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-600">
         <a href="index.html" class="hover:text-indigo-600 transition-colors">Home</a>
         <a href="services.html" class="hover:text-indigo-600 transition-colors">Services</a>
-        <a href="templates.html" class="hover:text-indigo-600 transition-colors">Portfolio & Templates</a>
-        <a href="pricing.html" class="hover:text-indigo-600 transition-colors">Pricing & Plans</a>
+        <a href="pricing.html" class="hover:text-indigo-600 transition-colors">Pricing</a>
+        <a href="templates.html" class="hover:text-indigo-600 transition-colors flex items-center gap-1">
+          <span>Templates & Demos</span>
+          <span class="bg-indigo-100 text-indigo-700 text-[10px] px-2 py-0.5 rounded-full font-extrabold">6 Live</span>
+        </a>
+        <a href="about.html" class="hover:text-indigo-600 transition-colors">About Us</a>
         <a href="contact.html" class="text-indigo-600">Contact</a>
       </nav>
 
-      <div class="flex items-center gap-3">
-        <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20reaching%20out%20to%20schedule%20a%20consultation." 
+      <!-- Desktop Action Buttons -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20claim%20my%20free%20growth%20audit." 
            target="_blank" 
-           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-semibold text-sm shadow-md shadow-emerald-600/20 transition-all hover:scale-105">
+           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-md shadow-emerald-600/25 transition-all hover:scale-105">
           <i data-lucide="message-circle" class="w-4 h-4"></i>
-          <span>Chat on WhatsApp</span>
+          <span>WhatsApp Founder</span>
+        </a>
+        <a href="#audit-form" class="inline-flex items-center gap-1.5 bg-slate-950 hover:bg-slate-800 text-white px-5 py-2.5 rounded-xl font-bold text-sm transition-all hover:shadow-lg">
+          <span>Claim Free Audit</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400"></i>
         </a>
       </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2.5 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition-colors" aria-label="Toggle Navigation">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+
     </div>
   </header>
 
+  <!-- Mobile Navigation Slide-Over Drawer -->
+  <div id="mobile-backdrop" class="fixed inset-0 bg-slate-950/60 z-50 hidden backdrop-blur-sm transition-opacity"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 bottom-0 w-80 max-w-[85%] bg-white z-50 shadow-2xl p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300 ease-in-out">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-slate-100">
+        <div class="flex items-center gap-2 font-black text-slate-900 text-lg">
+          <div class="w-8 h-8 rounded-xl bg-indigo-600 flex items-center justify-center text-white"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
+          <span>NovaScale<span class="text-indigo-600">.</span></span>
+        </div>
+        <button id="close-menu-btn" class="p-2 text-slate-400 hover:text-slate-700 rounded-lg">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+
+      <nav class="mt-6 flex flex-col gap-4 text-base font-bold text-slate-800">
+        <a href="index.html" class="p-2.5 rounded-xl hover:bg-slate-100">Home</a>
+        <a href="services.html" class="p-2.5 rounded-xl hover:bg-slate-100">Services</a>
+        <a href="pricing.html" class="p-2.5 rounded-xl hover:bg-slate-100">Pricing & Packages</a>
+        <a href="templates.html" class="p-2.5 rounded-xl hover:bg-slate-100 flex items-center justify-between">
+          <span>Templates & Demos</span>
+          <span class="bg-indigo-100 text-indigo-700 text-xs px-2 py-0.5 rounded-full font-bold">6 Live</span>
+        </a>
+        <a href="about.html" class="p-2.5 rounded-xl hover:bg-slate-100">About Us (Noida Studio)</a>
+        <a href="contact.html" class="p-2.5 rounded-xl hover:bg-indigo-50 text-indigo-600">Contact Us</a>
+      </nav>
+    </div>
+
+    <div class="space-y-3 pt-6 border-t border-slate-100">
+      <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20interested%20in%20connecting." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 text-white p-3.5 rounded-xl font-bold text-sm shadow-md">
+        <i data-lucide="message-circle" class="w-4 h-4"></i>
+        <span>Chat on WhatsApp Directly</span>
+      </a>
+      <a href="#audit-form" class="w-full inline-flex items-center justify-center gap-2 bg-slate-900 text-white p-3.5 rounded-xl font-bold text-sm">
+        <span>Request Free Strategy Call</span>
+      </a>
+    </div>
+  </div>
+
   <!-- Page Header -->
-  <section class="py-16 bg-slate-900 text-white text-center relative overflow-hidden">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-      <span class="inline-block text-indigo-400 text-xs font-bold uppercase tracking-widest mb-3">Get In Touch</span>
-      <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-tight">
-        Let’s Discuss Your Business Growth
+  <section class="relative pt-14 pb-12 overflow-hidden bg-slate-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/20 border border-indigo-500/40 text-indigo-300 text-xs font-bold mb-6">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Average Response Time &lt; 15 Minutes</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight max-w-4xl mx-auto mb-4">
+        Let’s Build Your Local Growth Engine.
       </h1>
-      <p class="mt-4 text-base sm:text-lg text-slate-300 max-w-2xl mx-auto font-normal">
-        Fill out the consultation form below or send a direct inquiry through our instant WhatsApp desk.
+
+      <p class="text-sm sm:text-lg text-slate-400 max-w-2xl mx-auto leading-relaxed">
+        Speak directly with our growth strategists in Sector 62, Noida. Claim a 100% free digital competitor audit or start your 5-day website build immediately.
       </p>
     </div>
   </section>
 
-  <!-- Contact & Form Section -->
-  <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" id="consultation-form">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-      
-      <!-- Direct Contact Channels (Left Column) -->
-      <div class="lg:col-span-5 space-y-8">
-        <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-indigo-600">Direct Channels</span>
-          <h2 class="text-3xl font-extrabold text-slate-950 mt-1">Connect Directly With Our Growth Team</h2>
-          <p class="text-slate-600 text-sm mt-3 leading-relaxed">
-            Whether you need a high-converting website, hyper-targeted local ads, or complete marketing management, our team is ready to assist.
+  <!-- Main Contact & Intake Form Section -->
+  <section class="py-16 bg-slate-50" id="audit-form">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Touchpoints & Studio Info -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <span class="text-xs font-black uppercase text-indigo-600 tracking-widest bg-indigo-50 px-3 py-1 rounded-full">Fastest Direct Route</span>
+            <h2 class="text-2xl sm:text-3xl font-black text-slate-950 mt-3 mb-4">Tap to Connect Instantly</h2>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Skip back-and-forth emails. We operate primarily through our real-time founder WhatsApp channel for rapid decision making.
+            </p>
+
+            <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20reaching%20out%20to%20discuss%20growing%20my%20business." target="_blank" class="w-full inline-flex items-center justify-between p-5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white transition-all shadow-lg shadow-emerald-600/25 group">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center">
+                  <i data-lucide="message-circle" class="w-6 h-6"></i>
+                </div>
+                <div>
+                  <div class="font-extrabold text-sm">Direct WhatsApp Channel</div>
+                  <div class="text-xs text-emerald-100 font-medium">Instant reply in &lt; 15 mins</div>
+                </div>
+              </div>
+              <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+          </div>
+
+          <div class="p-6 rounded-3xl bg-white border border-slate-200 shadow-sm space-y-5">
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Engineering Studio HQ</h4>
+                <p class="text-xs text-slate-600 mt-0.5">Sector 62, Noida, Uttar Pradesh 201309, India</p>
+                <span class="text-[11px] text-indigo-600 font-bold mt-1 block">Near Electronic City Metro Corridor</span>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="clock" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Working Hours</h4>
+                <p class="text-xs text-slate-600 mt-0.5">Monday – Saturday: 9:30 AM – 7:30 PM IST</p>
+                <p class="text-[11px] text-slate-500 mt-0.5">WhatsApp monitored 7 days a week</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0 mt-0.5">
+                <i data-lucide="shield-check" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-slate-900 text-sm">Privacy & Security</h4>
+                <p class="text-xs text-slate-600 mt-0.5">Your contact data is never shared with third parties or spammers.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick FAQ snippet -->
+          <div class="p-6 rounded-3xl bg-slate-900 text-white space-y-3">
+            <div class="font-black text-sm text-indigo-400">Need immediate help?</div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              If you have an existing website that is broken, slow, or penalised on Google Maps, send us the link on WhatsApp and we will run a live audit within 2 hours.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: Intake & Free Audit Form -->
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200 shadow-xl relative">
+            <div class="flex items-center justify-between pb-6 border-b border-slate-100 mb-6">
+              <div>
+                <h3 class="text-xl sm:text-2xl font-black text-slate-950">Claim Free Growth Audit</h3>
+                <p class="text-xs sm:text-sm text-slate-500">We analyze your local rankings and send a customized roadmap.</p>
+              </div>
+              <span class="bg-emerald-100 text-emerald-800 text-[10px] font-black uppercase px-3 py-1 rounded-full">
+                100% Free • No Obligation
+              </span>
+            </div>
+
+            <form id="contact-intake-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-800 mb-1.5">Business Name *</label>
+                  <input type="text" id="biz-name" required placeholder="e.g. Apex Dental Clinic" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-600 bg-slate-50" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-800 mb-1.5">Your Name *</label>
+                  <input type="text" id="client-name" required placeholder="e.g. Dr. Rajesh Gupta" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-600 bg-slate-50" />
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-800 mb-1.5">Industry Category *</label>
+                  <select id="biz-cat" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-600 bg-slate-50">
+                    <option>Clinic / Healthcare / Dental</option>
+                    <option>Gym / Crossfit / Fitness Center</option>
+                    <option>Salon / Spa / Aesthetic Studio</option>
+                    <option>Real Estate Broker / Builder</option>
+                    <option>Restaurant / Café / Bistro</option>
+                    <option>Coaching Academy / EdTech</option>
+                    <option>Retail Store / Other Local Business</option>
+                    <option>International / E-Commerce Brand</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-800 mb-1.5">Location / City *</label>
+                  <input type="text" id="biz-location" required placeholder="e.g. Sector 50 Noida or Delhi NCR" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-600 bg-slate-50" />
+                </div>
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold text-slate-800 mb-1.5">WhatsApp Contact Number *</label>
+                  <input type="tel" id="biz-phone" required placeholder="WhatsApp Number" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-600 bg-slate-50" />
+                </div>
+                <div>
+                  <label class="block text-xs font-bold text-slate-800 mb-1.5">Primary Growth Goal</label>
+                  <select id="biz-goal" class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-600 bg-slate-50">
+                    <option>High-Speed 5-Day Website (₹7,999)</option>
+                    <option>Google Maps Top-3 Ranking (Local SEO)</option>
+                    <option>Meta & Google Performance Ads</option>
+                    <option>Viral Social Media Reels & Content</option>
+                    <option>Full Growth Retainer (₹12,999/mo)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold text-slate-800 mb-1.5">Tell us about your current challenges or website (Optional)</label>
+                <textarea id="biz-notes" rows="3" placeholder="e.g. Our competitors rank ahead of us on Google Maps, and our current website doesn't bring inquiries." class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-600 bg-slate-50"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-slate-950 hover:bg-indigo-600 text-white py-4 rounded-xl font-black text-sm shadow-xl transition-all duration-300 flex items-center justify-center gap-2">
+                <span>Submit & Receive Free Audit on WhatsApp</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </form>
+
+            <div id="form-success" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-300 text-emerald-900 text-xs font-bold">
+              ✓ Request generated! Redirecting you to WhatsApp to connect directly with NovaScale leadership...
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="py-16 bg-white border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <span class="text-xs font-black uppercase text-indigo-600 tracking-widest bg-indigo-50 px-3 py-1 rounded-full">Common Inquiries</span>
+        <h2 class="text-2xl sm:text-3xl font-black text-slate-950 mt-3">Frequently Asked Questions</h2>
+      </div>
+
+      <div class="space-y-4">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <h4 class="font-bold text-slate-900 text-sm mb-1">How quickly can our website launch?</h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Our turnkey industry blueprints launch within 5 business days (120 hours) from the moment we receive your business name, services, and photos. Custom ground-up platforms take 10-14 days.
           </p>
         </div>
 
-        <div class="space-y-4">
-          
-          <!-- WhatsApp Channel Card -->
-          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0">
-              <i data-lucide="message-circle" class="w-6 h-6"></i>
-            </div>
-            <div>
-              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Instant WhatsApp Channel</div>
-              <div class="text-base font-extrabold text-slate-900 mt-0.5">Priority WhatsApp Desk</div>
-              <span class="text-xs text-emerald-600 font-semibold flex items-center gap-1 mt-1 mb-3">
-                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Active & Online 24/7
-              </span>
-              <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20would%20like%20to%20request%20a%20consultation." target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl transition-colors">
-                <span>Start Direct Chat</span> &rarr;
-              </a>
-            </div>
-          </div>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <h4 class="font-bold text-slate-900 text-sm mb-1">Do you serve clients outside of Noida?</h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Yes! While our studio is based in Sector 62, Noida, we have active clients across Greater Noida, Ghaziabad, Delhi, Gurgaon, Mumbai, and Bengaluru, as well as international brands in Dubai (UAE) and London (UK).
+          </p>
+        </div>
 
-          <!-- Email Inquiry Card -->
-          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center shrink-0">
-              <i data-lucide="mail" class="w-6 h-6"></i>
-            </div>
-            <div>
-              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Official Strategy Desk</div>
-              <div class="text-base font-extrabold text-slate-900 mt-0.5">Corporate Email Inbox</div>
-              <span class="text-xs text-slate-500 mt-1 block mb-3">Reviewed daily by agency founders</span>
-              <a href="mailto:Vikashyadav9068982811@gmail.com?subject=Inquiry%20from%20NovaScale%20Website" class="inline-flex items-center gap-1.5 text-xs font-bold bg-slate-900 hover:bg-slate-800 text-white px-4 py-2 rounded-xl transition-colors">
-                <span>Open Mail Client</span> &rarr;
-              </a>
-            </div>
-          </div>
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <h4 class="font-bold text-slate-900 text-sm mb-1">Are there hidden monthly hosting or maintenance fees?</h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            No hidden costs. The ₹7,999 ($199) Starter Blueprint is a flat one-time payment that includes 30 days of complimentary support. You own 100% of the code and assets.
+          </p>
+        </div>
 
-          <!-- Global Coverage Card -->
-          <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm flex items-start gap-4">
-            <div class="w-12 h-12 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center shrink-0">
-              <i data-lucide="globe-2" class="w-6 h-6"></i>
-            </div>
-            <div>
-              <div class="text-xs font-bold text-slate-400 uppercase tracking-wider">Global Timezone Coverage</div>
-              <div class="text-sm font-extrabold text-slate-900 mt-0.5">EST (US) • GMT (UK) • IST (India)</div>
-              <span class="text-xs text-slate-500 mt-1 block">Dedicated support across American, European, and Asian business hours</span>
-            </div>
-          </div>
-
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <h4 class="font-bold text-slate-900 text-sm mb-1">How do you guarantee more local phone calls and walk-ins?</h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            We focus on two high-intent channels: ranking your Google Business Profile in the top-3 Google Maps pack for high-volume keywords (e.g. "best dental clinic in sector 50"), and converting visitors via 1-tap WhatsApp buttons.
+          </p>
         </div>
       </div>
-
-      <!-- Consultation Request Form (Right Column) -->
-      <div class="lg:col-span-7 bg-white rounded-3xl border border-slate-200 p-8 sm:p-10 shadow-xl">
-        <h3 class="text-2xl font-black text-slate-950 mb-2">Request Free Digital Strategy Proposal</h3>
-        <p class="text-slate-500 text-xs mb-8">Fill in your information to receive a bespoke audit and quote tailored to your business model.</p>
-
-        <form id="contact-form" onsubmit="submitContactForm(event)" class="space-y-5">
-          
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Full Name *</label>
-              <input type="text" id="c-name" required placeholder="e.g. John Doe" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-indigo-600 focus:bg-white transition-all">
-            </div>
-            <div>
-              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Email Address *</label>
-              <input type="email" id="c-email" required placeholder="e.g. john@business.com" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-indigo-600 focus:bg-white transition-all">
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Phone / WhatsApp Number *</label>
-              <input type="tel" id="c-phone" required placeholder="e.g. +1 555 123 4567" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-indigo-600 focus:bg-white transition-all">
-            </div>
-            <div>
-              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Company / Business Name *</label>
-              <input type="text" id="c-company" required placeholder="e.g. City Dental Studio" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-indigo-600 focus:bg-white transition-all">
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
-            <div>
-              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Primary Service Needed</label>
-              <select id="c-service" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-indigo-600 focus:bg-white transition-all">
-                <option value="Complete Growth Retainer">Complete Growth Retainer (Web + Ads + Maps)</option>
-                <option value="High-Converting Website">High-Converting Website & Architecture</option>
-                <option value="Meta & Google Performance Ads">Meta & Google Performance Ads</option>
-                <option value="Google Maps (GMB) Top 3 SEO">Google Maps (GMB) Top 3 SEO</option>
-                <option value="Social Media & Viral Reels">Social Media & Viral Reels Studio</option>
-              </select>
-            </div>
-            <div>
-              <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Target Market / Region</label>
-              <select id="c-region" class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-indigo-600 focus:bg-white transition-all">
-                <option value="Local City / Regional (India)">Local City / Regional (India)</option>
-                <option value="United States (US)">United States (US)</option>
-                <option value="United Kingdom (UK)">United Kingdom (UK)</option>
-                <option value="Canada / Australia">Canada / Australia</option>
-                <option value="Middle East / UAE">Middle East / UAE</option>
-              </select>
-            </div>
-          </div>
-
-          <div>
-            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">Tell Us About Your Goals & Current Challenges</label>
-            <textarea id="c-notes" rows="4" placeholder="Briefly describe what services you offer and how many new customers/leads you want to acquire per month..." class="w-full bg-slate-50 border border-slate-300 rounded-xl px-4 py-3 text-sm text-slate-900 focus:outline-none focus:border-indigo-600 focus:bg-white transition-all"></textarea>
-          </div>
-
-          <button type="submit" class="w-full py-4 rounded-xl font-bold text-sm bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700 text-white shadow-xl shadow-indigo-600/25 transition-all hover:scale-[1.01]">
-            Submit Inquiry & Connect on WhatsApp &rarr;
-          </button>
-        </form>
-      </div>
-
     </div>
   </section>
 
-  <!-- Frequently Asked Questions Accordion -->
-  <section class="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-slate-200">
-    <div class="text-center mb-12">
-      <span class="text-xs font-bold uppercase tracking-widest text-indigo-600">Client FAQ</span>
-      <h3 class="text-3xl font-black text-slate-950 mt-1">Frequently Asked Questions</h3>
-    </div>
-
-    <div class="space-y-4">
-      <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-        <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
-          <span>How fast can our website and marketing campaigns be launched?</span>
-          <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-5 h-5 text-indigo-600"></i></span>
-        </summary>
-        <p class="mt-4 text-sm text-slate-600 leading-relaxed">
-          Our rapid deployment protocol allows us to launch full responsive landing pages and complete Google Maps optimization within 48 to 72 hours. Paid ad campaigns typically undergo a 2-day research and creative cycle before going live.
-        </p>
-      </details>
-
-      <details class="group bg-white rounded-2xl border border-slate-200 p-6 [&_summary::-webkit-details-marker]:hidden">
-        <summary class="flex items-center justify-between cursor-pointer font-bold text-slate-900 text-base">
-          <span>Do you work with international clients outside of India?</span>
-          <span class="transition group-open:rotate-180"><i data-lucide="chevron-down" class="w-5 h-5 text-indigo-600"></i></span>
-        </summary>
-        <p class="mt-4 text-sm text-slate-600 leading-relaxed">
-          Yes. NovaScale Global actively serves businesses in the United States, United Kingdom, Canada, Australia, and the Middle East. We accommodate major Western time zones (EST, GMT) and provide billing in USD, GBP, or EUR.
-        </p>
-      </details>
-    </div>
-  </section>
-
-  <!-- Global Footer (Pure action links, zero raw contact info displayed) -->
-  <footer class="bg-slate-950 text-slate-400 py-16 border-t border-slate-800 text-xs">
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 pt-16 pb-12 border-t border-slate-800 text-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
-        <div>
-          <div class="flex items-center gap-3 text-white font-extrabold text-xl">
-            <div class="w-8 h-8 rounded-xl bg-indigo-600 flex items-center justify-center text-white"><i data-lucide="sparkles" class="w-4 h-4"></i></div>
-            <span>NovaScale<span class="text-indigo-500">.</span></span>
-          </div>
-          <p class="mt-4 text-slate-400 text-xs leading-relaxed">Data-driven digital growth architecture for ambitious brands worldwide.</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-slate-800/80">
+        
+        <div class="lg:col-span-2 space-y-4">
+          <a href="index.html" class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-black text-lg">N</div>
+            <span class="text-2xl font-black tracking-tight text-white">NovaScale<span class="text-indigo-500">.</span></span>
+          </a>
+          <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+            Based in Sector 62, Noida, India. We engineer hyper-growth web systems, local Google Maps rankings, and high-ROI ad funnels for ambitious clinics, gyms, salons, real estate firms, and restaurants.
+          </p>
         </div>
+
         <div>
-          <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Navigation</h4>
-          <ul class="space-y-2.5">
-            <li><a href="index.html" class="hover:text-white">Home</a></li>
-            <li><a href="services.html" class="hover:text-white">Services</a></li>
-            <li><a href="templates.html" class="hover:text-white">Portfolio & Templates</a></li>
-            <li><a href="pricing.html" class="hover:text-white">Pricing & Plans</a></li>
-            <li><a href="contact.html" class="hover:text-white">Contact</a></li>
+          <h4 class="text-white font-bold text-sm mb-4">Live Demos</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="demos/clinic.html" target="_blank" class="hover:text-white transition-colors">CarePlus Dental Clinic</a></li>
+            <li><a href="demos/gym.html" target="_blank" class="hover:text-white transition-colors">IronForge Performance Gym</a></li>
+            <li><a href="demos/salon.html" target="_blank" class="hover:text-white transition-colors">Luxe Aura Bridal Salon</a></li>
+            <li><a href="demos/realestate.html" target="_blank" class="hover:text-white transition-colors">PrimeAcre Luxury Estates</a></li>
+            <li><a href="demos/restaurant.html" target="_blank" class="hover:text-white transition-colors">The Urban Roast Bistro</a></li>
+            <li><a href="demos/coaching.html" target="_blank" class="hover:text-white transition-colors">Zenith Elite Academy</a></li>
           </ul>
         </div>
+
         <div>
-          <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Services</h4>
-          <ul class="space-y-2.5">
-            <li><a href="services.html#web" class="hover:text-white">High-Converting Websites</a></li>
-            <li><a href="services.html#ads" class="hover:text-white">Meta & Google Ads</a></li>
-            <li><a href="services.html#gmb" class="hover:text-white">Google Maps SEO</a></li>
+          <h4 class="text-white font-bold text-sm mb-4">Navigation</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+            <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+            <li><a href="pricing.html" class="hover:text-white transition-colors">Pricing Packages</a></li>
+            <li><a href="templates.html" class="hover:text-white transition-colors">Templates & Demos</a></li>
+            <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+            <li><a href="contact.html" class="text-indigo-400 font-bold">Contact</a></li>
           </ul>
         </div>
+
         <div>
-          <h4 class="text-white font-bold text-sm mb-4 uppercase tracking-wider">Connect With Us</h4>
+          <h4 class="text-white font-bold text-sm mb-4">Direct Touchpoints</h4>
           <ul class="space-y-3">
             <li>
               <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20have%20an%20inquiry." target="_blank" class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl font-bold text-xs transition-colors">
@@ -305,43 +406,48 @@
               </a>
             </li>
             <li>
-              <a href="#consultation-form" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-xl font-bold text-xs transition-colors">
+              <a href="contact.html" class="inline-flex items-center gap-2 bg-slate-800 hover:bg-slate-700 text-white px-4 py-2 rounded-xl font-bold text-xs transition-colors">
                 <i data-lucide="mail" class="w-4 h-4"></i> Official Consultation Form
               </a>
             </li>
-            <li class="text-[11px] text-slate-500">Average response time: within 15 minutes.</li>
+            <li class="text-[11px] text-slate-500">📍 Studio: Sector 62, Noida, UP, India</li>
           </ul>
         </div>
+
       </div>
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div>&copy; 2026 NovaScale Global Media. All rights reserved.</div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+        <div>&copy; 2026 NovaScale Global Media. All rights reserved. Registered Digital Agency.</div>
       </div>
     </div>
   </footer>
 
   <!-- Floating WhatsApp Quick Button -->
-  <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20have%20an%20inquiry." 
+  <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20claim%20my%20free%20growth%20audit." 
      target="_blank" 
-     class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all hover:scale-110">
+     class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all hover:scale-110">
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 
+  <!-- Core Scripts -->
+  <script src="js/main.js"></script>
   <script>
-    lucide.createIcons();
-
-    function submitContactForm(e) {
+    function handleFormSubmit(e) {
       e.preventDefault();
-      const name = document.getElementById('c-name').value;
-      const email = document.getElementById('c-email').value;
-      const phone = document.getElementById('c-phone').value;
-      const company = document.getElementById('c-company').value;
-      const service = document.getElementById('c-service').value;
-      const region = document.getElementById('c-region').value;
-      const notes = document.getElementById('c-notes').value || "None provided";
+      const bizName = document.getElementById('biz-name').value;
+      const clientName = document.getElementById('client-name').value;
+      const bizCat = document.getElementById('biz-cat').value;
+      const bizLoc = document.getElementById('biz-location').value;
+      const bizGoal = document.getElementById('biz-goal').value;
 
-      const formattedMsg = `*New Client Inquiry | NovaScale Global*%0A%0A*Name:* ${name}%0A*Company:* ${company}%0A*Email:* ${email}%0A*Phone:* ${phone}%0A*Service:* ${service}%0A*Region:* ${region}%0A*Notes:* ${notes}%0A%0A_Sent via NovaScale Consultation Form_`;
+      document.getElementById('form-success').classList.remove('hidden');
 
-      window.open(`https://wa.me/919457886467?text=${formattedMsg}`, '_blank');
+      const message = `Hello NovaScale Global! My name is ${clientName} from ${bizName} (${bizCat}, based in ${bizLoc}). I am interested in: ${bizGoal}. Please share my free growth audit.`;
+      const encoded = encodeURIComponent(message);
+      
+      setTimeout(() => {
+        window.open(`https://wa.me/919457886467?text=${encoded}`, '_blank');
+      }, 700);
     }
   </script>
 </body>
