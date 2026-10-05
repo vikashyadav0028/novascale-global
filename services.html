@@ -26,23 +26,6 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white">
 
-  <!-- Top Micro Announcement Bar -->
-  <div class="bg-slate-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
-    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
-      <div class="flex items-center gap-2">
-        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
-          📍 SERVICES DIRECTORY
-        </span>
-        <span>Everything required to turn your local business into the #1 recognized brand in your area</span>
-      </div>
-      <div class="flex items-center gap-4 text-xs">
-        <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20have%20a%20question%20regarding%20services." target="_blank" class="text-white hover:text-indigo-400 flex items-center gap-1 transition-colors font-bold">
-          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400"></i> WhatsApp Founder Line
-        </a>
-      </div>
-    </div>
-  </div>
-
   <!-- Main Navigation Bar -->
   <header class="sticky top-0 z-40 glass-nav">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
@@ -173,25 +156,38 @@
         </div>
       </div>
 
-      <div class="p-8 rounded-3xl bg-slate-900 text-white border border-slate-800 shadow-2xl space-y-4">
-        <div class="text-xs font-bold text-indigo-400 uppercase">Deliverables Included</div>
-        <h4 class="text-xl font-bold">What You Get With Every Build:</h4>
-        <div class="space-y-3 text-xs text-slate-300">
-          <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
-            <span>Mobile-First Responsive Layout</span>
-            <span class="text-emerald-400 font-bold">100% Guaranteed</span>
+      <div class="rounded-3xl bg-slate-900 text-white border border-slate-800 shadow-2xl overflow-hidden group">
+        <div class="relative h-48 w-full overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" 
+               alt="Web Architecture & Analytics" 
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+               loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+          <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between">
+            <span class="text-[11px] font-black uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded-full border border-emerald-500/30">Sub-1s Mobile Speed</span>
+            <span class="text-xs text-white/90 font-bold flex items-center gap-1"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Turnkey Ready</span>
           </div>
-          <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
-            <span>WhatsApp Click-To-Chat Integration</span>
-            <span class="text-emerald-400 font-bold">Included</span>
-          </div>
-          <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
-            <span>Google Analytics 4 & Meta Pixel Tracking</span>
-            <span class="text-emerald-400 font-bold">Configured</span>
-          </div>
-          <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
-            <span>Turnaround Time</span>
-            <span class="text-amber-400 font-bold">48 - 72 Hours</span>
+        </div>
+        <div class="p-6 sm:p-8 space-y-4">
+          <div class="text-xs font-bold text-indigo-400 uppercase">Deliverables Included</div>
+          <h4 class="text-xl font-bold">What You Get With Every Build:</h4>
+          <div class="space-y-3 text-xs text-slate-300">
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>Mobile-First Responsive Layout</span>
+              <span class="text-emerald-400 font-bold">100% Guaranteed</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>WhatsApp Click-To-Chat Integration</span>
+              <span class="text-emerald-400 font-bold">Included</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>Google Analytics 4 & Meta Pixel Tracking</span>
+              <span class="text-emerald-400 font-bold">Configured</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>Turnaround Time</span>
+              <span class="text-amber-400 font-bold">48 - 72 Hours</span>
+            </div>
           </div>
         </div>
       </div>
@@ -199,25 +195,38 @@
 
     <!-- Service 2: Google Maps Local SEO -->
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-      <div class="order-2 lg:order-1 p-8 rounded-3xl bg-slate-900 text-white border border-slate-800 shadow-2xl space-y-4">
-        <div class="text-xs font-bold text-amber-400 uppercase">The Local 3-Pack Advantage</div>
-        <h4 class="text-xl font-bold">How We Get You To #1 on Maps:</h4>
-        <div class="space-y-3 text-xs text-slate-300">
-          <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
-            <span>Primary & Secondary Category Setup</span>
-            <span class="text-emerald-400 font-bold">Done</span>
+      <div class="order-2 lg:order-1 rounded-3xl bg-slate-900 text-white border border-slate-800 shadow-2xl overflow-hidden group">
+        <div class="relative h-48 w-full overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80" 
+               alt="Google Maps Local SEO" 
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+               loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+          <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between">
+            <span class="text-[11px] font-black uppercase tracking-wider text-amber-400 bg-amber-950/80 px-2.5 py-1 rounded-full border border-amber-500/30">Google 3-Pack Dominance</span>
+            <span class="text-xs text-white/90 font-bold flex items-center gap-1"><i data-lucide="star" class="w-3.5 h-3.5 text-amber-400 fill-amber-400"></i> 5-Star QR Standee</span>
           </div>
-          <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
-            <span>5-Star Review Automation QR Standee</span>
-            <span class="text-emerald-400 font-bold">Delivered</span>
-          </div>
-          <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
-            <span>Geo-Tagged High-Resolution Photography</span>
-            <span class="text-emerald-400 font-bold">Uploaded</span>
-          </div>
-          <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
-            <span>NAP Local Citations Across 25+ Directories</span>
-            <span class="text-emerald-400 font-bold">Synced</span>
+        </div>
+        <div class="p-6 sm:p-8 space-y-4">
+          <div class="text-xs font-bold text-amber-400 uppercase">The Local 3-Pack Advantage</div>
+          <h4 class="text-xl font-bold">How We Get You To #1 on Maps:</h4>
+          <div class="space-y-3 text-xs text-slate-300">
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>Primary & Secondary Category Setup</span>
+              <span class="text-emerald-400 font-bold">Done</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>5-Star Review Automation QR Standee</span>
+              <span class="text-emerald-400 font-bold">Delivered</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>Geo-Tagged High-Resolution Photography</span>
+              <span class="text-emerald-400 font-bold">Uploaded</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>NAP Local Citations Across 25+ Directories</span>
+              <span class="text-emerald-400 font-bold">Synced</span>
+            </div>
           </div>
         </div>
       </div>
@@ -278,26 +287,102 @@
         </div>
       </div>
 
-      <div class="p-8 rounded-3xl bg-slate-900 text-white border border-slate-800 shadow-2xl space-y-4">
-        <div class="text-xs font-bold text-pink-400 uppercase">Campaign Blueprint</div>
-        <h4 class="text-xl font-bold">How We Scale Your Ads:</h4>
-        <div class="space-y-3 text-xs text-slate-300">
-          <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
-            <span>Target Audience Profiling (5-10km radius)</span>
-            <span class="text-emerald-400 font-bold">Yes</span>
+      <div class="rounded-3xl bg-slate-900 text-white border border-slate-800 shadow-2xl overflow-hidden group">
+        <div class="relative h-48 w-full overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" 
+               alt="Performance Ads & Funnels" 
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+               loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+          <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between">
+            <span class="text-[11px] font-black uppercase tracking-wider text-pink-400 bg-pink-950/80 px-2.5 py-1 rounded-full border border-pink-500/30">Targeted 5-10km Radius</span>
+            <span class="text-xs text-white/90 font-bold flex items-center gap-1"><i data-lucide="trending-up" class="w-3.5 h-3.5 text-emerald-400"></i> 4x-10x ROAS</span>
           </div>
-          <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
-            <span>Ad Copywriting & High-Converting Hooks</span>
-            <span class="text-emerald-400 font-bold">3-4 Variations</span>
+        </div>
+        <div class="p-6 sm:p-8 space-y-4">
+          <div class="text-xs font-bold text-pink-400 uppercase">Campaign Blueprint</div>
+          <h4 class="text-xl font-bold">How We Scale Your Ads:</h4>
+          <div class="space-y-3 text-xs text-slate-300">
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>Target Audience Profiling (5-10km radius)</span>
+              <span class="text-emerald-400 font-bold">Yes</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>Ad Copywriting & High-Converting Hooks</span>
+              <span class="text-emerald-400 font-bold">3-4 Variations</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>Meta Pixel & Conversion API (CAPI) Setup</span>
+              <span class="text-emerald-400 font-bold">Configured</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>Daily Budget Monitoring & Lead Check</span>
+              <span class="text-emerald-400 font-bold">Daily</span>
+            </div>
           </div>
-          <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
-            <span>Meta Pixel & Conversion API (CAPI) Setup</span>
-            <span class="text-emerald-400 font-bold">Configured</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Service 4: Viral Local Reels & Creative -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="order-2 lg:order-1 rounded-3xl bg-slate-900 text-white border border-slate-800 shadow-2xl overflow-hidden group">
+        <div class="relative h-48 w-full overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1536240478700-b869070f9279?auto=format&fit=crop&w=800&q=80" 
+               alt="Viral Reels & Creative Production" 
+               class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+               loading="lazy">
+          <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent"></div>
+          <div class="absolute bottom-3 left-4 right-4 flex items-center justify-between">
+            <span class="text-[11px] font-black uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-1 rounded-full border border-cyan-500/30">High-Retention Hooks</span>
+            <span class="text-xs text-white/90 font-bold flex items-center gap-1"><i data-lucide="video" class="w-3.5 h-3.5 text-cyan-400"></i> 4K Mobile Format</span>
           </div>
-          <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
-            <span>Daily Budget Monitoring & Lead Check</span>
-            <span class="text-emerald-400 font-bold">Daily</span>
+        </div>
+        <div class="p-6 sm:p-8 space-y-4">
+          <div class="text-xs font-bold text-cyan-400 uppercase">Creative Deliverables</div>
+          <h4 class="text-xl font-bold">Viral Social Media Architecture:</h4>
+          <div class="space-y-3 text-xs text-slate-300">
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>Short-Form Video Scripts (Hindi + English)</span>
+              <span class="text-emerald-400 font-bold">Included</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>Trending Audio & Dynamic Subtitles</span>
+              <span class="text-emerald-400 font-bold">Handled</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>Instagram Profile Bio & Grid Layout</span>
+              <span class="text-emerald-400 font-bold">Redesigned</span>
+            </div>
+            <div class="p-3 bg-slate-800/60 rounded-xl border border-slate-700 flex justify-between">
+              <span>Direct Link-in-Bio to WhatsApp</span>
+              <span class="text-emerald-400 font-bold">Integrated</span>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <div class="order-1 lg:order-2">
+        <div class="w-12 h-12 rounded-2xl bg-cyan-50 text-cyan-600 flex items-center justify-center mb-6">
+          <i data-lucide="video" class="w-6 h-6"></i>
+        </div>
+        <span class="text-xs font-black text-cyan-600 uppercase tracking-widest">04. Organic Magnet</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-1">Viral Local Reels & High-Trust Video Ads</h2>
+        <p class="mt-4 text-slate-600 text-sm leading-relaxed">
+          People don't read long essays on social media anymore—they watch 30-second videos. We engineer scroll-stopping Instagram Reels and YouTube Shorts that show behind-the-scenes clinic treatments, gym workouts, or salon transformations to turn local viewers into instant inquiries.
+        </p>
+
+        <ul class="mt-6 space-y-2 text-xs font-bold text-slate-700">
+          <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Scripting with 3-second psychological retention hooks</li>
+          <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> High-conversion call-to-actions sending viewers directly to DM or WhatsApp</li>
+          <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Complete Canva AI & professional motion graphics templates</li>
+        </ul>
+
+        <div class="mt-8">
+          <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20learn%20more%20about%20your%20Reels%20and%20Creative%20Production." target="_blank" class="inline-flex items-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-xl font-bold text-sm shadow-md transition-all">
+            <span>Discuss Reels Production</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
         </div>
       </div>
     </div>
