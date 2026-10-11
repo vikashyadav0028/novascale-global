@@ -38,9 +38,12 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white">
 
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
   <!-- Main Navigation Bar -->
-  <header class="sticky top-0 z-40 glass-nav">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between nav-inner transition-all duration-300">
       
       <!-- Brand Logo -->
       <a href="index.html" class="flex items-center gap-3 group">
@@ -55,26 +58,26 @@
 
       <!-- Desktop Nav Links -->
       <nav class="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-600">
-        <a href="index.html" class="hover:text-indigo-600 transition-colors">Home</a>
-        <a href="services.html" class="hover:text-indigo-600 transition-colors">Services</a>
-        <a href="pricing.html" class="hover:text-indigo-600 transition-colors">Pricing</a>
-        <a href="templates.html" class="hover:text-indigo-600 transition-colors flex items-center gap-1">
+        <a href="index.html" class="hover:text-indigo-600 transition-colors nav-link-animated">Home</a>
+        <a href="services.html" class="hover:text-indigo-600 transition-colors nav-link-animated">Services</a>
+        <a href="pricing.html" class="hover:text-indigo-600 transition-colors nav-link-animated">Pricing</a>
+        <a href="templates.html" class="hover:text-indigo-600 transition-colors flex items-center gap-1 nav-link-animated">
           <span>Templates & Demos</span>
           <span class="bg-indigo-100 text-indigo-700 text-[10px] px-2 py-0.5 rounded-full font-extrabold">6 Live</span>
         </a>
-        <a href="about.html" class="text-indigo-600">About Us</a>
-        <a href="contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+        <a href="about.html" class="text-indigo-600 nav-link-animated active">About Us</a>
+        <a href="contact.html" class="hover:text-indigo-600 transition-colors nav-link-animated">Contact</a>
       </nav>
 
       <!-- Desktop Action Buttons -->
       <div class="hidden sm:flex items-center gap-3">
         <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20interested%20in%20meeting%20or%20speaking%20with%20your%20team." 
            target="_blank" 
-           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-md shadow-emerald-600/25 transition-all hover:scale-105">
+           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-md shadow-emerald-600/25 transition-all hover:scale-105 btn-shine">
           <i data-lucide="message-circle" class="w-4 h-4"></i>
           <span>WhatsApp Founder</span>
         </a>
-        <a href="contact.html" class="inline-flex items-center gap-1.5 bg-slate-950 hover:bg-slate-800 text-white px-5 py-2.5 rounded-xl font-bold text-sm transition-all hover:shadow-lg">
+        <a href="contact.html" class="inline-flex items-center gap-1.5 bg-slate-950 hover:bg-slate-800 text-white px-5 py-2.5 rounded-xl font-bold text-sm transition-all hover:shadow-lg btn-shine">
           <span>Claim Free Audit</span>
           <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400"></i>
         </a>
@@ -428,7 +431,8 @@
   <!-- Floating WhatsApp Quick Button -->
   <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20interested%20in%20learning%20more%20about%20your%20agency." 
      target="_blank" 
-     class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all hover:scale-110">
+     class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center wa-pulse-btn hover:scale-110 transition-transform duration-300"
+     aria-label="Chat on WhatsApp">
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 

@@ -30,10 +30,15 @@
       }
     }
   </script>
+  <!-- NovaScale Shared Stylesheet -->
+  <link rel="stylesheet" href="../css/styles.css" />
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="bg-gradient-to-r from-blue-600 via-indigo-600 to-amber-400"></div>
 
   <!-- NovaScale Live Demo Top Banner -->
   <div class="bg-slate-950 text-slate-200 py-2.5 px-4 border-b border-slate-800 sticky top-0 z-50 shadow-md">
@@ -50,7 +55,7 @@
         </a>
         <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20love%20the%20Zenith%20Coaching%20template.%20I%20want%20to%20order%20this%20website%20for%20my%20institute." 
            target="_blank" 
-           class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1 rounded-lg font-bold flex items-center gap-1.5 transition-all shadow-sm">
+           class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1 rounded-lg font-bold flex items-center gap-1.5 transition-all shadow-sm btn-shine">
           <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Order This Site (₹7,999)
         </a>
       </div>
@@ -73,7 +78,7 @@
   </div>
 
   <!-- Academy Header -->
-  <header class="bg-white border-b border-slate-200 sticky top-9 z-40">
+  <header class="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-9 z-40 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-blue-700 to-indigo-600 flex items-center justify-center text-white shadow-lg shadow-blue-500/20">
@@ -86,71 +91,78 @@
       </div>
 
       <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-600">
-        <a href="#results" class="hover:text-blue-600 transition-colors">Results 2026</a>
-        <a href="#courses" class="hover:text-blue-600 transition-colors">Courses</a>
-        <a href="#faculty" class="hover:text-blue-600 transition-colors">IIT/AIIMS Mentors</a>
-        <a href="#scholarship" class="hover:text-blue-600 transition-colors">Scholarship Test</a>
+        <a href="#results" class="nav-link-animated hover:text-blue-600 transition-colors">Results 2026</a>
+        <a href="#courses" class="nav-link-animated hover:text-blue-600 transition-colors">Courses</a>
+        <a href="#faculty" class="nav-link-animated hover:text-blue-600 transition-colors">IIT/AIIMS Mentors</a>
+        <a href="#scholarship" class="nav-link-animated hover:text-blue-600 transition-colors">Scholarship Test</a>
       </nav>
 
       <div class="flex items-center gap-3">
-        <a href="#scholarship" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-md shadow-blue-600/20 transition-all hover:scale-105 flex items-center gap-2">
+        <a href="#scholarship" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-md shadow-blue-600/20 transition-all hover:scale-105 flex items-center gap-2 btn-shine">
           <i data-lucide="file-text" class="w-4 h-4"></i> Free Diagnostic Test
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative pt-12 pb-20 bg-gradient-to-b from-blue-50/70 to-white overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- Hero Section with Ken Burns Academic Background -->
+  <section class="relative pt-16 pb-24 overflow-hidden bg-edu-950 text-white">
+    <!-- Full-Width Ken Burns Background Photo -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1920&q=80" alt="Zenith Elite Academic Study Center" class="ken-burns w-full h-full object-cover opacity-25" loading="eager" width="1920" height="1080" />
+      <div class="absolute inset-0 bg-gradient-to-r from-edu-950 via-edu-950/90 to-blue-950/70"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         
-        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100 border border-blue-300 text-blue-900 text-xs font-bold">
-            <i data-lucide="trophy" class="w-4 h-4 text-amber-500"></i> Highest IIT Selection Ratio in Noida & NCR
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left reveal">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-amber-300 text-xs font-bold">
+            <i data-lucide="trophy" class="w-4 h-4 text-amber-400"></i> Highest IIT & NEET Selection Ratio in Noida & NCR
           </div>
 
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight">
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight uppercase">
             Turn Ambition Into <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-indigo-600 to-cyan-600">Top 100 All India Rank.</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-200">Top 100 All India Rank.</span>
           </h1>
 
-          <p class="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
+          <p class="text-base sm:text-lg text-blue-100 max-w-2xl leading-relaxed">
             Personalized small batches of 30 students, full-time ex-IITian doubt mentors, AI-powered mock tests, and rigorous concept mastery for JEE & NEET.
           </p>
 
           <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
-            <a href="#scholarship" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-lg shadow-blue-600/30 transition-all hover:scale-105 flex items-center gap-2">
+            <a href="#scholarship" class="bg-amber-500 hover:bg-amber-400 text-slate-950 px-6 py-3.5 rounded-xl font-black text-sm shadow-lg shadow-amber-500/30 transition-all hover:scale-105 flex items-center gap-2 btn-shine">
               <i data-lucide="file-check" class="w-4 h-4"></i> Book Free Scholarship Test
             </a>
-            <a href="https://wa.me/919457886467?text=Hello%20Zenith%20Academy!%20I%20want%20to%20download%20the%202026-27%20brochure." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-lg shadow-emerald-600/30 transition-all hover:scale-105 flex items-center gap-2">
+            <a href="https://wa.me/919457886467?text=Hello%20Zenith%20Academy!%20I%20want%20to%20download%20the%202026-27%20brochure." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-lg shadow-emerald-600/30 transition-all hover:scale-105 flex items-center gap-2 btn-shine">
               <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Academic Dean
             </a>
           </div>
 
-          <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-200 text-left">
+          <!-- Count-Up Stats Row -->
+          <div class="pt-6 grid grid-cols-3 gap-4 border-t border-blue-900/80 text-left">
             <div>
-              <div class="text-2xl font-black text-blue-600">AIR 42</div>
-              <div class="text-xs text-slate-500 font-semibold">Highest JEE Adv Rank</div>
+              <div class="text-2xl sm:text-3xl font-black text-amber-400" data-counter="42" data-prefix="AIR ">AIR 42</div>
+              <div class="text-xs text-blue-200 font-semibold mt-1">Highest JEE Adv Rank</div>
             </div>
             <div>
-              <div class="text-2xl font-black text-slate-900">685/720</div>
-              <div class="text-xs text-slate-500 font-semibold">Highest NEET Score</div>
+              <div class="text-2xl sm:text-3xl font-black text-white" data-counter="685" data-suffix="/720">685/720</div>
+              <div class="text-xs text-blue-200 font-semibold mt-1">Highest NEET Score</div>
             </div>
             <div>
-              <div class="text-2xl font-black text-slate-900">1 : 15</div>
-              <div class="text-xs text-slate-500 font-semibold">Mentor to Student Ratio</div>
+              <div class="text-2xl sm:text-3xl font-black text-amber-400" data-counter="15" data-prefix="1 : ">1 : 15</div>
+              <div class="text-xs text-blue-200 font-semibold mt-1">Mentor Student Ratio</div>
             </div>
           </div>
         </div>
 
         <!-- Diagnostic Test Form -->
-        <div class="lg:col-span-5" id="scholarship">
-          <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-blue-100 relative">
+        <div class="lg:col-span-5 reveal stagger-3" id="scholarship">
+          <div class="bg-white text-slate-900 rounded-3xl p-6 sm:p-8 shadow-2xl border border-blue-100 relative card-lift">
             <div class="absolute -top-3 right-6 bg-amber-500 text-slate-950 text-[10px] font-black uppercase px-3 py-1 rounded-full shadow">
               Up To 90% Scholarship
             </div>
-            <h3 class="text-xl font-black text-slate-900 mb-1">Scholarship & Aptitude Test</h3>
+            <h3 class="text-2xl font-black text-slate-900 mb-1">Scholarship & Aptitude Test</h3>
             <p class="text-xs text-slate-500 mb-5">Free evaluation test conducted every Sunday at Sector 62 campus.</p>
 
             <form onsubmit="event.preventDefault(); alert('Test registered successfully! Redirecting to WhatsApp to send your admit card and sample paper.'); window.open('https://wa.me/919457886467?text=Hello%20Zenith%20Academy!%20I%20have%20registered%20for%20the%20Sunday%20Scholarship%20Test.');" class="space-y-4">
@@ -183,7 +195,7 @@
                 </div>
               </div>
 
-              <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-bold text-sm shadow-md shadow-blue-600/25 transition-all">
+              <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-xl font-bold text-sm shadow-md shadow-blue-600/25 transition-all btn-shine">
                 Download Admit Card on WhatsApp →
               </button>
             </form>
@@ -194,50 +206,184 @@
     </div>
   </section>
 
-  <!-- Courses Grid -->
+  <!-- Hall of Fame / Results 2026 Section -->
+  <section id="results" class="py-20 bg-slate-100 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <span class="text-xs font-black uppercase text-blue-600 tracking-widest bg-blue-50 px-3 py-1 rounded-full border border-blue-200">Hall of Fame</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3">Our 2026 Top Rankers</h2>
+        <p class="text-slate-500 text-sm mt-2">Consistent results produced by systematic practice and rigorous mentoring.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Topper 1 -->
+        <div class="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm card-lift reveal stagger-1 text-center">
+          <div class="relative w-28 h-28 mx-auto mb-4">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Aryan Gupta" class="w-full h-full rounded-2xl object-cover border-2 border-blue-600 shadow-md" loading="lazy" width="112" height="112" />
+            <div class="absolute -bottom-2 -right-2 bg-amber-500 text-slate-950 text-[10px] font-black px-2 py-0.5 rounded-full shadow">
+              AIR 42
+            </div>
+          </div>
+          <h4 class="text-base font-black text-slate-900">Aryan Gupta</h4>
+          <span class="text-xs font-bold text-blue-600 block">JEE Advanced (IIT Bombay CS)</span>
+          <p class="text-[11px] text-slate-500 mt-2">"The daily problem sheets and 1-on-1 doubt clearing turned my weak Physics into my highest scoring paper."</p>
+        </div>
+
+        <!-- Topper 2 -->
+        <div class="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm card-lift reveal stagger-2 text-center">
+          <div class="relative w-28 h-28 mx-auto mb-4">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Sneha Iyer" class="w-full h-full rounded-2xl object-cover border-2 border-emerald-600 shadow-md" loading="lazy" width="112" height="112" />
+            <div class="absolute -bottom-2 -right-2 bg-emerald-600 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow">
+              AIR 118
+            </div>
+          </div>
+          <h4 class="text-base font-black text-slate-900">Sneha Iyer</h4>
+          <span class="text-xs font-bold text-emerald-600 block">NEET-UG • Score: 685/720</span>
+          <p class="text-[11px] text-slate-500 mt-2">"Full syllabus OMR simulations every weekend made the actual exam day feel like just another mock test."</p>
+        </div>
+
+        <!-- Topper 3 -->
+        <div class="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm card-lift reveal stagger-3 text-center">
+          <div class="relative w-28 h-28 mx-auto mb-4">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Rohan Verma" class="w-full h-full rounded-2xl object-cover border-2 border-blue-600 shadow-md" loading="lazy" width="112" height="112" />
+            <div class="absolute -bottom-2 -right-2 bg-amber-500 text-slate-950 text-[10px] font-black px-2 py-0.5 rounded-full shadow">
+              AIR 214
+            </div>
+          </div>
+          <h4 class="text-base font-black text-slate-900">Rohan Verma</h4>
+          <span class="text-xs font-bold text-blue-600 block">JEE Advanced (IIT Delhi)</span>
+          <p class="text-[11px] text-slate-500 mt-2">"Mentors spent hours explaining the core mechanics behind difficult electrodynamics questions."</p>
+        </div>
+
+        <!-- Topper 4 -->
+        <div class="bg-white rounded-3xl p-5 border border-slate-200 shadow-sm card-lift reveal stagger-4 text-center">
+          <div class="relative w-28 h-28 mx-auto mb-4">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=300&q=80" alt="Divya Sharma" class="w-full h-full rounded-2xl object-cover border-2 border-emerald-600 shadow-md" loading="lazy" width="112" height="112" />
+            <div class="absolute -bottom-2 -right-2 bg-emerald-600 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow">
+              AIR 342
+            </div>
+          </div>
+          <h4 class="text-base font-black text-slate-900">Divya Sharma</h4>
+          <span class="text-xs font-bold text-emerald-600 block">NEET-UG (AIIMS Rishikesh)</span>
+          <p class="text-[11px] text-slate-500 mt-2">"Dr. Priya's NCERT decoding notes saved me hundreds of hours of revision during the last two months."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Grid with Photography & Hover Lifts -->
   <section id="courses" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
         <span class="text-xs font-black uppercase text-blue-600 tracking-widest bg-blue-50 px-3 py-1 rounded-full">Targeted Curricula</span>
         <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3">Programs For Every Aspirant</h2>
         <p class="text-slate-500 text-sm mt-2">Comprehensive coverage from NCERT fundamentals to advanced multi-concept problem solving.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 hover:border-blue-500 transition-all">
-          <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center mb-5">
-            <i data-lucide="compass" class="w-6 h-6"></i>
+        <!-- Batch 1: JEE Pinnacle -->
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 hover:border-blue-500 transition-all card-lift reveal stagger-1 overflow-hidden">
+          <div class="h-48 overflow-hidden img-zoom-hover relative">
+            <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80" alt="IIT-JEE Pinnacle Batch" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
           </div>
-          <span class="text-[11px] font-bold uppercase text-blue-600 tracking-wider">Class 11 & 12</span>
-          <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">IIT-JEE 2-Year Pinnacle</h3>
-          <p class="text-xs text-slate-600 leading-relaxed mb-4">Master Physics, Chemistry and Advanced Math with structured chapter modules, 1,200+ hours of live teaching, and national rank testing.</p>
-          <a href="https://wa.me/919457886467?text=Hello%20Zenith!%20Send%20syllabus%20for%20IIT-JEE%20Pinnacle." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1">
-            Request Course Brochure <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-          </a>
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center mb-4">
+              <i data-lucide="compass" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase text-blue-600 tracking-wider">Class 11 & 12</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">IIT-JEE 2-Year Pinnacle</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">Master Physics, Chemistry and Advanced Math with structured chapter modules, 1,200+ hours of live teaching, and national rank testing.</p>
+            <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-500">Batch of 30 Students</span>
+              <a href="https://wa.me/919457886467?text=Hello%20Zenith!%20Send%20syllabus%20for%20IIT-JEE%20Pinnacle." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1 btn-shine px-3 py-1.5 rounded-lg bg-blue-50">
+                Course Brochure <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 hover:border-blue-500 transition-all">
-          <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center mb-5">
-            <i data-lucide="heart" class="w-6 h-6"></i>
+        <!-- Batch 2: NEET Medicos -->
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 hover:border-blue-500 transition-all card-lift reveal stagger-2 overflow-hidden">
+          <div class="h-48 overflow-hidden img-zoom-hover relative">
+            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=600&q=80" alt="NEET-UG Medicos Batch" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
           </div>
-          <span class="text-[11px] font-bold uppercase text-blue-600 tracking-wider">Medical Aspirants</span>
-          <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">NEET-UG Medicos Batch</h3>
-          <p class="text-xs text-slate-600 leading-relaxed mb-4">NCERT-intensive Biology diagrams, numerical problem workouts in Physics and Physical Chemistry, with weekly OMR simulation exams.</p>
-          <a href="https://wa.me/919457886467?text=Hello%20Zenith!%20Send%20syllabus%20for%20NEET%20Medicos." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1">
-            Request Course Brochure <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-          </a>
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center mb-4">
+              <i data-lucide="heart" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase text-blue-600 tracking-wider">Medical Aspirants</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">NEET-UG Medicos Batch</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">NCERT-intensive Biology diagrams, numerical problem workouts in Physics and Physical Chemistry, with weekly OMR simulation exams.</p>
+            <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-500">AIIMS Doctors Mentorship</span>
+              <a href="https://wa.me/919457886467?text=Hello%20Zenith!%20Send%20syllabus%20for%20NEET%20Medicos." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1 btn-shine px-3 py-1.5 rounded-lg bg-blue-50">
+                Course Brochure <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
         </div>
 
-        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 hover:border-blue-500 transition-all">
-          <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center mb-5">
-            <i data-lucide="zap" class="w-6 h-6"></i>
+        <!-- Batch 3: Dropper Target Rank -->
+        <div class="rounded-3xl bg-slate-50 border border-slate-200 hover:border-blue-500 transition-all card-lift reveal stagger-3 overflow-hidden">
+          <div class="h-48 overflow-hidden img-zoom-hover relative">
+            <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=600&q=80" alt="Dropper Target Rank Batch" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent"></div>
           </div>
-          <span class="text-[11px] font-bold uppercase text-blue-600 tracking-wider">12th Passed / Repeaters</span>
-          <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">Dropper Target Rank Batch</h3>
-          <p class="text-xs text-slate-600 leading-relaxed mb-4">Intensive 8-month full-syllabus revision, time management coaching, error-book analysis, and 50+ full-length mock examinations.</p>
-          <a href="https://wa.me/919457886467?text=Hello%20Zenith!%20Send%20syllabus%20for%20Dropper%20Batch." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1">
-            Request Course Brochure <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-          </a>
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-700 flex items-center justify-center mb-4">
+              <i data-lucide="zap" class="w-6 h-6"></i>
+            </div>
+            <span class="text-[11px] font-bold uppercase text-blue-600 tracking-wider">12th Passed / Repeaters</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1 mb-2">Dropper Target Rank Batch</h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">Intensive 8-month full-syllabus revision, time management coaching, error-book analysis, and 50+ full-length mock examinations.</p>
+            <div class="pt-4 border-t border-slate-200 flex items-center justify-between">
+              <span class="text-xs font-bold text-slate-500">Includes Test Series</span>
+              <a href="https://wa.me/919457886467?text=Hello%20Zenith!%20Send%20syllabus%20for%20Dropper%20Batch." target="_blank" class="text-xs font-bold text-blue-600 hover:text-blue-800 flex items-center gap-1 btn-shine px-3 py-1.5 rounded-lg bg-blue-50">
+                Course Brochure <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Faculty Mentors Section -->
+  <section id="faculty" class="py-20 bg-slate-100 border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <span class="text-xs font-black uppercase text-blue-600 tracking-widest bg-blue-50 px-3 py-1 rounded-full border border-blue-200">Academic Leadership</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3">Learn Directly From IITians & Doctors</h2>
+        <p class="text-slate-500 text-sm mt-2">Zero junior tutors. Every lecture and doubt clinic is taken by senior domain masters.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-3xl bg-white border border-slate-200 card-lift reveal stagger-1">
+          <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=400&q=80" alt="Prof. Arvind Singhal" class="w-28 h-28 rounded-2xl object-cover shrink-0 shadow-md border-2 border-blue-500" loading="lazy" width="112" height="112" />
+          <div>
+            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider">HOD Physics • IIT Kharagpur Alum</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Prof. Arvind Singhal</h3>
+            <p class="text-xs text-slate-500 mb-2">16+ Years Experience • Authored 'Concept Mechanics'</p>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">Known for visualising rotational motion and electromagnetic induction from fundamental calculus.</p>
+            <a href="https://wa.me/919457886467?text=Hello!%20I%20want%20to%20consult%20Prof.%20Arvind%20at%20Zenith." target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 btn-shine px-3 py-1.5 rounded-lg bg-blue-50">
+              <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Request Demo Lecture
+            </a>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-3xl bg-white border border-slate-200 card-lift reveal stagger-2">
+          <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=400&q=80" alt="Dr. Priya Mukherjee" class="w-28 h-28 rounded-2xl object-cover shrink-0 shadow-md border-2 border-emerald-500" loading="lazy" width="112" height="112" />
+          <div>
+            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider">HOD Biology • MBBS, AIIMS Delhi</span>
+            <h3 class="text-xl font-bold text-slate-900 mt-1">Dr. Priya Mukherjee</h3>
+            <p class="text-xs text-slate-500 mb-2">Gold Medalist • 12+ Years NEET Mentorship</p>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">Master of high-yield NCERT diagram decoding and genetic lineage problem shortcuts.</p>
+            <a href="https://wa.me/919457886467?text=Hello!%20I%20want%20to%20consult%20Dr.%20Priya%20at%20Zenith." target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-blue-700 hover:text-blue-900 btn-shine px-3 py-1.5 rounded-lg bg-blue-50">
+              <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Request Demo Lecture
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -251,7 +397,7 @@
           <i data-lucide="graduation-cap" class="w-5 h-5 text-blue-400"></i> ZENITH ELITE ACADEMY
         </div>
         <div>📍 Campus: Institutional Area, C-Block, Sector 62, Noida, UP 201309</div>
-        <a href="https://wa.me/919457886467?text=Hello%20Zenith!%20I%20have%20an%20admission%20inquiry." target="_blank" class="bg-emerald-600 text-white px-4 py-2 rounded-xl font-bold flex items-center gap-1.5">
+        <a href="https://wa.me/919457886467?text=Hello%20Zenith!%20I%20have%20an%20admission%20inquiry." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded-xl font-bold flex items-center gap-1.5 btn-shine">
           <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Desk
         </a>
       </div>
@@ -261,15 +407,11 @@
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/919457886467?text=Hello%20Zenith%20Academy!%20I%20want%20to%20know%20about%20admissions." target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all hover:scale-110">
+  <!-- Floating WhatsApp Button with Breathing Pulse -->
+  <a href="https://wa.me/919457886467?text=Hello%20Zenith%20Academy!%20I%20want%20to%20know%20about%20admissions." target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all hover:scale-110 wa-pulse-btn" aria-label="Chat on WhatsApp">
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 
-  <script>
-    if (window.lucide) {
-      window.lucide.createIcons();
-    }
-  </script>
+  <script src="../js/main.js"></script>
 </body>
 </html>

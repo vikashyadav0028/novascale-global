@@ -38,9 +38,12 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white">
 
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
   <!-- Main Navigation Bar -->
-  <header class="sticky top-0 z-40 glass-nav">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between nav-inner transition-all duration-300">
       
       <!-- Brand Logo -->
       <a href="index.html" class="flex items-center gap-3 group">
@@ -55,26 +58,26 @@
 
       <!-- Desktop Nav Links -->
       <nav class="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-600">
-        <a href="index.html" class="text-indigo-600">Home</a>
-        <a href="services.html" class="hover:text-indigo-600 transition-colors">Services</a>
-        <a href="pricing.html" class="hover:text-indigo-600 transition-colors">Pricing</a>
-        <a href="templates.html" class="hover:text-indigo-600 transition-colors flex items-center gap-1">
+        <a href="index.html" class="text-indigo-600 nav-link-animated active">Home</a>
+        <a href="services.html" class="hover:text-indigo-600 transition-colors nav-link-animated">Services</a>
+        <a href="pricing.html" class="hover:text-indigo-600 transition-colors nav-link-animated">Pricing</a>
+        <a href="templates.html" class="hover:text-indigo-600 transition-colors flex items-center gap-1 nav-link-animated">
           <span>Templates & Demos</span>
           <span class="bg-indigo-100 text-indigo-700 text-[10px] px-2 py-0.5 rounded-full font-extrabold">6 Live</span>
         </a>
-        <a href="about.html" class="hover:text-indigo-600 transition-colors">About Us</a>
-        <a href="contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+        <a href="about.html" class="hover:text-indigo-600 transition-colors nav-link-animated">About Us</a>
+        <a href="contact.html" class="hover:text-indigo-600 transition-colors nav-link-animated">Contact</a>
       </nav>
 
       <!-- Desktop Action Buttons -->
       <div class="hidden sm:flex items-center gap-3">
         <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20interested%20in%20a%20free%20growth%20audit%20for%20my%20business." 
            target="_blank" 
-           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-md shadow-emerald-600/25 transition-all hover:scale-105">
+           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-md shadow-emerald-600/25 transition-all hover:scale-105 btn-shine">
           <i data-lucide="message-circle" class="w-4 h-4"></i>
           <span>WhatsApp Founder</span>
         </a>
-        <a href="contact.html" class="inline-flex items-center gap-1.5 bg-slate-950 hover:bg-slate-800 text-white px-5 py-2.5 rounded-xl font-bold text-sm transition-all hover:shadow-lg">
+        <a href="contact.html" class="inline-flex items-center gap-1.5 bg-slate-950 hover:bg-slate-800 text-white px-5 py-2.5 rounded-xl font-bold text-sm transition-all hover:shadow-lg btn-shine">
           <span>Claim Free Audit</span>
           <i data-lucide="arrow-right" class="w-4 h-4 text-indigo-400"></i>
         </a>
@@ -116,7 +119,7 @@
     </div>
 
     <div class="space-y-3 pt-6 border-t border-slate-100">
-      <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20interested%20in%20a%20free%20growth%20audit." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 text-white p-3.5 rounded-xl font-bold text-sm shadow-md">
+      <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20interested%20in%20a%20free%20growth%20audit." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 text-white p-3.5 rounded-xl font-bold text-sm shadow-md btn-shine">
         <i data-lucide="message-circle" class="w-4 h-4"></i>
         <span>Chat on WhatsApp Directly</span>
       </a>
@@ -129,44 +132,44 @@
   <!-- Hero Section -->
   <section class="relative pt-12 pb-24 overflow-hidden">
     <!-- Atmospheric Lighting Gradients -->
-    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[350px] glow-primary rounded-full pointer-events-none -z-10 blur-3xl"></div>
-    <div class="absolute top-1/3 right-10 w-[450px] h-[300px] glow-pink rounded-full pointer-events-none -z-10 blur-3xl"></div>
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[350px] glow-primary rounded-full pointer-events-none -z-10 blur-3xl glow-ambient"></div>
+    <div class="absolute top-1/3 right-10 w-[450px] h-[300px] glow-pink rounded-full pointer-events-none -z-10 blur-3xl glow-ambient"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       
       <!-- Trust Pillar Badge -->
-      <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-200/80 text-indigo-700 text-xs sm:text-sm font-extrabold mb-8 shadow-sm">
+      <div class="reveal stagger-1 inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-indigo-50 border border-indigo-200/80 text-indigo-700 text-xs sm:text-sm font-extrabold mb-8 shadow-sm">
         <span class="flex h-2.5 w-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
         <span>Trusted Growth Studio for Local Clinics, Gyms, Salons & Retailers</span>
       </div>
 
       <!-- Main Headline -->
-      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-slate-950 max-w-5xl mx-auto leading-[1.12]">
+      <h1 class="reveal stagger-2 text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight text-slate-950 max-w-5xl mx-auto leading-[1.12]">
         Turn Local Walk-Bys Into A <br class="hidden sm:inline" />
         <span class="gradient-text">24/7 Flood Of Paying Customers</span>
       </h1>
 
       <!-- Subheadline -->
-      <p class="mt-6 text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto font-normal leading-relaxed">
+      <p class="reveal stagger-3 mt-6 text-lg sm:text-xl text-slate-600 max-w-3xl mx-auto font-normal leading-relaxed">
         Stop losing high-paying customers to competitors. We build <strong>sub-1 second mobile websites</strong>, dominate <strong>Google Maps Top 3</strong> rankings, and run <strong>ROI-focused Meta & Google Ads</strong> designed to make your WhatsApp buzz with inquiries.
       </p>
 
       <!-- High-Conversion Action Buttons -->
-      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <div class="reveal stagger-4 mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20interested%20in%20a%20Free%20Local%20Business%20Audit." 
            target="_blank" 
-           class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-2xl font-black text-base shadow-xl shadow-emerald-600/30 transition-all hover:scale-105">
+           class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-2xl font-black text-base shadow-xl shadow-emerald-600/30 transition-all hover:scale-105 btn-shine">
           <i data-lucide="message-circle" class="w-5 h-5"></i>
           <span>Chat on WhatsApp (Get Free Audit)</span>
         </a>
-        <a href="templates.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-900 border border-slate-300 px-8 py-4 rounded-2xl font-bold text-base shadow-sm transition-all hover:-translate-y-0.5">
+        <a href="templates.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-100 text-slate-900 border border-slate-300 px-8 py-4 rounded-2xl font-bold text-base shadow-sm transition-all hover:-translate-y-0.5 btn-shine">
           <i data-lucide="layout-grid" class="w-5 h-5 text-indigo-600"></i>
           <span>Inspect 6 Live Client Demos</span>
         </a>
       </div>
 
       <!-- Hero Visual Showcase (Engaging Browser Mockup & Live Leads) -->
-      <div class="mt-14 max-w-5xl mx-auto relative group">
+      <div class="reveal stagger-4 mt-14 max-w-5xl mx-auto relative group hero-floating">
         <div class="rounded-3xl overflow-hidden border border-slate-200/90 shadow-2xl bg-white">
           <!-- Browser Header Bar -->
           <div class="bg-slate-900 text-slate-300 px-4 py-3 flex items-center justify-between text-xs">
@@ -216,21 +219,21 @@
       </div>
 
       <!-- Live Metric Counters Bar -->
-      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto border border-slate-200/80 py-8 bg-white/80 backdrop-blur-md rounded-3xl px-8 shadow-sm">
+      <div class="reveal stagger-5 mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto border border-slate-200/80 py-8 bg-white/80 backdrop-blur-md rounded-3xl px-8 shadow-sm">
         <div>
-          <div class="text-3xl sm:text-4xl font-black text-slate-950">65+</div>
+          <div class="text-3xl sm:text-4xl font-black text-slate-950" data-counter="65" data-suffix="+">65+</div>
           <div class="text-xs sm:text-sm font-bold text-slate-500 mt-1">Businesses Scaled</div>
         </div>
         <div>
-          <div class="text-3xl sm:text-4xl font-black text-indigo-600">4.8x</div>
+          <div class="text-3xl sm:text-4xl font-black text-indigo-600" data-counter="4.8" data-suffix="x" data-decimals="1">4.8x</div>
           <div class="text-xs sm:text-sm font-bold text-slate-500 mt-1">Average Client ROAS</div>
         </div>
         <div>
-          <div class="text-3xl sm:text-4xl font-black text-amber-500">4.9 ★</div>
+          <div class="text-3xl sm:text-4xl font-black text-amber-500" data-counter="4.9" data-suffix=" ★" data-decimals="1">4.9 ★</div>
           <div class="text-xs sm:text-sm font-bold text-slate-500 mt-1">Google Rating (300+ Reviews)</div>
         </div>
         <div>
-          <div class="text-3xl sm:text-4xl font-black text-emerald-600">₹3.8 Cr+</div>
+          <div class="text-3xl sm:text-4xl font-black text-emerald-600" data-counter="3.8" data-prefix="₹" data-suffix=" Cr+" data-decimals="1">₹3.8 Cr+</div>
           <div class="text-xs sm:text-sm font-bold text-slate-500 mt-1">Client Pipeline Generated</div>
         </div>
       </div>
@@ -334,9 +337,9 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       
       <!-- Case 1 -->
-      <div class="gradient-border-card p-6 flex flex-col justify-between group">
+      <div class="gradient-border-card p-6 flex flex-col justify-between group card-lift reveal stagger-1">
         <div>
-          <div class="h-40 rounded-2xl overflow-hidden mb-4 relative shadow-inner">
+          <div class="h-40 rounded-2xl overflow-hidden mb-4 relative shadow-inner img-zoom-hover">
             <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80" alt="Dental Clinic Noida" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
             <span class="absolute bottom-2.5 left-2.5 bg-emerald-500/90 text-white text-[10px] font-black px-2 py-0.5 rounded-md backdrop-blur-sm">Sector 50 Noida</span>
@@ -361,9 +364,9 @@
       </div>
 
       <!-- Case 2 -->
-      <div class="gradient-border-card p-6 flex flex-col justify-between group">
+      <div class="gradient-border-card p-6 flex flex-col justify-between group card-lift reveal stagger-2">
         <div>
-          <div class="h-40 rounded-2xl overflow-hidden mb-4 relative shadow-inner">
+          <div class="h-40 rounded-2xl overflow-hidden mb-4 relative shadow-inner img-zoom-hover">
             <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=600&q=80" alt="IronForge Gym NCR" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
             <span class="absolute bottom-2.5 left-2.5 bg-indigo-600/90 text-white text-[10px] font-black px-2 py-0.5 rounded-md backdrop-blur-sm">Indirapuram</span>
@@ -388,9 +391,9 @@
       </div>
 
       <!-- Case 3 -->
-      <div class="gradient-border-card p-6 flex flex-col justify-between group">
+      <div class="gradient-border-card p-6 flex flex-col justify-between group card-lift reveal stagger-3">
         <div>
-          <div class="h-40 rounded-2xl overflow-hidden mb-4 relative shadow-inner">
+          <div class="h-40 rounded-2xl overflow-hidden mb-4 relative shadow-inner img-zoom-hover">
             <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=600&q=80" alt="Luxe Aura Bridal Salon" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
             <span class="absolute bottom-2.5 left-2.5 bg-pink-600/90 text-white text-[10px] font-black px-2 py-0.5 rounded-md backdrop-blur-sm">South Delhi</span>
@@ -415,9 +418,9 @@
       </div>
 
       <!-- Case 4 -->
-      <div class="gradient-border-card p-6 flex flex-col justify-between group">
+      <div class="gradient-border-card p-6 flex flex-col justify-between group card-lift reveal stagger-4">
         <div>
-          <div class="h-40 rounded-2xl overflow-hidden mb-4 relative shadow-inner">
+          <div class="h-40 rounded-2xl overflow-hidden mb-4 relative shadow-inner img-zoom-hover">
             <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80" alt="The Urban Roast Bistro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
             <span class="absolute bottom-2.5 left-2.5 bg-amber-600/90 text-white text-[10px] font-black px-2 py-0.5 rounded-md backdrop-blur-sm">Noida Sec 104</span>
@@ -463,8 +466,8 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <!-- Demo Card 1: Clinic -->
-        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
-          <div class="h-60 p-6 flex flex-col justify-between text-white relative overflow-hidden">
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group card-lift reveal stagger-1">
+          <div class="h-60 p-6 flex flex-col justify-between text-white relative overflow-hidden img-zoom-hover">
             <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80" 
                  alt="CarePlus Dental Clinic" 
                  class="absolute inset-0 w-full h-full object-cover brightness-[0.38] group-hover:scale-105 transition-transform duration-700 -z-10" />
@@ -485,8 +488,8 @@
         </div>
 
         <!-- Demo Card 2: Gym -->
-        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
-          <div class="h-60 p-6 flex flex-col justify-between text-white relative overflow-hidden">
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group card-lift reveal stagger-2">
+          <div class="h-60 p-6 flex flex-col justify-between text-white relative overflow-hidden img-zoom-hover">
             <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=700&q=80" 
                  alt="IronForge Performance Gym" 
                  class="absolute inset-0 w-full h-full object-cover brightness-[0.38] group-hover:scale-105 transition-transform duration-700 -z-10" />
@@ -507,8 +510,8 @@
         </div>
 
         <!-- Demo Card 3: Salon -->
-        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
-          <div class="h-60 p-6 flex flex-col justify-between text-white relative overflow-hidden">
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group card-lift reveal stagger-3">
+          <div class="h-60 p-6 flex flex-col justify-between text-white relative overflow-hidden img-zoom-hover">
             <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80" 
                  alt="Luxe Aura Bridal Studio" 
                  class="absolute inset-0 w-full h-full object-cover brightness-[0.38] group-hover:scale-105 transition-transform duration-700 -z-10" />
@@ -607,7 +610,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
       
       <!-- Tier 1 -->
-      <div class="rounded-3xl bg-white border border-slate-200 p-8 shadow-sm flex flex-col justify-between hover:border-slate-300 transition-all">
+      <div class="rounded-3xl bg-white border border-slate-200 p-8 shadow-sm flex flex-col justify-between hover:border-slate-300 transition-all card-lift reveal stagger-1">
         <div>
           <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-800">New Businesses</span>
           <h3 class="text-2xl font-extrabold text-slate-950 mt-4">Starter Launch Kit</h3>
@@ -644,13 +647,13 @@
 
         <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20order%20the%20Starter%20Launch%20Kit%20(₹7,999)." 
            target="_blank" 
-           class="mt-8 w-full block text-center py-3.5 px-6 rounded-2xl font-bold text-sm bg-slate-100 hover:bg-slate-200 text-slate-900 transition-colors">
+           class="mt-8 w-full block text-center py-3.5 px-6 rounded-2xl font-bold text-sm bg-slate-100 hover:bg-slate-200 text-slate-900 transition-colors btn-shine">
           Select Starter Launch
         </a>
       </div>
 
       <!-- Tier 2 -->
-      <div class="relative rounded-3xl bg-slate-950 text-white p-8 shadow-2xl flex flex-col justify-between border-2 border-indigo-500 scale-105 z-10">
+      <div class="relative rounded-3xl bg-slate-950 text-white p-8 shadow-2xl flex flex-col justify-between border-2 border-indigo-500 scale-105 z-10 popular-pulse card-lift reveal stagger-2">
         <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-indigo-500 to-pink-500 text-white text-xs font-extrabold uppercase px-4 py-1.5 rounded-full shadow-lg">
           ⭐ Most Popular Retainer
         </div>
@@ -691,13 +694,13 @@
 
         <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20enroll%20in%20the%20Business%20Growth%20Engine%20(₹12,999/mo)." 
            target="_blank" 
-           class="mt-8 w-full block text-center py-4 px-6 rounded-2xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white shadow-lg shadow-indigo-500/30 transition-all hover:scale-102">
+           class="mt-8 w-full block text-center py-4 px-6 rounded-2xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white shadow-lg shadow-indigo-500/30 transition-all hover:scale-102 btn-shine">
           Start Growing Today
         </a>
       </div>
 
       <!-- Tier 3 -->
-      <div class="rounded-3xl bg-white border border-slate-200 p-8 shadow-sm flex flex-col justify-between hover:border-slate-300 transition-all">
+      <div class="rounded-3xl bg-white border border-slate-200 p-8 shadow-sm flex flex-col justify-between hover:border-slate-300 transition-all card-lift reveal stagger-3">
         <div>
           <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-800">Total Dominance</span>
           <h3 class="text-2xl font-extrabold text-slate-950 mt-4">VIP Market Dominance</h3>
@@ -730,7 +733,7 @@
 
         <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20discuss%20the%20VIP%20Market%20Dominance%20Package." 
            target="_blank" 
-           class="mt-8 w-full block text-center py-3.5 px-6 rounded-2xl font-bold text-sm bg-slate-950 hover:bg-slate-800 text-white transition-colors">
+           class="mt-8 w-full block text-center py-3.5 px-6 rounded-2xl font-bold text-sm bg-slate-950 hover:bg-slate-800 text-white transition-colors btn-shine">
           Apply For VIP Scaling
         </a>
       </div>
@@ -896,5 +899,19 @@
 
     runCalculator();
   </script>
+
+  <!-- Floating Pulsing WhatsApp Quick-Action CTA -->
+  <aside aria-label="WhatsApp Quick Contact">
+    <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20am%20interested%20in%20scaling%20my%20business%20with%20your%20growth%20engine." 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center wa-pulse-btn hover:scale-110 transition-transform duration-300" 
+       aria-label="Chat on WhatsApp">
+      <i data-lucide="message-circle" class="w-7 h-7 text-white"></i>
+    </a>
+  </aside>
+
+  <!-- Core Interactive Script -->
+  <script src="js/main.js"></script>
 </body>
 </html>

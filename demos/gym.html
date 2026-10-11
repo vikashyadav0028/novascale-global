@@ -26,10 +26,15 @@
       }
     }
   </script>
+  <!-- NovaScale Shared Stylesheet -->
+  <link rel="stylesheet" href="../css/styles.css" />
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body class="bg-slate-950 text-slate-100 antialiased selection:bg-orange-500 selection:text-white">
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" class="bg-gradient-to-r from-orange-600 via-amber-500 to-red-600"></div>
 
   <!-- NovaScale Live Demo Top Banner -->
   <div class="bg-black text-slate-200 py-2.5 px-4 border-b border-slate-800 sticky top-0 z-50 shadow-md">
@@ -46,7 +51,7 @@
         </a>
         <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20love%20the%20IronForge%20Gym%20template.%20I%20want%20to%20order%20this%20website%20for%20my%20gym." 
            target="_blank" 
-           class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1 rounded-lg font-bold flex items-center gap-1.5 transition-all shadow-sm">
+           class="bg-emerald-500 hover:bg-emerald-600 text-white px-3 py-1 rounded-lg font-bold flex items-center gap-1.5 transition-all shadow-sm btn-shine">
           <i data-lucide="message-circle" class="w-3.5 h-3.5"></i> Order This Site (₹7,999)
         </a>
       </div>
@@ -54,10 +59,10 @@
   </div>
 
   <!-- Gym Navigation Header -->
-  <header class="bg-slate-900/90 backdrop-blur-md border-b border-slate-800 sticky top-9 z-40">
+  <header class="bg-slate-950/85 backdrop-blur-md border-b border-slate-800/80 sticky top-9 z-40 transition-all duration-300">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       <div class="flex items-center gap-3">
-        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-orange-600 to-amber-500 flex items-center justify-center text-white shadow-lg shadow-orange-500/20">
+        <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-orange-600 to-amber-500 flex items-center justify-center text-white shadow-lg shadow-orange-500/25">
           <i data-lucide="flame" class="w-6 h-6"></i>
         </div>
         <div>
@@ -67,69 +72,76 @@
       </div>
 
       <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-300">
-        <a href="#programs" class="hover:text-orange-500 transition-colors">Programs</a>
-        <a href="#pricing" class="hover:text-orange-500 transition-colors">Memberships</a>
-        <a href="#transformations" class="hover:text-orange-500 transition-colors">Transformations</a>
-        <a href="#trainers" class="hover:text-orange-500 transition-colors">Coaches</a>
-        <a href="#location" class="hover:text-orange-500 transition-colors">Facility Tour</a>
+        <a href="#programs" class="nav-link-animated hover:text-orange-400 transition-colors">Programs</a>
+        <a href="#pricing" class="nav-link-animated hover:text-orange-400 transition-colors">Memberships</a>
+        <a href="#transformations" class="nav-link-animated hover:text-orange-400 transition-colors">Transformations</a>
+        <a href="#trainers" class="nav-link-animated hover:text-orange-400 transition-colors">Coaches</a>
+        <a href="#location" class="nav-link-animated hover:text-orange-400 transition-colors">Facility Tour</a>
       </nav>
 
       <div class="flex items-center gap-3">
-        <a href="#trial" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg shadow-orange-500/25 transition-all hover:scale-105 flex items-center gap-2">
+        <a href="#trial" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-lg shadow-orange-500/25 transition-all hover:scale-105 flex items-center gap-2 btn-shine">
           <i data-lucide="ticket" class="w-4 h-4"></i> Claim 1-Day Free Pass
         </a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative pt-16 pb-24 overflow-hidden bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-orange-950/30 via-slate-950 to-slate-950">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- Hero Section with Ken Burns Background -->
+  <section class="relative pt-16 pb-24 overflow-hidden bg-slate-950">
+    <!-- Full-Width Ken Burns Background Photo -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80" alt="IronForge Gym Floor" class="ken-burns w-full h-full object-cover opacity-25" loading="eager" width="1920" height="1080" />
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-950/70"></div>
+      <div class="absolute inset-0 bg-radial-gradient from-orange-600/10 via-transparent to-transparent"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         
-        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left reveal">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-orange-500/10 border border-orange-500/30 text-orange-400 text-xs font-bold">
             <i data-lucide="zap" class="w-4 h-4 text-orange-400"></i> Sector 63 Noida • 10,000 Sq.Ft Elite Training Facility
           </div>
 
-          <h1 class="text-4xl sm:text-6xl font-black text-white leading-tight">
+          <h1 class="text-4xl sm:text-6xl font-black text-white leading-tight tracking-tight uppercase">
             Stop Exercising. <br />
             <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 via-amber-400 to-yellow-500">Start Training Like An Athlete.</span>
           </h1>
 
-          <p class="text-base sm:text-lg text-slate-400 max-w-2xl leading-relaxed">
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
             Imported Eleiko barbell rigs, Olympic turf track, sauna recovery lounge, and certified strength coaches who guarantee fat loss and explosive power.
           </p>
 
           <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
-            <a href="#trial" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-xl shadow-orange-500/30 transition-all hover:scale-105 flex items-center gap-2">
+            <a href="#trial" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-xl shadow-orange-500/30 transition-all hover:scale-105 flex items-center gap-2 btn-shine">
               <i data-lucide="ticket" class="w-4 h-4"></i> Get Free Workout Pass
             </a>
-            <a href="https://wa.me/919457886467?text=Hello%20IronForge!%20I%20want%20to%20inquire%20about%20gym%20membership." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-xl shadow-emerald-600/30 transition-all hover:scale-105 flex items-center gap-2">
+            <a href="https://wa.me/919457886467?text=Hello%20IronForge!%20I%20want%20to%20inquire%20about%20gym%20membership." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-xl shadow-emerald-600/30 transition-all hover:scale-105 flex items-center gap-2 btn-shine">
               <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Gym Desk
             </a>
           </div>
 
           <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-800 text-left">
             <div>
-              <div class="text-2xl font-black text-white">10,000+</div>
+              <div class="text-2xl sm:text-3xl font-black text-white" data-counter="10000" data-suffix="+">10,000+</div>
               <div class="text-xs text-slate-400 font-semibold">Sq.Ft Training Floor</div>
             </div>
             <div>
-              <div class="text-2xl font-black text-orange-400">1,850+</div>
+              <div class="text-2xl sm:text-3xl font-black text-orange-400" data-counter="1850" data-suffix="+">1,850+</div>
               <div class="text-xs text-slate-400 font-semibold">Active NCR Athletes</div>
             </div>
             <div>
-              <div class="text-2xl font-black text-white">4.9 ★</div>
+              <div class="text-2xl sm:text-3xl font-black text-white" data-counter="4.9" data-suffix=" ★" data-decimals="1">4.9 ★</div>
               <div class="text-xs text-slate-400 font-semibold">Google Maps Rated</div>
             </div>
           </div>
         </div>
 
         <!-- Trial Claim Form -->
-        <div class="lg:col-span-5" id="trial">
-          <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl relative">
-            <div class="absolute -top-3 right-6 bg-orange-500 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow">
+        <div class="lg:col-span-5 reveal stagger-3" id="trial">
+          <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl relative card-lift backdrop-blur-md">
+            <div class="absolute -top-3 right-6 bg-gradient-to-r from-orange-600 to-amber-500 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-lg">
               Only 7 Passes Left Today
             </div>
             <h3 class="text-2xl font-black text-white mb-1">Claim 1-Day Trial Pass</h3>
@@ -163,7 +175,7 @@
                 </select>
               </div>
 
-              <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-xl font-bold text-sm shadow-lg shadow-orange-500/25 transition-all">
+              <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-xl font-bold text-sm shadow-lg shadow-orange-500/25 transition-all btn-shine">
                 Send Free Pass to WhatsApp →
               </button>
             </form>
@@ -177,38 +189,155 @@
   <!-- Training Programs Section -->
   <section id="programs" class="py-20 bg-slate-900 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
         <span class="text-xs font-black uppercase text-orange-400 tracking-widest bg-orange-500/10 px-3 py-1 rounded-full border border-orange-500/20">Elite Disciplines</span>
-        <h2 class="text-3xl sm:text-4xl font-black text-white mt-3">Built for High Performance</h2>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-3 uppercase tracking-tight">Built for High Performance</h2>
         <p class="text-slate-400 text-sm mt-2">Every workout program is periodized and programmed by CSCS certified coaches.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-slate-950 p-6 rounded-3xl border border-slate-800 hover:border-orange-500 transition-all group">
-          <div class="w-12 h-12 rounded-2xl bg-orange-500/20 text-orange-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-            <i data-lucide="dumbbell" class="w-6 h-6"></i>
+        <!-- Program 1: Barbells -->
+        <div class="bg-slate-950 rounded-3xl border border-slate-800 hover:border-orange-500 transition-all group card-lift reveal stagger-1 overflow-hidden">
+          <div class="h-48 overflow-hidden img-zoom-hover relative">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=600&q=80" alt="Heavy Strength & Power" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
           </div>
-          <h3 class="text-xl font-black text-white mb-2">Heavy Strength & Power</h3>
-          <p class="text-xs text-slate-400 leading-relaxed mb-4">Dedicated powerlifting platforms, calibrated plates, and deadlift jacks for serious compound lifting progression.</p>
-          <span class="text-xs font-bold text-orange-400">Includes InBody 770 Body Comp Analysis</span>
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-2xl bg-orange-500/20 text-orange-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <i data-lucide="dumbbell" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-black text-white mb-2 uppercase">Heavy Strength & Power</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">Dedicated powerlifting platforms, calibrated plates, and deadlift jacks for serious compound lifting progression.</p>
+            <span class="text-xs font-bold text-orange-400">Includes InBody 770 Body Comp Analysis</span>
+          </div>
         </div>
 
-        <div class="bg-slate-950 p-6 rounded-3xl border border-slate-800 hover:border-orange-500 transition-all group">
-          <div class="w-12 h-12 rounded-2xl bg-orange-500/20 text-orange-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-            <i data-lucide="activity" class="w-6 h-6"></i>
+        <!-- Program 2: Crossfit -->
+        <div class="bg-slate-950 rounded-3xl border border-slate-800 hover:border-orange-500 transition-all group card-lift reveal stagger-2 overflow-hidden">
+          <div class="h-48 overflow-hidden img-zoom-hover relative">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Crossfit & MetCon WODs" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
           </div>
-          <h3 class="text-xl font-black text-white mb-2">Crossfit & MetCon WODs</h3>
-          <p class="text-xs text-slate-400 leading-relaxed mb-4">High-velocity cardiovascular conditioning, gymnastic rings, assault bikes, rowers, and ski-ergs.</p>
-          <span class="text-xs font-bold text-orange-400">Daily Coached Group Batches</span>
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-2xl bg-orange-500/20 text-orange-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <i data-lucide="activity" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-black text-white mb-2 uppercase">Crossfit & MetCon WODs</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">High-velocity cardiovascular conditioning, gymnastic rings, assault bikes, rowers, and ski-ergs.</p>
+            <span class="text-xs font-bold text-orange-400">Daily Coached Group Batches</span>
+          </div>
         </div>
 
-        <div class="bg-slate-950 p-6 rounded-3xl border border-slate-800 hover:border-orange-500 transition-all group">
-          <div class="w-12 h-12 rounded-2xl bg-orange-500/20 text-orange-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
-            <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+        <!-- Program 3: Sauna & Ice Bath -->
+        <div class="bg-slate-950 rounded-3xl border border-slate-800 hover:border-orange-500 transition-all group card-lift reveal stagger-3 overflow-hidden">
+          <div class="h-48 overflow-hidden img-zoom-hover relative">
+            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=600&q=80" alt="Sauna & Ice Bath Recovery" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
           </div>
-          <h3 class="text-xl font-black text-white mb-2">Sauna & Ice Bath Recovery</h3>
-          <p class="text-xs text-slate-400 leading-relaxed mb-4">Accelerate muscular recovery with our contrast therapy Finnish dry sauna and 3°C cold plunge tubs.</p>
-          <span class="text-xs font-bold text-orange-400">VIP & Annual Members Inclusive</span>
+          <div class="p-6">
+            <div class="w-12 h-12 rounded-2xl bg-orange-500/20 text-orange-400 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-black text-white mb-2 uppercase">Sauna & Ice Bath Recovery</h3>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">Accelerate muscular recovery with our contrast therapy Finnish dry sauna and 3°C cold plunge tubs.</p>
+            <span class="text-xs font-bold text-orange-400">VIP & Annual Members Inclusive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Transformations Section -->
+  <section id="transformations" class="py-20 bg-slate-950 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <span class="text-xs font-black uppercase text-orange-400 tracking-widest bg-orange-500/10 px-3 py-1 rounded-full border border-orange-500/20">Real Results</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-3 uppercase tracking-tight">Athlete Transformations</h2>
+        <p class="text-slate-400 text-sm mt-2">Documented body recomposition, strength milestones, and endurance records.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Transformation Card 1 -->
+        <div class="bg-slate-900 rounded-3xl border border-slate-800 p-5 card-lift reveal stagger-1">
+          <div class="h-56 rounded-2xl overflow-hidden img-zoom-hover relative mb-4">
+            <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=600&q=80" alt="16-Week Recomp Transformation" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent flex flex-col justify-end p-4">
+              <span class="text-xs font-extrabold text-orange-400 uppercase tracking-wider">-14kg Fat • +5kg Muscle</span>
+              <h4 class="text-base font-bold text-white">Aditya Verma (IT Director)</h4>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 italic leading-relaxed">
+            "The coaching structure here is unmatched in Noida. In 16 weeks I dropped 14 kilos of fat while deadlifting 180kg."
+          </p>
+        </div>
+
+        <!-- Transformation Card 2 -->
+        <div class="bg-slate-900 rounded-3xl border border-slate-800 p-5 card-lift reveal stagger-2">
+          <div class="h-56 rounded-2xl overflow-hidden img-zoom-hover relative mb-4">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=600&q=80" alt="Crossfit Athletic Endurance" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent flex flex-col justify-end p-4">
+              <span class="text-xs font-extrabold text-orange-400 uppercase tracking-wider">NCR Crossfit Open Qualifier</span>
+              <h4 class="text-base font-bold text-white">Kritika Sharma (Consultant)</h4>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 italic leading-relaxed">
+            "Went from zero pullups to competing in regional MetCon championships. The sauna and recovery tubs kept me injury-free."
+          </p>
+        </div>
+
+        <!-- Transformation Card 3 -->
+        <div class="bg-slate-900 rounded-3xl border border-slate-800 p-5 card-lift reveal stagger-3">
+          <div class="h-56 rounded-2xl overflow-hidden img-zoom-hover relative mb-4">
+            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?auto=format&fit=crop&w=600&q=80" alt="Athletic Conditioning" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent flex flex-col justify-end p-4">
+              <span class="text-xs font-extrabold text-orange-400 uppercase tracking-wider">Sub-20 Min 5K & 140kg Squat</span>
+              <h4 class="text-base font-bold text-white">Rohit Malhotra (Founder)</h4>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 italic leading-relaxed">
+            "Training here feels like training in an Olympic facility. The Eleiko barbells and coaches are best-in-class."
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coaches / Trainers Section -->
+  <section id="trainers" class="py-20 bg-slate-900 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+        <span class="text-xs font-black uppercase text-orange-400 tracking-widest bg-orange-500/10 px-3 py-1 rounded-full border border-orange-500/20">Elite Faculty</span>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-3 uppercase tracking-tight">Meet Your Head Coaches</h2>
+        <p class="text-slate-400 text-sm mt-2">Internationally certified strength and conditioning specialists.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <!-- Trainer 1 -->
+        <div class="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-3xl bg-slate-950 border border-slate-800 hover:border-orange-500/50 transition-all card-lift reveal stagger-1">
+          <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=600&q=80" alt="Coach Kabir Oberoi" class="w-32 h-32 rounded-2xl object-cover shrink-0 shadow-lg border-2 border-orange-500/50" loading="lazy" width="128" height="128" />
+          <div>
+            <span class="text-xs font-bold text-orange-400 uppercase tracking-wider">Head Strength & Powerlifting Coach</span>
+            <h3 class="text-xl font-black text-white mt-1">Kabir Oberoi</h3>
+            <p class="text-xs text-slate-500 mb-2">CSCS, USAW Level 2 • 11+ Years Coaching</p>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">Former national powerlifter specializing in periodized barbell programming and biomechanical injury prevention.</p>
+            <a href="https://wa.me/919457886467?text=Hello!%20I%20want%20to%20consult%20Coach%20Kabir%20at%20IronForge." target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 hover:text-orange-300 btn-shine px-3 py-1.5 rounded-lg bg-orange-500/10">
+              <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Book Coach Assessment
+            </a>
+          </div>
+        </div>
+
+        <!-- Trainer 2 -->
+        <div class="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-3xl bg-slate-950 border border-slate-800 hover:border-orange-500/50 transition-all card-lift reveal stagger-2">
+          <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=600&q=80" alt="Coach Rhea Singhania" class="w-32 h-32 rounded-2xl object-cover shrink-0 shadow-lg border-2 border-orange-500/50" loading="lazy" width="128" height="128" />
+          <div>
+            <span class="text-xs font-bold text-orange-400 uppercase tracking-wider">Head Crossfit & Conditioning Coach</span>
+            <h3 class="text-xl font-black text-white mt-1">Rhea Singhania</h3>
+            <p class="text-xs text-slate-500 mb-2">Crossfit Level 3, Precision Nutrition L1</p>
+            <p class="text-xs text-slate-400 leading-relaxed mb-4">Specialist in high-intensity metabolic conditioning, gymnastic skill progressions, and functional athletic nutrition.</p>
+            <a href="https://wa.me/919457886467?text=Hello!%20I%20want%20to%20consult%20Coach%20Rhea%20at%20IronForge." target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-orange-400 hover:text-orange-300 btn-shine px-3 py-1.5 rounded-lg bg-orange-500/10">
+              <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Book Coach Assessment
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -217,15 +346,15 @@
   <!-- Pricing Memberships Section -->
   <section id="pricing" class="py-20 bg-slate-950 border-t border-slate-800">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
         <span class="text-xs font-black uppercase text-orange-400 tracking-widest bg-orange-500/10 px-3 py-1 rounded-full border border-orange-500/20">No Long-Term Lock-in</span>
-        <h2 class="text-3xl sm:text-4xl font-black text-white mt-3">Simple, Transparent Memberships</h2>
+        <h2 class="text-3xl sm:text-4xl font-black text-white mt-3 uppercase tracking-tight">Simple, Transparent Memberships</h2>
         <p class="text-slate-400 text-sm mt-2">Zero admission fees. Clean locker facilities and towel service included.</p>
       </div>
 
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Monthly -->
-        <div class="bg-slate-900 rounded-3xl p-8 border border-slate-800 flex flex-col justify-between">
+        <div class="bg-slate-900 rounded-3xl p-8 border border-slate-800 hover:border-orange-500/50 flex flex-col justify-between card-lift reveal stagger-1">
           <div>
             <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Monthly Pass</span>
             <div class="text-4xl font-black text-white mt-2 mb-1">₹2,499<span class="text-sm font-normal text-slate-400">/mo</span></div>
@@ -236,14 +365,14 @@
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> 1 InBody Body Scan</li>
             </ul>
           </div>
-          <a href="https://wa.me/919457886467?text=Hello%20IronForge!%20I%20want%20to%20join%20the%20Monthly%20Pass." target="_blank" class="mt-8 block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl text-xs transition-colors">
+          <a href="https://wa.me/919457886467?text=Hello%20IronForge!%20I%20want%20to%20join%20the%20Monthly%20Pass." target="_blank" class="mt-8 block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl text-xs transition-colors btn-shine">
             Join Monthly on WhatsApp
           </a>
         </div>
 
-        <!-- Quarterly (Popular) -->
-        <div class="bg-slate-900 rounded-3xl p-8 border-2 border-orange-500 relative flex flex-col justify-between shadow-2xl shadow-orange-500/10">
-          <div class="absolute -top-3.5 right-6 bg-orange-500 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full">
+        <!-- Quarterly (Popular) with Glow Pulse -->
+        <div class="bg-slate-900 rounded-3xl p-8 border-2 border-orange-500 relative flex flex-col justify-between shadow-2xl shadow-orange-500/20 popular-pulse card-lift reveal stagger-2">
+          <div class="absolute -top-3.5 right-6 bg-gradient-to-r from-orange-600 to-amber-500 text-white text-[10px] font-black uppercase px-3 py-1 rounded-full shadow-lg">
             Most Popular
           </div>
           <div>
@@ -257,13 +386,13 @@
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> 2 Sauna Recovery Sessions</li>
             </ul>
           </div>
-          <a href="https://wa.me/919457886467?text=Hello%20IronForge!%20I%20want%20to%20join%20the%20Quarterly%20Transformation." target="_blank" class="mt-8 block text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-xs transition-colors shadow-lg shadow-orange-500/25">
+          <a href="https://wa.me/919457886467?text=Hello%20IronForge!%20I%20want%20to%20join%20the%20Quarterly%20Transformation." target="_blank" class="mt-8 block text-center bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-xs transition-colors shadow-lg shadow-orange-500/25 btn-shine">
             Claim Quarterly Offer on WhatsApp
           </a>
         </div>
 
         <!-- Annual VIP -->
-        <div class="bg-slate-900 rounded-3xl p-8 border border-slate-800 flex flex-col justify-between">
+        <div class="bg-slate-900 rounded-3xl p-8 border border-slate-800 hover:border-orange-500/50 flex flex-col justify-between card-lift reveal stagger-3">
           <div>
             <span class="text-xs font-bold text-slate-400 uppercase tracking-wider">Annual Athlete VIP</span>
             <div class="text-4xl font-black text-white mt-2 mb-1">₹18,999<span class="text-sm font-normal text-slate-400">/year</span></div>
@@ -275,7 +404,7 @@
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-orange-500"></i> 1-Month Free Freeze Option</li>
             </ul>
           </div>
-          <a href="https://wa.me/919457886467?text=Hello%20IronForge!%20I%20want%20to%20enroll%20in%20Annual%20VIP." target="_blank" class="mt-8 block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl text-xs transition-colors">
+          <a href="https://wa.me/919457886467?text=Hello%20IronForge!%20I%20want%20to%20enroll%20in%20Annual%20VIP." target="_blank" class="mt-8 block text-center bg-slate-800 hover:bg-slate-700 text-white font-bold py-3 rounded-xl text-xs transition-colors btn-shine">
             Enroll VIP on WhatsApp
           </a>
         </div>
@@ -317,7 +446,7 @@
         <div>
           <h4 class="text-white font-bold text-sm mb-3">Join The Tribe</h4>
           <p class="text-xs text-slate-400 mb-3">WhatsApp our floor manager for membership passes.</p>
-          <a href="https://wa.me/919457886467?text=Hello%20IronForge!%20I%20am%20interested%20in%20joining." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-xl font-bold text-xs transition-colors">
+          <a href="https://wa.me/919457886467?text=Hello%20IronForge!%20I%20am%20interested%20in%20joining." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-xl font-bold text-xs transition-colors btn-shine">
             <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Desk
           </a>
         </div>
@@ -329,15 +458,11 @@
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/919457886467?text=Hello%20IronForge!%20I%20want%20to%20claim%20my%201-Day%20Free%20Gym%20Pass." target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all hover:scale-110">
+  <!-- Floating WhatsApp Button with Breathing Pulse -->
+  <a href="https://wa.me/919457886467?text=Hello%20IronForge!%20I%20want%20to%20claim%20my%201-Day%20Free%20Gym%20Pass." target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all hover:scale-110 wa-pulse-btn" aria-label="Chat on WhatsApp">
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 
-  <script>
-    if (window.lucide) {
-      window.lucide.createIcons();
-    }
-  </script>
+  <script src="../js/main.js"></script>
 </body>
 </html>

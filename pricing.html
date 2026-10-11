@@ -26,9 +26,12 @@
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-indigo-600 selection:text-white">
 
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
+
   <!-- Main Navigation Bar -->
-  <header class="sticky top-0 z-40 glass-nav">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+  <header class="sticky top-0 z-40 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between nav-inner transition-all duration-300">
       
       <a href="index.html" class="flex items-center gap-3 group">
         <div class="w-11 h-11 rounded-2xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-purple-600 flex items-center justify-center text-white shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform">
@@ -41,21 +44,21 @@
       </a>
 
       <nav class="hidden lg:flex items-center gap-8 text-sm font-bold text-slate-600">
-        <a href="index.html" class="hover:text-indigo-600 transition-colors">Home</a>
-        <a href="services.html" class="hover:text-indigo-600 transition-colors">Services</a>
-        <a href="pricing.html" class="text-indigo-600">Pricing</a>
-        <a href="templates.html" class="hover:text-indigo-600 transition-colors flex items-center gap-1">
+        <a href="index.html" class="hover:text-indigo-600 transition-colors nav-link-animated">Home</a>
+        <a href="services.html" class="hover:text-indigo-600 transition-colors nav-link-animated">Services</a>
+        <a href="pricing.html" class="text-indigo-600 nav-link-animated active">Pricing</a>
+        <a href="templates.html" class="hover:text-indigo-600 transition-colors flex items-center gap-1 nav-link-animated">
           <span>Templates & Demos</span>
           <span class="bg-indigo-100 text-indigo-700 text-[10px] px-2 py-0.5 rounded-full font-extrabold">6 Live</span>
         </a>
-        <a href="about.html" class="hover:text-indigo-600 transition-colors">About Us</a>
-        <a href="contact.html" class="hover:text-indigo-600 transition-colors">Contact</a>
+        <a href="about.html" class="hover:text-indigo-600 transition-colors nav-link-animated">About Us</a>
+        <a href="contact.html" class="hover:text-indigo-600 transition-colors nav-link-animated">Contact</a>
       </nav>
 
       <div class="hidden sm:flex items-center gap-3">
         <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20have%20a%20pricing%20question." 
            target="_blank" 
-           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-md shadow-emerald-600/25 transition-all hover:scale-105">
+           class="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2.5 rounded-xl font-bold text-sm shadow-md shadow-emerald-600/25 transition-all hover:scale-105 btn-shine">
           <i data-lucide="message-circle" class="w-4 h-4"></i>
           <span>WhatsApp Founder</span>
         </a>
@@ -131,7 +134,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
       
       <!-- Tier 1: Starter Launch -->
-      <div class="rounded-3xl bg-white border border-slate-200 p-8 shadow-sm flex flex-col justify-between hover:border-slate-300 transition-all">
+      <div class="rounded-3xl bg-white border border-slate-200 p-8 shadow-sm flex flex-col justify-between hover:border-slate-300 transition-all card-lift reveal stagger-1">
         <div>
           <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-800">New Businesses</span>
           <h3 class="text-2xl font-extrabold text-slate-950 mt-4">Starter Launch Kit</h3>
@@ -172,13 +175,13 @@
 
         <a id="btn-starter" href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20order%20the%20Starter%20Launch%20Kit." 
            target="_blank" 
-           class="mt-8 w-full block text-center py-3.5 px-6 rounded-2xl font-bold text-sm bg-slate-100 hover:bg-slate-200 text-slate-900 transition-colors">
+           class="mt-8 w-full block text-center py-3.5 px-6 rounded-2xl font-bold text-sm bg-slate-100 hover:bg-slate-200 text-slate-900 transition-colors btn-shine">
           Select Starter Launch
         </a>
       </div>
 
       <!-- Tier 2: Business Growth Retainer -->
-      <div class="relative rounded-3xl bg-slate-950 text-white p-8 shadow-2xl flex flex-col justify-between border-2 border-indigo-500 scale-105 z-10">
+      <div class="relative rounded-3xl bg-slate-950 text-white p-8 shadow-2xl flex flex-col justify-between border-2 border-indigo-500 scale-105 z-10 popular-pulse card-lift reveal stagger-2">
         <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-indigo-500 to-pink-500 text-white text-xs font-extrabold uppercase px-4 py-1.5 rounded-full shadow-lg">
           ⭐ Most Chosen Package
         </div>
@@ -223,13 +226,13 @@
 
         <a id="btn-growth" href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20enroll%20in%20the%20Business%20Growth%20Engine%20Retainer." 
            target="_blank" 
-           class="mt-8 w-full block text-center py-4 px-6 rounded-2xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white shadow-lg shadow-indigo-500/30 transition-all hover:scale-102">
+           class="mt-8 w-full block text-center py-4 px-6 rounded-2xl font-bold text-sm bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white shadow-lg shadow-indigo-500/30 transition-all hover:scale-102 btn-shine">
           Start Growing Today
         </a>
       </div>
 
       <!-- Tier 3: VIP Enterprise Scale -->
-      <div class="rounded-3xl bg-white border border-slate-200 p-8 shadow-sm flex flex-col justify-between hover:border-slate-300 transition-all">
+      <div class="rounded-3xl bg-white border border-slate-200 p-8 shadow-sm flex flex-col justify-between hover:border-slate-300 transition-all card-lift reveal stagger-3">
         <div>
           <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-800">Total Dominance</span>
           <h3 class="text-2xl font-extrabold text-slate-950 mt-4">VIP Market Dominance</h3>
@@ -266,7 +269,7 @@
 
         <a id="btn-vip" href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20want%20to%20discuss%20the%20VIP%20Market%20Dominance%20Package." 
            target="_blank" 
-           class="mt-8 w-full block text-center py-3.5 px-6 rounded-2xl font-bold text-sm bg-slate-950 hover:bg-slate-800 text-white transition-colors">
+           class="mt-8 w-full block text-center py-3.5 px-6 rounded-2xl font-bold text-sm bg-slate-950 hover:bg-slate-800 text-white transition-colors btn-shine">
           Apply For VIP Scaling
         </a>
       </div>
@@ -397,7 +400,8 @@
   <!-- Floating WhatsApp Quick Button -->
   <a href="https://wa.me/919457886467?text=Hello%20NovaScale!%20I%20have%20a%20pricing%20inquiry." 
      target="_blank" 
-     class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all hover:scale-110">
+     class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl flex items-center justify-center wa-pulse-btn hover:scale-110 transition-transform duration-300"
+     aria-label="Chat on WhatsApp">
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 

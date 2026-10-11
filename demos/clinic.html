@@ -32,8 +32,13 @@
   </script>
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- NovaScale Shared Stylesheet -->
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased selection:bg-cyan-600 selection:text-white">
+
+  <!-- Scroll Progress Bar -->
+  <div id="scroll-progress"></div>
 
   <!-- NovaScale Live Demo Top Banner -->
   <div class="bg-slate-950 text-slate-200 py-2.5 px-4 border-b border-slate-800 sticky top-0 z-50 shadow-md">
@@ -103,53 +108,62 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="relative pt-12 pb-20 bg-gradient-to-b from-cyan-50/60 to-white overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <section class="relative pt-16 pb-24 overflow-hidden bg-slate-950 text-white min-h-[640px] flex items-center">
+    <!-- Full-Width Background Photo with Ken Burns & Dark Overlay -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none -z-10">
+      <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1600&q=80" 
+           alt="CarePlus Modern Dental Clinic" 
+           class="w-full h-full object-cover ken-burns brightness-[0.32]" 
+           loading="eager" />
+      <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-cyan-950/40"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         
         <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-100 border border-cyan-300 text-cyan-800 text-xs font-bold">
-            <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-600"></i> Noida's Top Rated Dental & Aesthetic Center
+          <div class="reveal stagger-1 inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-500/40 text-cyan-300 text-xs font-bold shadow-sm">
+            <i data-lucide="check-circle-2" class="w-4 h-4 text-cyan-400"></i> Noida's Top Rated Dental & Aesthetic Center
           </div>
 
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 leading-tight">
+          <h1 class="reveal stagger-2 text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">
             Painless Dentistry & <br />
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600">World-Class Smile Makeovers.</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-300">World-Class Smile Makeovers.</span>
           </h1>
 
-          <p class="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
+          <p class="reveal stagger-3 text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed font-normal">
             Experience gentle, anxiety-free dental treatments powered by 3D digital intraoral scanners, laser whitening, and Swiss dental implants right here in Sector 50, Noida.
           </p>
 
-          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
-            <a href="#book-form" class="bg-cyan-600 hover:bg-cyan-700 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-lg shadow-cyan-600/30 transition-all hover:scale-105 flex items-center gap-2">
+          <div class="reveal stagger-4 flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+            <a href="#book-form" class="bg-cyan-500 hover:bg-cyan-600 text-slate-950 px-6 py-3.5 rounded-xl font-black text-sm shadow-lg shadow-cyan-500/25 transition-all hover:scale-105 flex items-center gap-2 btn-shine">
               <i data-lucide="calendar" class="w-4 h-4"></i> Book Instant Appointment
             </a>
-            <a href="https://wa.me/919457886467?text=Hello%20CarePlus%20Dental!%20I%20have%20an%20urgent%20dental%20query." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-lg shadow-emerald-600/30 transition-all hover:scale-105 flex items-center gap-2">
+            <a href="https://wa.me/919457886467?text=Hello%20CarePlus%20Dental!%20I%20have%20an%20urgent%20dental%20query." target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3.5 rounded-xl font-bold text-sm shadow-lg shadow-emerald-600/30 transition-all hover:scale-105 flex items-center gap-2 btn-shine">
               <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp Doctor Desk
             </a>
           </div>
 
-          <!-- Trust Badges -->
-          <div class="pt-6 grid grid-cols-3 gap-4 border-t border-slate-200">
+          <!-- Trust Badges with Count-Up -->
+          <div class="reveal stagger-5 pt-6 grid grid-cols-3 gap-4 border-t border-slate-800">
             <div>
-              <div class="text-2xl font-black text-slate-900">7,500+</div>
-              <div class="text-xs text-slate-500 font-semibold">Patients Treated</div>
+              <div class="text-2xl font-black text-white" data-counter="7500" data-suffix="+">7,500+</div>
+              <div class="text-xs text-slate-400 font-semibold">Patients Treated</div>
             </div>
             <div>
-              <div class="text-2xl font-black text-cyan-600">4.9 / 5.0</div>
-              <div class="text-xs text-slate-500 font-semibold">Google Maps Rating</div>
+              <div class="text-2xl font-black text-cyan-400" data-counter="4.9" data-suffix=" / 5.0" data-decimals="1">4.9 / 5.0</div>
+              <div class="text-xs text-slate-400 font-semibold">Google Maps Rating</div>
             </div>
             <div>
-              <div class="text-2xl font-black text-slate-900">100%</div>
-              <div class="text-xs text-slate-500 font-semibold">Painless Guarantee</div>
+              <div class="text-2xl font-black text-white" data-counter="100" data-suffix="%">100%</div>
+              <div class="text-xs text-slate-400 font-semibold">Painless Guarantee</div>
             </div>
           </div>
         </div>
 
         <!-- Hero Form Card -->
-        <div class="lg:col-span-5" id="book-form">
-          <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-100 relative">
+        <div class="lg:col-span-5 reveal stagger-3" id="book-form">
+          <div class="bg-white text-slate-900 rounded-3xl p-6 sm:p-8 shadow-2xl border border-slate-200 relative card-lift">
             <div class="absolute -top-3 right-6 bg-amber-500 text-white text-[10px] font-extrabold uppercase px-3 py-1 rounded-full shadow">
               Zero Waiting Time
             </div>
@@ -181,7 +195,7 @@
                 <input type="date" required class="w-full px-4 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-cyan-500 bg-slate-50" />
               </div>
 
-              <button type="submit" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-3 rounded-xl font-bold text-sm shadow-md shadow-cyan-600/25 transition-all">
+              <button type="submit" class="w-full bg-cyan-600 hover:bg-cyan-700 text-white py-3 rounded-xl font-bold text-sm shadow-md shadow-cyan-600/25 transition-all btn-shine">
                 Confirm Slot with Doctor →
               </button>
             </form>
@@ -198,7 +212,7 @@
   <!-- Popular Treatments Section -->
   <section id="services" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
         <span class="text-xs font-black uppercase text-cyan-600 tracking-widest bg-cyan-50 px-3 py-1 rounded-full">World-Class Specialities</span>
         <h2 class="text-3xl sm:text-4xl font-black text-slate-900 mt-3">Advanced Treatments with Transparent Pricing</h2>
         <p class="text-slate-500 text-sm sm:text-base mt-2">No hidden costs. Every treatment is preceded by a complete 3D digital diagnosis.</p>
@@ -206,7 +220,11 @@
 
       <div class="grid md:grid-cols-3 gap-8">
         <!-- Treatment Card 1 -->
-        <div class="rounded-3xl p-6 bg-slate-50 border border-slate-200 hover:border-cyan-400 hover:shadow-xl transition-all group">
+        <div class="rounded-3xl p-6 bg-slate-50 border border-slate-200 hover:border-cyan-400 hover:shadow-xl transition-all group card-lift reveal stagger-1 overflow-hidden">
+          <div class="h-44 -mx-6 -mt-6 mb-5 overflow-hidden img-zoom-hover relative">
+            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80" alt="Laser Teeth Whitening at CarePlus" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+          </div>
           <div class="w-12 h-12 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
             <i data-lucide="sparkles" class="w-6 h-6"></i>
           </div>
@@ -218,14 +236,18 @@
               <span class="text-xs text-slate-400 block">Starting from</span>
               <span class="text-lg font-black text-slate-900">₹3,999</span>
             </div>
-            <a href="https://wa.me/919457886467?text=Hello%20CarePlus!%20I%20want%20to%20enquire%20about%20Laser%20Teeth%20Whitening." target="_blank" class="text-xs font-bold text-cyan-600 hover:text-cyan-800 flex items-center gap-1">
+            <a href="https://wa.me/919457886467?text=Hello%20CarePlus!%20I%20want%20to%20enquire%20about%20Laser%20Teeth%20Whitening." target="_blank" class="text-xs font-bold text-cyan-600 hover:text-cyan-800 flex items-center gap-1 btn-shine px-3 py-1.5 rounded-lg bg-cyan-50">
               Book on WhatsApp <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
         <!-- Treatment Card 2 -->
-        <div class="rounded-3xl p-6 bg-slate-50 border border-slate-200 hover:border-cyan-400 hover:shadow-xl transition-all group">
+        <div class="rounded-3xl p-6 bg-slate-50 border border-slate-200 hover:border-cyan-400 hover:shadow-xl transition-all group card-lift reveal stagger-2 overflow-hidden">
+          <div class="h-44 -mx-6 -mt-6 mb-5 overflow-hidden img-zoom-hover relative">
+            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=600&q=80" alt="Invisible Clear Aligners at CarePlus" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+          </div>
           <div class="w-12 h-12 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
             <i data-lucide="smile" class="w-6 h-6"></i>
           </div>
@@ -237,14 +259,18 @@
               <span class="text-xs text-slate-400 block">Starting from</span>
               <span class="text-lg font-black text-slate-900">₹39,999</span>
             </div>
-            <a href="https://wa.me/919457886467?text=Hello%20CarePlus!%20I%20want%20to%20enquire%20about%20Clear%20Aligners." target="_blank" class="text-xs font-bold text-cyan-600 hover:text-cyan-800 flex items-center gap-1">
+            <a href="https://wa.me/919457886467?text=Hello%20CarePlus!%20I%20want%20to%20enquire%20about%20Clear%20Aligners." target="_blank" class="text-xs font-bold text-cyan-600 hover:text-cyan-800 flex items-center gap-1 btn-shine px-3 py-1.5 rounded-lg bg-cyan-50">
               Book on WhatsApp <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
           </div>
         </div>
 
         <!-- Treatment Card 3 -->
-        <div class="rounded-3xl p-6 bg-slate-50 border border-slate-200 hover:border-cyan-400 hover:shadow-xl transition-all group">
+        <div class="rounded-3xl p-6 bg-slate-50 border border-slate-200 hover:border-cyan-400 hover:shadow-xl transition-all group card-lift reveal stagger-3 overflow-hidden">
+          <div class="h-44 -mx-6 -mt-6 mb-5 overflow-hidden img-zoom-hover relative">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Single-Sitting Root Canal at CarePlus" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent"></div>
+          </div>
           <div class="w-12 h-12 rounded-2xl bg-cyan-100 text-cyan-700 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
             <i data-lucide="shield" class="w-6 h-6"></i>
           </div>
@@ -256,7 +282,7 @@
               <span class="text-xs text-slate-400 block">Starting from</span>
               <span class="text-lg font-black text-slate-900">₹2,999</span>
             </div>
-            <a href="https://wa.me/919457886467?text=Hello%20CarePlus!%20I%20want%20to%20enquire%20about%20Painless%20Root%20Canal." target="_blank" class="text-xs font-bold text-cyan-600 hover:text-cyan-800 flex items-center gap-1">
+            <a href="https://wa.me/919457886467?text=Hello%20CarePlus!%20I%20want%20to%20enquire%20about%20Painless%20Root%20Canal." target="_blank" class="text-xs font-bold text-cyan-600 hover:text-cyan-800 flex items-center gap-1 btn-shine px-3 py-1.5 rounded-lg bg-cyan-50">
               Book on WhatsApp <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
             </a>
           </div>
@@ -268,22 +294,48 @@
   <!-- Smile Transformations / Before-After Section -->
   <section id="transformations" class="py-20 bg-slate-100 border-y border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-14">
+      <div class="text-center max-w-2xl mx-auto mb-14 reveal">
         <span class="text-xs font-black uppercase text-cyan-600 tracking-widest bg-white px-3 py-1 rounded-full shadow-sm">Verified Results</span>
         <h2 class="text-3xl font-black text-slate-900 mt-3">Real Smile Transformations</h2>
         <p class="text-slate-500 text-sm mt-1">See how we restore confidence for patients across Noida & Delhi NCR.</p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200">
-          <div class="h-44 bg-gradient-to-tr from-cyan-800 to-slate-900 rounded-xl flex items-center justify-center text-white text-center p-4">
+      <!-- Interactive Before/After Smile Slider -->
+      <div class="mb-14 reveal">
+        <div class="max-w-3xl mx-auto bg-white p-4 sm:p-6 rounded-3xl border border-slate-200 shadow-xl">
+          <div class="flex items-center justify-between mb-4 px-2">
             <div>
-              <i data-lucide="smile" class="w-10 h-10 mx-auto text-cyan-400 mb-2"></i>
+              <span class="text-xs font-black uppercase text-cyan-600 tracking-wider">Interactive Case Showcase</span>
+              <h3 class="text-lg sm:text-xl font-black text-slate-900">Drag Slider to Reveal Smile Makeover</h3>
+            </div>
+            <span class="text-xs text-cyan-700 bg-cyan-50 border border-cyan-200 px-3 py-1 rounded-full font-bold">Touch & Drag ‹ ›</span>
+          </div>
+          <div class="before-after-wrapper relative h-72 sm:h-96 w-full rounded-2xl overflow-hidden cursor-ew-resize">
+            <!-- Before Image (Base) -->
+            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1000&q=80" alt="Smile Before Treatment" class="absolute inset-0 w-full h-full object-cover select-none pointer-events-none" loading="lazy" width="1000" height="600" />
+            <div class="absolute bottom-4 right-4 bg-black/70 backdrop-blur-sm text-white text-[11px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider z-10 pointer-events-none">Before Treatment</div>
+            <!-- After Image (Overlay) -->
+            <div class="before-after-after absolute top-0 left-0 h-full overflow-hidden select-none pointer-events-none" style="width: 50%;">
+              <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1000&q=80" alt="Smile After Treatment" class="absolute top-0 left-0 max-w-none h-full object-cover select-none pointer-events-none" loading="lazy" width="1000" height="600" />
+              <div class="absolute bottom-4 left-4 bg-cyan-600/90 backdrop-blur-sm text-white text-[11px] font-bold px-3 py-1.5 rounded-full uppercase tracking-wider z-10">After 8-Shade Whitening</div>
+            </div>
+            <!-- Slider Handle -->
+            <div class="before-after-handle"></div>
+          </div>
+          <p class="text-center text-xs text-slate-500 mt-3 font-medium">Slide left or right to compare pre-treatment enamel discoloration vs. post-laser whitening.</p>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200 card-lift reveal stagger-1 overflow-hidden">
+          <div class="h-44 overflow-hidden rounded-xl img-zoom-hover relative mb-4">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Porcelain Veneers Makeover" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent flex flex-col justify-end p-4 text-white">
               <div class="text-sm font-bold">Porcelain Veneers Makeover</div>
               <div class="text-xs text-cyan-200">Patient: Priya S., Sector 44 Noida</div>
             </div>
           </div>
-          <div class="mt-4">
+          <div>
             <div class="flex items-center gap-1 text-amber-400 mb-1">
               <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
               <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
@@ -295,15 +347,15 @@
           </div>
         </div>
 
-        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200">
-          <div class="h-44 bg-gradient-to-tr from-teal-800 to-slate-900 rounded-xl flex items-center justify-center text-white text-center p-4">
-            <div>
-              <i data-lucide="check-circle" class="w-10 h-10 mx-auto text-teal-400 mb-2"></i>
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200 card-lift reveal stagger-2 overflow-hidden">
+          <div class="h-44 overflow-hidden rounded-xl img-zoom-hover relative mb-4">
+            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=600&q=80" alt="6 Months Clear Aligners" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent flex flex-col justify-end p-4 text-white">
               <div class="text-sm font-bold">6 Months Clear Aligners</div>
               <div class="text-xs text-teal-200">Patient: Vikram M., Indirapuram</div>
             </div>
           </div>
-          <div class="mt-4">
+          <div>
             <div class="flex items-center gap-1 text-amber-400 mb-1">
               <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
               <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
@@ -315,15 +367,15 @@
           </div>
         </div>
 
-        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200">
-          <div class="h-44 bg-gradient-to-tr from-indigo-800 to-slate-900 rounded-xl flex items-center justify-center text-white text-center p-4">
-            <div>
-              <i data-lucide="activity" class="w-10 h-10 mx-auto text-indigo-400 mb-2"></i>
+        <div class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200 card-lift reveal stagger-3 overflow-hidden">
+          <div class="h-44 overflow-hidden rounded-xl img-zoom-hover relative mb-4">
+            <img src="https://images.unsplash.com/photo-1629909615184-74f495363b67?auto=format&fit=crop&w=600&q=80" alt="Swiss Dental Implants" class="w-full h-full object-cover" loading="lazy" width="600" height="350" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/30 to-transparent flex flex-col justify-end p-4 text-white">
               <div class="text-sm font-bold">Swiss Dental Implants</div>
               <div class="text-xs text-indigo-200">Patient: Alok G., Sector 93 Noida</div>
             </div>
           </div>
-          <div class="mt-4">
+          <div>
             <div class="flex items-center gap-1 text-amber-400 mb-1">
               <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
               <i data-lucide="star" class="w-4 h-4 fill-amber-400"></i>
@@ -341,38 +393,34 @@
   <!-- Lead Doctors Section -->
   <section id="doctors" class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-16 reveal">
         <span class="text-xs font-black uppercase text-cyan-600 tracking-widest bg-cyan-50 px-3 py-1 rounded-full">Medical Leadership</span>
         <h2 class="text-3xl font-black text-slate-900 mt-3">Meet Your Senior Dental Surgeons</h2>
         <p class="text-slate-500 text-sm mt-1">Over 25+ combined years of clinical expertise from top medical institutes.</p>
       </div>
 
       <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <div class="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-3xl bg-slate-50 border border-slate-200">
-          <div class="w-28 h-28 rounded-2xl bg-cyan-600 flex items-center justify-center text-white text-3xl font-black shrink-0">
-            DR
-          </div>
+        <div class="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-3xl bg-slate-50 border border-slate-200 card-lift reveal stagger-1">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=400&q=80" alt="Dr. Ananya Sharma" class="w-28 h-28 rounded-2xl object-cover shrink-0 shadow-md border-2 border-cyan-400" loading="lazy" width="112" height="112" />
           <div>
             <span class="text-xs font-bold text-cyan-600">Head Orthodontist & Founder</span>
             <h3 class="text-xl font-bold text-slate-900">Dr. Ananya Sharma</h3>
             <p class="text-xs text-slate-500 mb-2">BDS, MDS (Orthodontics), AIIMS Alum</p>
             <p class="text-xs text-slate-600 leading-relaxed mb-4">Specialist in clear aligners and lingual braces with over 4,000 successful smile rehabilitations.</p>
-            <a href="https://wa.me/919457886467?text=Hello!%20I%20want%20to%20consult%20Dr.%20Ananya%20Sharma." target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-cyan-700 hover:text-cyan-900">
+            <a href="https://wa.me/919457886467?text=Hello!%20I%20want%20to%20consult%20Dr.%20Ananya%20Sharma." target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-cyan-700 hover:text-cyan-900 btn-shine px-3 py-1.5 rounded-lg bg-cyan-50">
               <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Request Doctor Consultation
             </a>
           </div>
         </div>
 
-        <div class="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-3xl bg-slate-50 border border-slate-200">
-          <div class="w-28 h-28 rounded-2xl bg-teal-600 flex items-center justify-center text-white text-3xl font-black shrink-0">
-            DR
-          </div>
+        <div class="flex flex-col sm:flex-row items-center gap-6 p-6 rounded-3xl bg-slate-50 border border-slate-200 card-lift reveal stagger-2">
+          <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80" alt="Dr. Rohit Verma" class="w-28 h-28 rounded-2xl object-cover shrink-0 shadow-md border-2 border-teal-400" loading="lazy" width="112" height="112" />
           <div>
             <span class="text-xs font-bold text-teal-600">Chief Implantologist</span>
             <h3 class="text-xl font-bold text-slate-900">Dr. Rohit Verma</h3>
             <p class="text-xs text-slate-500 mb-2">MDS (Oral & Maxillofacial), Fellow ICOI (USA)</p>
             <p class="text-xs text-slate-600 leading-relaxed mb-4">Certified in computer-guided basal implants and complex bone graft reconstructions.</p>
-            <a href="https://wa.me/919457886467?text=Hello!%20I%20want%20to%20consult%20Dr.%20Rohit%20Verma." target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-cyan-700 hover:text-cyan-900">
+            <a href="https://wa.me/919457886467?text=Hello!%20I%20want%20to%20consult%20Dr.%20Rohit%20Verma." target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-cyan-700 hover:text-cyan-900 btn-shine px-3 py-1.5 rounded-lg bg-teal-50">
               <i data-lucide="calendar" class="w-3.5 h-3.5"></i> Request Doctor Consultation
             </a>
           </div>
@@ -415,7 +463,7 @@
         <div>
           <h4 class="text-white font-bold text-sm mb-3">Need An Appointment?</h4>
           <p class="text-xs text-slate-400 mb-3">Chat directly with clinic coordinators on WhatsApp.</p>
-          <a href="https://wa.me/919457886467?text=Hello%20CarePlus!%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-xl font-bold text-xs transition-colors">
+          <a href="https://wa.me/919457886467?text=Hello%20CarePlus!%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white py-2.5 rounded-xl font-bold text-xs transition-colors btn-shine">
             <i data-lucide="message-circle" class="w-4 h-4"></i> Chat on WhatsApp
           </a>
         </div>
@@ -428,14 +476,10 @@
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/919457886467?text=Hello%20CarePlus%20Dental!%20I%20want%20to%20book%20an%20appointment." target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all hover:scale-110">
+  <a href="https://wa.me/919457886467?text=Hello%20CarePlus%20Dental!%20I%20want%20to%20book%20an%20appointment." target="_blank" class="fixed bottom-6 right-6 z-40 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl shadow-emerald-500/40 flex items-center justify-center transition-all hover:scale-110 wa-pulse-btn" aria-label="Chat on WhatsApp">
     <i data-lucide="message-circle" class="w-7 h-7"></i>
   </a>
 
-  <script>
-    if (window.lucide) {
-      window.lucide.createIcons();
-    }
-  </script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
