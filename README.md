@@ -1,15 +1,16 @@
-# NovaScale Global • Digital Growth Agency
+﻿# VDigitalverse • Digital Growth Agency
 
 > **Headquarters:** Sector 62, Noida, Uttar Pradesh, India  
 > **Global Reach:** Serving local businesses across Delhi NCR, pan-India, and international clients in UAE, UK, and North America.  
-> **Live GitHub Pages URL:** [https://vikashyadav0028.github.io/novascale-global/](https://vikashyadav0028.github.io/novascale-global/)
+> **Live GitHub Pages URL:** [https://vikashyadav0028.github.io/novascale-global-global/](https://vikashyadav0028.github.io/novascale-global-global/)  
+> **1-Click Vercel Deployment:** [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvikashyadav0028%2FVDigitalverse-global)
 
 ---
 
 ## ⚡ Mission & Overview
-NovaScale Global is an engineering-driven digital growth agency designed specifically for local service businesses: **dental clinics, gyms & fitness clubs, luxury bridal salons, real estate brokerages, cafés & restaurants, and coaching academies**.
+VDigitalverse is an engineering-driven digital growth agency designed specifically for local service businesses: **dental clinics, gyms & fitness clubs, luxury bridal salons, real estate brokerages, cafés & restaurants, and coaching academies**.
 
-Unlike traditional agencies that sell bloated 45-plugin WordPress templates taking 3 months to deliver, NovaScale delivers hand-crafted, high-velocity frontend web systems deployed in **5 business days flat**, pre-integrated with:
+Unlike traditional agencies that sell bloated 45-plugin WordPress templates taking 3 months to deliver, VDigitalverse delivers hand-crafted, high-velocity frontend web systems deployed in **5 business days flat**, pre-integrated with:
 - **Direct 1-Tap WhatsApp Conversion Funnels**
 - **Google Maps Local SEO Schema & Top-3 Pack Optimization**
 - **Sub-1s Mobile Page Load Speeds (99/100 Google PageSpeed)**
@@ -56,7 +57,7 @@ digital-growth-agency/
 ---
 
 ## 🌟 The 6 Standalone Client Demos
-Each demo is a fully functional, mobile-optimized landing page equipped with a sticky preview bar linking back to NovaScale Global:
+Each demo is a fully functional, mobile-optimized landing page equipped with a sticky preview bar linking back to VDigitalverse:
 1. **CarePlus Dental Clinic** (`demos/clinic.html`): 3D Intraoral scan callouts, appointment form, smile makeover gallery, doctor credentials.
 2. **IronForge Gym** (`demos/gym.html`): Dark-mode athletic aesthetics, 1-day free pass generator, multi-tier memberships, contrast therapy.
 3. **Luxe Aura Salon** (`demos/salon.html`): Rose gold bridal aesthetic, lookbook, airbrush bridal packages, stylist booking.
@@ -78,4 +79,4 @@ Then navigate to: `http://localhost:5000/`
 ## 📞 Agency Contact Points
 - **WhatsApp:** Direct prefilled routing to `https://wa.me/919457886467`
 - **Location:** Sector 62, Noida, Uttar Pradesh 201309, India
-- **License:** Registered Digital Agency © 2026 NovaScale Global Media. All rights reserved.
+- **License:** Registered Digital Agency © 2026 VDigitalverse Media. All rights reserved.

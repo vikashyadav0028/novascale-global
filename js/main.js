@@ -1,5 +1,5 @@
-/**
- * NovaScale Global - Unified Vanilla Client Animation & Interaction Engine
+﻿/**
+ * VDigitalverse - Unified Vanilla Client Animation & Interaction Engine
  * Ultra-lightweight (< 5KB), zero dependencies, 60fps performance
  */
 

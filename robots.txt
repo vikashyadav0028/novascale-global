@@ -1,4 +1,4 @@
-User-agent: *
+﻿User-agent: *
 Allow: /
 
-Sitemap: https://vikashyadav0028.github.io/novascale-global/sitemap.xml
+Sitemap: https://vikashyadav0028.github.io/novascale-global-global/sitemap.xml
